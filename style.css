@@ -216,7 +216,7 @@ header {
         display: none;
     }
     details{
-        display: none;
+        /* display: none; */
         align-self: flex-end;
         background-color: whitesmoke;
     }
@@ -292,8 +292,8 @@ header {
         #searchContainer{
             display: none;
         }
-        details{
-            display: block;
+        #hamburger{
+            display:inline-block;
         }
     }
     #background-blob {
