@@ -65,25 +65,17 @@ body {
 }
 
 .home .center-header1 p {
-<<<<<<< HEAD
     color: #777777;
     width: 50%;
-=======
-    width: 45%;
->>>>>>> 9bf1e39f1f460195695e8fa2c017b0ffed9240fd
     text-align: center;
     margin-top: 20px;
     font-family: light;
     font-weight: 600;
     font-size: 1.2rem;
-<<<<<<< HEAD
 
     span{
         color: whitesmoke;
     }
-=======
-    color: #909090;
->>>>>>> 9bf1e39f1f460195695e8fa2c017b0ffed9240fd
 }
 
 .home .center-header1 h2 {
