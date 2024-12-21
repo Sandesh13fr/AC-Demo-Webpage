@@ -41,6 +41,7 @@ body {
 body {
     background-color: #0C0712;
     color: whitesmoke;
+    overflow: hidden;
 }
 
 .home ,.center-header1{
@@ -54,7 +55,7 @@ body {
 }
 
 .home .center-header1 h1 {
-    font-family: GilroyBold;
+    font-family: "GilroyBold";
     font-weight: bold;
     font-size: 7rem;
     z-index: 1;
@@ -106,7 +107,7 @@ body {
 #background-blob {
     position: absolute;
     top: 50vh;
-    left: 30vw;
+    left: 25vw;
     border-radius: 50%;
     height: 25vw;
     width: 40vw;
@@ -322,6 +323,11 @@ header {
         left: 20vw;
         width: 60vw;
         height: 30vw;
+    }
+    .center-header1{
+        h2{
+            
+        }
     }
 }
 
