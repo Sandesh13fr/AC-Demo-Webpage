@@ -13,3 +13,24 @@ body{
     background-color: #111111;
     color: whitesmoke;
 }
+#background-blob{
+    position: absolute;
+    top: 60vh;
+    left: 20vw;
+    border-radius: 50%;
+    height: 35vw;
+    width: 35vw;
+    background: linear-gradient(to top right, #fc0c04, #f49c37);
+    z-index: 1;
+    filter: blur(60px);
+    animation: gola 3s linear infinite alternate;
+  }
+  
+  @keyframes gola {
+    to {
+      transform: translate(10%, -10%) skew(-10deg);
+    }
+    from {
+      transform: translate(-10%, 13%) skew(5deg);
+    }
+  }
