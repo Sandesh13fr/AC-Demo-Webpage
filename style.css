@@ -287,6 +287,9 @@ header {
         cursor: pointer;
         border-radius: 20px;
     }
+    #eng:active{
+        color: #742c74;
+    }
 }
 
 
