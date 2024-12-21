@@ -64,12 +64,17 @@ body {
 }
 
 .home .center-header1 p {
+    color: #777777;
     width: 50%;
     text-align: center;
     margin-top: 20px;
     font-family: light;
     font-weight: 600;
     font-size: 1.2rem;
+
+    span{
+        color: whitesmoke;
+    }
 }
 
 .home .center-header1 h2 {
@@ -252,7 +257,7 @@ header {
     }
 }
 
-#full {
+#hamburger {
     height: 100%;
     width: 20%;
     background-color: #1a1a1a;
@@ -266,15 +271,15 @@ header {
     z-index: 99;
 }
 
-#full h1 {
+#hamburger h1 {
     cursor: pointer;
 }
 
-#full h1 a:hover {
+#hamburger h1 a:hover {
     color: rgb(203, 203, 203);
 }
 
-#full h1 a {
+#hamburger h1 a {
     font-weight: 600;
     text-decoration: none;
     font-size: 1.7vw;
@@ -284,7 +289,7 @@ header {
     margin-bottom: 10px;
 }
 
-#full i {
+#hamburger i {
     position: absolute;
     right: 7%;
     top: 2%;
@@ -296,7 +301,7 @@ header {
     cursor: pointer;
 }
 
-#full i:hover {
+#hamburger i:hover {
     background-color: rgb(255, 255, 255);
     color: #000000;
 }
