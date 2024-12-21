@@ -41,7 +41,6 @@ body {
 body {
     background-color: #0C0712;
     color: whitesmoke;
-    /* padding: 0 1rem; */
 }
 
 .home {
@@ -79,7 +78,7 @@ body {
     border-radius: 50%;
     height: 25vw;
     width: 40vw;
-    background: linear-gradient(to top right, purple, navy);
+    background: linear-gradient(to top right, rgb(95, 2, 95), navy);
     z-index: -1;
     filter: blur(60px);
     animation: blob 3s linear infinite alternate;
@@ -94,7 +93,6 @@ body {
         height: 30vw;
         filter: blur(70px);
         -webkit-filter: blur(70px);
-        background: linear-gradient(to top left, #d380d3, navy);
     }
 }
 
