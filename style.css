@@ -13,6 +13,10 @@ body{
     background-color: #111111;
     color: whitesmoke;
 }
+#home{
+    width: 100%;
+    height: 100%;
+}
 #background-blob{
     position: absolute;
     top: 60vh;
