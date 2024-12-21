@@ -1,5 +1,8 @@
+
 const hamBurgerAnimation=()=>{
 var close = document.querySelector("#full i")
+
+var close = document.querySelector("#hamburger i")
     var menu = document.querySelector(".language-opts i")
 
     var tl = gsap.timeline()
