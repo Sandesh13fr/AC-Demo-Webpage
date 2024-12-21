@@ -1,42 +1,4 @@
-
-const hamBurgerAnimation=()=>{
-var close = document.querySelector("#full i")
-
-var close = document.querySelector("#hamburger i")
-    var menu = document.querySelector(".language-opts i")
-
-    var tl = gsap.timeline()
-    tl.to("#hamburger", {
-        transform: 'translateX(0%)',
-        duration: 1,
-        opacity: 1
-    })
-    tl.from("#hamburger h1", {
-        x: 30,
-        duration: 0.3,
-        opacity: 0,
-        stagger: 0.2
-    })
-
-    tl.from("#hamburger i", {
-        scale: 0,
-        opacity: 0,
-        duration: 0.3
-    })
-
-    tl.pause()
-
-    menu.addEventListener('click', function () {
-        tl.play()
-    })
-    close.addEventListener("click", function () {
-        tl.reverse()
-    })
-}
-
-hamBurgerAnimation()
-
-const languageChangeOnCLick = () => {
+const languageChangeOnClick = () => {
     const translations = {
         en: {
             heading2: "Drive Your Dreams, Powered by Trust.",
@@ -54,50 +16,41 @@ const languageChangeOnCLick = () => {
         },
     };
 
-    // Function to update content based on selected language
     function setLanguage(lang) {
+        localStorage.setItem("language", lang); // Save user preference
         const content = translations[lang];
 
         document.querySelector(".center-header1 h2").textContent = content.heading2;
-        document.querySelector(".center-header1 h1").innerHTML = content.heading1; // Use innerHTML for line break
+        document.querySelector(".center-header1 h1").innerHTML = content.heading1;
         document.querySelector(".center-header1 p").textContent = content.paragraph;
         document.querySelector(".btnContainer button").textContent = content.button;
     }
 
-    // Add event listeners for language switch buttons
-    document.getElementById("eng").addEventListener("click", () => setLanguage("en"));
-    document.getElementById("fre").addEventListener("click", () => setLanguage("fr"));
+    const savedLanguage = localStorage.getItem("language") || "en";
+    setLanguage(savedLanguage);
 
-    // Set default language to English on page load
-    setLanguage("en");
-    const storeUserPerference = () =>{
-        function setLanguage(lang) {
-            localStorage.setItem("language", lang); // Save user preference
-            const content = translations[lang];
-        
-            document.querySelector(".center-header1 h2").textContent = content.heading2;
-            document.querySelector(".center-header1 h1").innerHTML = content.heading1;
-            document.querySelector(".center-header1 p").textContent = content.paragraph;
-            document.querySelector(".btnContainer button").textContent = content.button;
-        }
-        
-        // Load saved language on page load or default to English
-        const savedLanguage = localStorage.getItem("language") || "en";
-        setLanguage(savedLanguage);
-        
-    }
-    storeUserPerference()
+    // Add click event to change color and set language
+    document.getElementById("eng").addEventListener("click", function () {
+        setLanguage("en");
+        updateSelectedStyle(this); // Highlight selected element
+    });
+
+    document.getElementById("fre").addEventListener("click", function () {
+        setLanguage("fr");
+        updateSelectedStyle(this); // Highlight selected element
+    });
+
     function updateSelectedStyle(selectedElement) {
-        // Reset styles for all buttons
+        // Reset styles for all language spans
         document.querySelectorAll(".language-btn").forEach((btn) => {
-            btn.style.backgroundColor = "";
-            btn.style.color = "";
+            btn.style.color = ""; // Reset text color
+            btn.style.fontWeight = ""; // Reset font weight
         });
 
-        // Apply style to the clicked element
-        selectedElement.style.backgroundColor = "green";
-        selectedElement.style.color = "red";
+        // Apply styles to the clicked element
+        selectedElement.style.color = "purple";
+        selectedElement.style.fontWeight = "bold";
     }
-}
+};
 
-languageChangeOnCLick()
+languageChangeOnClick();
