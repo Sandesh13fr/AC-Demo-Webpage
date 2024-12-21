@@ -155,11 +155,12 @@ header {
 
     #logoContainer {
         height: 3.5rem;
-        width: 3.5rem;
+        width: 10.5rem;
 
         img {
             height: 100%;
             width: 100%;
+            object-fit: contain;
             }
 
         img:hover{
