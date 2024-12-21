@@ -237,6 +237,9 @@ header {
         align-items: center;
         /* Adjusting padding for better spacing */
         padding: 1rem 2rem;
+        details{
+            display: block;
+        }
     }
 }
 
@@ -254,6 +257,9 @@ header {
         }
         #searchContainer{
             display: none;
+        }
+        details{
+            display: block;
         }
     }
     #background-blob {
@@ -277,6 +283,9 @@ header {
         flex-direction: column;
         align-items: center;
         padding: 1rem;
+        details{
+            display: block;
+        }
     }
 
     #background-blob {
