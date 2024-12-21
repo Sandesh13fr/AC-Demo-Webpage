@@ -87,6 +87,17 @@ const languageChangeOnCLick = () => {
         
     }
     storeUserPerference()
+    function updateSelectedStyle(selectedElement) {
+        // Reset styles for all buttons
+        document.querySelectorAll(".language-btn").forEach((btn) => {
+            btn.style.backgroundColor = "";
+            btn.style.color = "";
+        });
+
+        // Apply style to the clicked element
+        selectedElement.style.backgroundColor = "green";
+        selectedElement.style.color = "red";
+    }
 }
 
 languageChangeOnCLick()
