@@ -1,5 +1,5 @@
 @font-face {
-    font-family: 'Gilroy Bold';
+    font-family: GilroyBold;
     src: url('./Assets/fonts/Gilroy-Bold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
@@ -16,11 +16,8 @@
 }
 
 @font-face {
-    font-family: 'Gilroy';
-    src: url('./Assets/fonts/Gilroy-Regular.ttf') format('truetype'),
-         url('./Assets/fonts/Gilroy-Bold.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+    font-family: Gilroy;
+    src: url('./Assets/fonts/Gilroy-Regular.ttf') format('truetype');
 }
 
 @font-face {
@@ -44,7 +41,6 @@ body {
 body {
     background-color: #0C0712;
     color: whitesmoke;
-    padding: 0 1rem;
 }
 
 .home {
@@ -52,18 +48,22 @@ body {
     height: 100vh;
     display: flex;
     justify-content: center;
-    align-content: center;
+    align-items: center;
     text-align: center;
 }
-.home .center-header1 h1{
-    font-family: 'Gilroy Bold', sans-serif;
+
+.home .center-header1 h1 {
+    font-family: GilroyBold;
     font-weight: 1000;
     font-size: 5rem;
     margin-top: 7rem;
     z-index: 1;
+    line-height: 4rem;
 }
-.home .center-header1 h2{
-    font-family: 'Gilroy', sans-serif;
+
+.home .center-header1 h2 {
+    font-family: Gilroy;
+    line-height: 2rem;
     font-weight: 700;
     font-size: 2rem;
     margin-top: 1rem;
@@ -78,7 +78,7 @@ body {
     border-radius: 50%;
     height: 25vw;
     width: 40vw;
-    background: linear-gradient(to top right, purple, navy);
+    background: linear-gradient(to top right, rgb(95, 2, 95), navy);
     z-index: -1;
     transform: skew(20deg);
     filter: blur(60px);
@@ -94,6 +94,7 @@ body {
         height: 30vw;
         filter: blur(70px);
         -webkit-filter: blur(70px);
+<<<<<<< HEAD
         background: linear-gradient(to top center, #640664, navy);
 }
     to {
@@ -104,6 +105,9 @@ body {
         -webkit-filter: blur(70px);
         background: linear-gradient(to top left, #742c74, navy);
 }
+=======
+    }
+>>>>>>> 555919806634aa8e8fb5fed57eb19ed8d9d4e0ff
 }
 
 header {
@@ -111,8 +115,12 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 1.5rem 3rem;
-    font-family: regular;
+    font-family: Gilroy;
     border-bottom: 2px solid rgba(118, 118, 118, 0.475);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
 
     #logoContainer {
         height: 3.5rem;
