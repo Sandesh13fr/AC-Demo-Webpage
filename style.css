@@ -41,12 +41,8 @@ body {
     color: whitesmoke;
     padding: 0 1rem;
 }
-<<<<<<< HEAD
-.home{
-=======
 
 .home {
->>>>>>> fcb9644e153ef7691ac212a8e5c2d34eaf3b802a
     width: 100%;
     height: 8vh;
 }
@@ -67,16 +63,9 @@ body {
 
 @keyframes blob {
     to {
-<<<<<<< HEAD
-      transform: translate(10%, -10%) skew(-10deg);
-<<<<<<< HEAD
-=======
-=======
-=======
         transform: translate(10%, -10%) skew(-10deg);
     }
 }
->>>>>>> fcb9644e153ef7691ac212a8e5c2d34eaf3b802a
 
 header {
     display: flex;
@@ -94,6 +83,8 @@ header {
             height: 100%;
             width: 100%;
         }
+
+
     }
 
     nav {
