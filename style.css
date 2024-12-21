@@ -90,9 +90,10 @@ body {
     to {
         transform: translate(10%, -10%) skew(-10deg);
         width: 50vw;
-        filter: blur(40px);
-        -webkit-filter: blur(40px);
-        background: linear-gradient(to top right, #860686, #070764);
+        height: 30vw;
+        filter: blur(70px);
+        -webkit-filter: blur(70px);
+        background: linear-gradient(to top left, #d380d3, navy);
 }
 }
 
