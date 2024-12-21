@@ -58,18 +58,20 @@ body {
 .home .center-header1 h1 {
     font-family: "GilroyBold";
     font-weight: bold;
-    font-size: 7rem;
+    font-size: 8rem;
     z-index: 1;
     line-height: 6.8rem;
+    letter-spacing: -5px;
 }
 
 .home .center-header1 p {
-    width: 50%;
+    width: 45%;
     text-align: center;
     margin-top: 20px;
     font-family: light;
     font-weight: 600;
     font-size: 1.2rem;
+    color: #909090;
 }
 
 .home .center-header1 h2 {
@@ -80,6 +82,8 @@ body {
     z-index: 1;
     margin-bottom: 5px;
     color: #777777;
+    letter-spacing: -1px;
+
 }
 
 .btnContainer {
@@ -161,15 +165,16 @@ header {
             height: 100%;
             width: 100%;
             object-fit: contain;
-            }
+            transition: all ease-in 0.9s;
+        }
 
-        img:hover{
+        img:hover {
             transform: scale(1.2);
-            -webkit-transform: scale(1.2);
-            -moz-transform: scale(1.2);
-            -ms-transform: scale(1.2);
-            -o-transform: scale(1.2);
-}
+            -webkit-transform: scale(1.1);
+            -moz-transform: scale(1.1);
+            -ms-transform: scale(1.1);
+            -o-transform: scale(1.1);
+        }
     }
 
     nav {
@@ -192,7 +197,7 @@ header {
 
     input[type="text"] {
         padding: 0.5rem;
-        margin-right: 0.5rem;
+        margin-right: 0.2rem;
         border: none;
         border-radius: 5px;
         background-color: #333333;
@@ -205,15 +210,15 @@ header {
         background-color: #555555;
     }
 
-    button {
+    #searchButton {
         padding: 0.5rem 1rem;
-        border: none;
         border-radius: 5px;
         background-color: #333333;
         color: whitesmoke;
         cursor: pointer;
         font-size: 1rem;
         transition: background-color 0.3s ease;
+        border: none;
 
         &:hover {
             background-color: #555555;
@@ -223,20 +228,10 @@ header {
             background-color: #777777;
         }
     }
-    #searchButton{
-        background-color: #333333;
-        color: whitesmoke;
-        cursor: pointer;
-        font-size: 1rem;
-        transition: background-color 0.3s ease;
 
-        &:hover {
-            background-color: #555555;
-        }
-
-        &:active {
-            background-color: #777777;
-        }
+    .container{
+        display: flex ;
+        gap: 20px;
     }
 
     .language-opts {
@@ -247,8 +242,29 @@ header {
     }
 
     .language-opts i {
+        display: none;
         font-size: 2rem;
         cursor: pointer;
+    }
+
+    .language button{
+        border: none;
+        background-color: transparent;
+        color: white;
+        font-size: 1.3rem;
+    }
+    
+    .language-opts i {
+        border: 2px solid #1a1a1a;
+        padding: 10px 12px;
+        border-radius: 50%;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    
+    .language-opts i:hover {
+        background-color: #373737;
+        color: rgb(255, 255, 255);
     }
 }
 
@@ -301,18 +317,6 @@ header {
     color: #000000;
 }
 
-.language-opts i {
-    border: 2px solid #1a1a1a;
-    padding: 10px 12px;
-    border-radius: 50%;
-    font-size: 20px;
-    cursor: pointer;
-}
-
-.language-opts i:hover {
-    background-color: #373737;
-    color: rgb(255, 255, 255);
-}
 
 @media (max-width: 1200px) {
     .home .center-header1 h1 {
@@ -384,11 +388,6 @@ header {
         left: 20vw;
         width: 60vw;
         height: 30vw;
-    }
-    .center-header1{
-        h2{
-            
-        }
     }
 }
 
