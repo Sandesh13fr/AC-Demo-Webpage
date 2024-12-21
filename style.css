@@ -73,7 +73,7 @@ header {
     justify-content: space-between;
     padding: 1.5rem 3rem;
     font-family: regular;
-    border-bottom: 2px solid rgba(170, 170, 170, 0.475);
+    border-bottom: 2px solid rgba(118, 118, 118, 0.475);
 
     #logoContainer {
         height: 3.5rem;
