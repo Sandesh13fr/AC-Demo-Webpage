@@ -43,7 +43,8 @@ body {
     color: whitesmoke;
 }
 
-.home ,.center-header1{
+.home,
+.center-header1 {
     width: 100%;
     height: 100vh;
     display: flex;
@@ -61,7 +62,7 @@ body {
     line-height: 6.8rem;
 }
 
-.home .center-header1 p{
+.home .center-header1 p {
     width: 50%;
     text-align: center;
     margin-top: 20px;
@@ -80,13 +81,14 @@ body {
     color: #777777;
 }
 
-.btnContainer{
+.btnContainer {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 20px;
     gap: 10px;
-    button{
+
+    button {
         background-color: transparent;
         border: 2px solid rgb(255, 255, 255);
         color: white;
@@ -120,14 +122,15 @@ body {
 }
 
 @keyframes blob {
-    50%{
+    50% {
         transform: translate(10%, -10%) skew(-20deg);
         width: 50vw;
         height: 30vw;
         filter: blur(70px);
         -webkit-filter: blur(70px);
         background: linear-gradient(to top center, #640664, navy);
-}
+    }
+
     to {
         transform: translate(10%, -10%) skew(-10deg);
         width: 40vw;
@@ -135,7 +138,7 @@ body {
         filter: blur(70px);
         -webkit-filter: blur(70px);
         background: linear-gradient(to top left, #742c74, navy);
-}
+    }
 }
 
 header {
@@ -212,44 +215,95 @@ header {
             background-color: #777777;
         }
     }
-    #hamburger{
-        display: none;
+
+    .language-opts {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
     }
-    details{
-        /* display: none; */
-        align-self: flex-end;
-        background-color: whitesmoke;
+
+    .language-opts i {
+        font-size: 2rem;
+        cursor: pointer;
     }
-    details>summary{
-        list-style: none;
-        padding: 10px 10px 10px 40px;
-        background: url(/Assets/photos/menu.png) no-repeat 14px 50%;
-        background-size: 18px;
-        font-weight: bold;
-    }
-    details>details>summary{
-        align-self: flex-end;
-        list-style: none;
-        padding: 10px 10px 10px 40px;
-        background: url(/Assets/photos/arrow.png) no-repeat 14px 50%;
-        background-size: 18px;
-        font-weight: bold;
-    }
+}
+
+#full {
+    height: 100%;
+    width: 20%;
+    background-color: #1a1a1a;
+    backdrop-filter: blur(30px);
+    position: fixed;
+    right: 0;
+    top: 0;
+    padding: 12vw 3vw;
+    transform: translateX(100%);
+
+    z-index: 99;
+}
+
+#full h1 {
+    cursor: pointer;
+}
+
+#full h1 a:hover {
+    color: rgb(203, 203, 203);
+}
+
+#full h1 a {
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 1.7vw;
+    color: #1a1a1a;
+    color: rgb(87, 87, 87);
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 10px;
+}
+
+#full i {
+    position: absolute;
+    right: 7%;
+    top: 2%;
+    font-size: 25px;
+    border: 2px solid #f3f3f3;
+    padding: 5px;
+    border-radius: 50%;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+#full i:hover {
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+}
+
+.language-opts i {
+    border: 2px solid #1a1a1a;
+    padding: 10px 12px;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.language-opts i:hover {
+    background-color: #373737;
+    color: rgb(255, 255, 255);
 }
 
 @media (max-width: 1200px) {
     .home .center-header1 h1 {
         font-size: 4rem;
     }
-    
+
     .home .center-header1 h2 {
         font-size: 1.8rem;
     }
 
     header {
         padding: 1.5rem 2rem;
-        
-        details{
+
+        details {
             display: block;
         }
     }
@@ -259,7 +313,7 @@ header {
     .home .center-header1 h1 {
         font-size: 3.5rem;
     }
-    
+
     .home .center-header1 h2 {
         font-size: 1.6rem;
     }
@@ -271,31 +325,37 @@ header {
         align-items: center;
         /* Adjusting padding for better spacing */
         padding: 1rem 2rem;
-        details{
+
+        details {
             display: block;
         }
     }
 }
 
 @media (max-width: 768px) {
-    
-    header{
-        #logoContainer{
+
+    header {
+        #logoContainer {
             align-self: flex-start;
         }
-        nav{
+
+        nav {
             display: none;
         }
-        .language-opts{
+
+        .language-opts {
             display: none;
         }
-        #searchContainer{
+
+        #searchContainer {
             display: none;
         }
-        #hamburger{
-            display:inline-block;
+
+        #hamburger {
+            display: inline-block;
         }
     }
+
     #background-blob {
         top: 40vh;
         left: 20vw;
@@ -317,7 +377,8 @@ header {
         flex-direction: column;
         align-items: center;
         padding: 1rem;
-        details{
+
+        details {
             display: block;
         }
     }
