@@ -247,11 +247,9 @@ header {
         cursor: pointer;
     }
 
-    .language button{
-        border: none;
-        background-color: transparent;
-        color: white;
-        font-size: 1.3rem;
+    .language h3 span{
+        user-select: none;
+        cursor: pointer;
     }
     
     .language-opts i {
