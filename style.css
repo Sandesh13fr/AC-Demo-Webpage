@@ -94,7 +94,6 @@ body {
         height: 30vw;
         filter: blur(70px);
         -webkit-filter: blur(70px);
-<<<<<<< HEAD
         background: linear-gradient(to top center, #640664, navy);
 }
     to {
@@ -105,9 +104,6 @@ body {
         -webkit-filter: blur(70px);
         background: linear-gradient(to top left, #742c74, navy);
 }
-=======
-    }
->>>>>>> 555919806634aa8e8fb5fed57eb19ed8d9d4e0ff
 }
 
 header {
@@ -185,8 +181,8 @@ header {
             background-color: #777777;
         }
     }
-    #hamburger{
-
+    details{
+        display: none;
         align-self: flex-end;
         background-color: whitesmoke;
     }
@@ -218,6 +214,10 @@ header {
 
     header {
         padding: 1.5rem 2rem;
+        
+        details{
+            display: block;
+        }
     }
 }
 
