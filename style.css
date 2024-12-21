@@ -212,6 +212,9 @@ header {
             background-color: #777777;
         }
     }
+    #hamburger{
+        display: none;
+    }
     details{
         display: none;
         align-self: flex-end;
