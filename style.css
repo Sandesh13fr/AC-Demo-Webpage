@@ -41,12 +41,13 @@ body {
     color: whitesmoke;
     padding: 0 1rem;
 }
-<<<<<<< HEAD
-.home{
+
+.home {
     width: 100%;
     height: 8vh;
 }
-#background-blob{
+
+#background-blob {
     position: absolute;
     top: 50vh;
     left: 30vw;
@@ -59,11 +60,12 @@ body {
     animation: blob 3s linear infinite alternate;
     -webkit-animation: blob 3s linear infinite alternate;
 }
-  
-  @keyframes blob {
+
+@keyframes blob {
     to {
-      transform: translate(10%, -10%) skew(-10deg);
-=======
+        transform: translate(10%, -10%) skew(-10deg);
+    }
+}
 
 header {
     display: flex;
@@ -72,6 +74,7 @@ header {
     padding: 1.5rem 3rem;
     font-family: regular;
     border-bottom: 2px solid rgba(170, 170, 170, 0.475);
+
     #logoContainer {
         height: 3.5rem;
         width: 3.5rem;
@@ -80,7 +83,8 @@ header {
             height: 100%;
             width: 100%;
         }
->>>>>>> 28d7b94853959d8e845e09e100b097efe7194f99
+
+
     }
 
     nav {
@@ -93,7 +97,8 @@ header {
             cursor: pointer;
             font-size: 1.1rem;
             transition: all ease-in 0.2s;
-            &:hover{
+
+            &:hover {
                 color: #7a7a7a;
             }
         }
@@ -128,8 +133,9 @@ header {
         &:hover {
             background-color: #555555;
         }
+
         &:active {
             background-color: #777777;
-        } 
+        }
     }
 }
