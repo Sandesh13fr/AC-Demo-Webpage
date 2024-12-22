@@ -19,13 +19,12 @@
     <div id="main" class="h-full w-full text-white">
         <header
             class="backdrop-blur-sm fixed top-0 left-0 w-full flex items-center justify-between py-4 px-8 z-10 max-sm:px-6">
-            <div id="logo" class="h-12 max-md:h-7 max-sm:h-[1.6rem]">
+            <div id="logo" class="h-10 max-md:h-7 max-sm:h-[1.6rem]">
                 <img src="./Assets/photos/3.Logo_Horizontale_Blanc_sanstagline.png" alt="" class="h-full object-cover">
             </div>
-            <nav class="flex items-center space-x-8">
-                <!-- Menu Items -->
-                <div class="relative group">
-                    <span class="cursor-pointer uppercase tracking-widest text-sm font-light hover:text-gray-400">IM Companys</span>
+            <nav class="flex items-center space-x-8 group">
+                <div class="relative">
+                    <span class="cursor-pointer uppercase tracking-widest text-sm font-light hover:text-gray-400" data-translate="aboutUs">My Company</span>
                     <div
                         class="absolute top-full left-0 bg-gray-900 hidden group-hover:flex flex-col p-2 opacity-0 transition-all group-hover:opacity-100">
                         <a href="#about" class="text-white text-sm hover:text-gray-400">About Us</a>
@@ -34,7 +33,7 @@
                     </div>
                 </div>
 
-                <div class="relative group">
+                <div class="relative">
                     <span
                         class="cursor-pointer uppercase tracking-widest text-sm font-light hover:text-gray-400">Acquisition
                         Options</span>
@@ -47,7 +46,7 @@
                     </div>
                 </div>
 
-                <div class="relative group">
+                <div class="relative">
                     <span class="cursor-pointer uppercase tracking-widest text-sm font-light hover:text-gray-400">360
                         space</span>
                     <div
@@ -65,16 +64,14 @@
                 <h4 data-translate="acquisitionOptions" class="cursor-pointer">Acquisition Options</h4>
                 <h4 data-translate="space360" class="cursor-pointer">360 space</h4>
             </nav> -->
-            <div class="flex items-center gap-4">
+            <div class="flex justify-center items-center gap-4">
                 <div id="searchContainer" class="flex items-start justify-center gap-2">
-                    <input type="text" id="searchInput" placeholder="Search..."
-                        class="px-2 py-1 w-full text-white bg-zinc-800 rounded-md outline-none max-md:hidden">
-                    <button id="searchButton" class="px-2 py-1 rounded-md bg-zinc-800"><i
-                            class="ri-search-2-line"></i></button>
+                    <button id="searchButton"><i
+                            class="ri-search-2-line text-2xl"></i></button>
                 </div>
                 <div class="language-opts flex items-center gap-3">
                     <div class="language">
-                        <h3><span id="fre" class="language-btn cursor-pointer">FR</span> / <span id="eng"
+                        <h3 class="text-lg font-[font3] font-semibold"><span id="fre" class="language-btn cursor-pointer">FR</span> / <span id="eng"
                                 class="language-btn cursor-pointer">EN</span></h3>
                     </div>
                     <i class="ri-menu-4-line text-3xl cursor-pointer max-sm:text-2xl hidden max-md:contents"></i>
