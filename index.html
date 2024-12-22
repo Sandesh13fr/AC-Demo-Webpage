@@ -24,9 +24,9 @@
                 <img src="./Assets/photos/3.Logo_Horizontale_Blanc_sanstagline.png" alt="" class="h-full object-cover">
             </div>
             <nav class="flex items-center gap-5 max-md:hidden">
-                <h4>About Us</h4>
-                <h4>Acquisition Options</h4>
-                <h4>360 space</h4>
+                <h4 data-translate="aboutUs">About Us</h4>
+                <h4 data-translate="acquisitionOptions">Acquisition Options</h4>
+                <h4 data-translate="space360">360 space</h4>
             </nav>
             <div class="flex items-center gap-4">
                 <div id="searchContainer" class="flex items-start justify-center gap-2">
@@ -53,16 +53,28 @@
                     class="brightness-50 h-full w-full object-cover"></video>
                 <div id="home-container"
                     class="flex items-center justify-center flex-col h-screen w-full absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-                    <h4 class="text-center text-2xl font-[font4] text-zinc-300 max-md:text-lg max-sm:text-sm">Drive Your
+                    <h4 data-translate="homeSubtitle"
+                        class="text-center text-2xl font-[font4] text-zinc-300 max-md:text-lg max-sm:text-sm">Drive Your
                         Dreams, Powered by Trust.</h4>
-                    <h1
-                        class="text-center text-8xl font-[font4] leading-none font-semibold max-md:text-6xl max-sm:text-5xl">
+                    <h1 class="text-center text-8xl font-[font4] leading-none font-semibold max-md:text-6xl max-sm:text-5xl"
+                        data-translate="homeTitle">
                         Your Dream Car<br>
                         Awaits You</h1>
+<<<<<<< HEAD
                     <p
                         class="text-center w-1/2 font-[font3] text-zinc-300 my-6 max-md:text-lg max-md:w-3/5 max-sm:text-sm">
                         At INT'l Motor, we provide tailored vehicle acquisition solutions for personal or professional needs. From cars to machinery, our expert team ensures top-quality service with integrity and excellence.</p>
                     <button class="py-2 px-6 border-2 rounded-lg max-sm:text-sm">Book Free Consultation</button>
+=======
+                    <p class="text-center w-1/2 font-[font3] text-zinc-300 my-6 max-md:text-lg max-md:w-3/5 max-sm:text-sm"
+                        data-translate="homeText">
+                        At Int'l Motor, we offer top-quality vehicles with precision and care.
+                        Whether you're buying or
+                        selling, our expert team ensures every car meets the highest standards for performance and
+                        appearance.</p>
+                    <button class="py-2 px-6 border-2 rounded-lg max-sm:text-sm" data-translate="buttonText">Book Free
+                        Consultation</button>
+>>>>>>> 79d871035e5dce4bbdeaf86bade1894bbb1d1f48
                 </div>
             </section>
             <section class="h-screen">
@@ -71,24 +83,32 @@
             <section class="testimonials">
                 <section class="py-8">
                     <div class="container flex flex-col items-center mx-auto md:p-10 md:px-12">
-                        <h1 class="p-4 text-6xl font-semibold leading-none text-center font-[font3]">What our customers are saying about us</h1>
+                        <h1 class="p-4 text-6xl font-semibold leading-none text-center font-[font3]"
+                            data-translate="testimonialsTitle">What our customers are saying about us</h1>
                     </div>
-                    <div class="container flex flex-col items-center justify-center mx-auto lg:flex-row lg:flex-wrap lg:justify-evenly lg:px-10">
+                    <div
+                        class="container flex flex-col items-center justify-center mx-auto lg:flex-row lg:flex-wrap lg:justify-evenly lg:px-10">
                         <div class="flex flex-col max-w-sm mx-4 my-6 border-2 rounded-xl">
                             <div class="px-4 py-12 rounded-t-lg sm:px-8 md:px-12">
                                 <p class="relative px-6 py-1 text-lg italic text-center">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor" class="w-8 h-8">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor"
+                                        class="w-8 h-8">
                                         <path d="M232,246.857V16H16V416H54.4ZM48,48H200V233.143L48,377.905Z"></path>
-                                        <path d="M280,416h38.4L496,246.857V16H280ZM312,48H464V233.143L312,377.905Z"></path>
-                                    </svg>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus quibusdam, eligendi exercitationem molestias possimus facere.
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor" class="absolute right-0 w-8 h-8">
+                                        <path d="M280,416h38.4L496,246.857V16H280ZM312,48H464V233.143L312,377.905Z">
+                                        </path>
+                                    </svg>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus
+                                    quibusdam, eligendi exercitationem molestias possimus facere.
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor"
+                                        class="absolute right-0 w-8 h-8">
                                         <path d="M280,185.143V416H496V16H457.6ZM464,384H312V198.857L464,54.1Z"></path>
                                         <path d="M232,16H193.6L16,185.143V416H232ZM200,384H48V198.857L200,54.1Z"></path>
                                     </svg>
                                 </p>
                             </div>
-                            <div class="flex flex-col items-center justify-center p-8 bg-zinc-300 text-black rounded-b-lg">
-                                <img src="./Assets//photos/Person1.jpg" alt="" class="w-16 h-16 mb-2 -mt-16 object-cover object-center rounded-full">
+                            <div
+                                class="flex flex-col items-center justify-center p-8 bg-zinc-300 text-black rounded-b-lg">
+                                <img src="./Assets//photos/Person1.jpg" alt=""
+                                    class="w-16 h-16 mb-2 -mt-16 object-cover object-center rounded-full">
                                 <p class="text-xl font-semibold leading-tight">Person1</p>
                                 <p class="text-sm uppercase">Consumer</p>
                             </div>
@@ -96,18 +116,24 @@
                         <div class="flex flex-col max-w-sm mx-4 my-6 border-2 rounded-xl">
                             <div class="px-4 py-12 rounded-t-lg sm:px-8 md:px-12">
                                 <p class="relative px-6 py-1 text-lg italic text-center">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor" class="w-8 h-8">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor"
+                                        class="w-8 h-8">
                                         <path d="M232,246.857V16H16V416H54.4ZM48,48H200V233.143L48,377.905Z"></path>
-                                        <path d="M280,416h38.4L496,246.857V16H280ZM312,48H464V233.143L312,377.905Z"></path>
-                                    </svg>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus quibusdam, eligendi exercitationem molestias possimus facere.
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor" class="absolute right-0 w-8 h-8">
+                                        <path d="M280,416h38.4L496,246.857V16H280ZM312,48H464V233.143L312,377.905Z">
+                                        </path>
+                                    </svg>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus
+                                    quibusdam, eligendi exercitationem molestias possimus facere.
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor"
+                                        class="absolute right-0 w-8 h-8">
                                         <path d="M280,185.143V416H496V16H457.6ZM464,384H312V198.857L464,54.1Z"></path>
                                         <path d="M232,16H193.6L16,185.143V416H232ZM200,384H48V198.857L200,54.1Z"></path>
                                     </svg>
                                 </p>
                             </div>
-                            <div class="flex flex-col items-center justify-center p-8 bg-zinc-300 text-black rounded-b-lg">
-                                <img src="./Assets/photos/person2.jpg" alt="" class="w-16 h-16 mb-2 -mt-16 object-cover object-center rounded-full">
+                            <div
+                                class="flex flex-col items-center justify-center p-8 bg-zinc-300 text-black rounded-b-lg">
+                                <img src="./Assets/photos/person2.jpg" alt=""
+                                    class="w-16 h-16 mb-2 -mt-16 object-cover object-center rounded-full">
                                 <p class="text-xl font-semibold leading-tight">Person2</p>
                                 <p class="text-sm uppercase">Consumer</p>
                             </div>
@@ -115,18 +141,24 @@
                         <div class="flex flex-col max-w-sm mx-4 my-6 border-2 rounded-xl">
                             <div class="px-4 py-12 rounded-t-lg sm:px-8 md:px-12">
                                 <p class="relative px-6 py-1 text-lg italic text-center">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor" class="w-8 h-8">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor"
+                                        class="w-8 h-8">
                                         <path d="M232,246.857V16H16V416H54.4ZM48,48H200V233.143L48,377.905Z"></path>
-                                        <path d="M280,416h38.4L496,246.857V16H280ZM312,48H464V233.143L312,377.905Z"></path>
-                                    </svg>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus quibusdam, eligendi exercitationem molestias possimus facere.
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor" class="absolute right-0 w-8 h-8">
+                                        <path d="M280,416h38.4L496,246.857V16H280ZM312,48H464V233.143L312,377.905Z">
+                                        </path>
+                                    </svg>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus
+                                    quibusdam, eligendi exercitationem molestias possimus facere.
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor"
+                                        class="absolute right-0 w-8 h-8">
                                         <path d="M280,185.143V416H496V16H457.6ZM464,384H312V198.857L464,54.1Z"></path>
                                         <path d="M232,16H193.6L16,185.143V416H232ZM200,384H48V198.857L200,54.1Z"></path>
                                     </svg>
                                 </p>
                             </div>
-                            <div class="flex flex-col items-center justify-center p-8 bg-zinc-300 text-black rounded-b-lg">
-                                <img src="./Assets//photos/Person3.jpg" alt="" class="w-16 h-16 mb-2 -mt-16 object-cover object-center rounded-full">
+                            <div
+                                class="flex flex-col items-center justify-center p-8 bg-zinc-300 text-black rounded-b-lg">
+                                <img src="./Assets//photos/Person3.jpg" alt=""
+                                    class="w-16 h-16 mb-2 -mt-16 object-cover object-center rounded-full">
                                 <p class="text-xl font-semibold leading-tight">Person3</p>
                                 <p class="text-sm uppercase">Consumer</p>
                             </div>
@@ -134,18 +166,24 @@
                         <div class="flex flex-col max-w-sm mx-4 my-6 border-2 rounded-xl">
                             <div class="px-4 py-12 rounded-t-lg sm:px-8 md:px-12">
                                 <p class="relative px-6 py-1 text-lg italic text-center">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor" class="w-8 h-8">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor"
+                                        class="w-8 h-8">
                                         <path d="M232,246.857V16H16V416H54.4ZM48,48H200V233.143L48,377.905Z"></path>
-                                        <path d="M280,416h38.4L496,246.857V16H280ZM312,48H464V233.143L312,377.905Z"></path>
-                                    </svg>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus quibusdam, eligendi exercitationem molestias possimus facere.
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor" class="absolute right-0 w-8 h-8">
+                                        <path d="M280,416h38.4L496,246.857V16H280ZM312,48H464V233.143L312,377.905Z">
+                                        </path>
+                                    </svg>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus
+                                    quibusdam, eligendi exercitationem molestias possimus facere.
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor"
+                                        class="absolute right-0 w-8 h-8">
                                         <path d="M280,185.143V416H496V16H457.6ZM464,384H312V198.857L464,54.1Z"></path>
                                         <path d="M232,16H193.6L16,185.143V416H232ZM200,384H48V198.857L200,54.1Z"></path>
                                     </svg>
                                 </p>
                             </div>
-                            <div class="flex flex-col items-center justify-center p-8 bg-zinc-300 text-black rounded-b-lg">
-                                <img src="./Assets/photos/person4.jpg" alt="" class="w-16 h-16 mb-2 -mt-16 object-cover object-center rounded-full">
+                            <div
+                                class="flex flex-col items-center justify-center p-8 bg-zinc-300 text-black rounded-b-lg">
+                                <img src="./Assets/photos/person4.jpg" alt=""
+                                    class="w-16 h-16 mb-2 -mt-16 object-cover object-center rounded-full">
                                 <p class="text-xl font-semibold leading-tight">Person4</p>
                                 <p class="text-sm uppercase">Consumer</p>
                             </div>
@@ -271,9 +309,14 @@
                                 </svg>
                             </a>
                             <a rel="noopener noreferrer" href="#" title="X" class="flex items-center p-1">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
-                                    <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
-                                  </svg>
+                                <?xml version="1.0" ?><svg xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" width="24px"
+                                    height="24px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;"
+                                    xml:space="preserve">
+                                    <path
+                                        d="M14.095479,10.316482L22.286354,1h-1.940718l-7.115352,8.087682L7.551414,1H1l8.589488,12.231093L1,23h1.940717  l7.509372-8.542861L16.448587,23H23L14.095479,10.316482z M11.436522,13.338465l-0.871624-1.218704l-6.924311-9.68815h2.981339  l5.58978,7.82155l0.867949,1.218704l7.26506,10.166271h-2.981339L11.436522,13.338465z" />
+                                </svg>
+                            </a>
                             <a rel="noopener noreferrer" href="#" title="Instagram" class="flex items-center p-1">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor"
                                     class="w-5 h-5 fill-current">
@@ -286,7 +329,12 @@
                     </div>
                 </div>
             </div>
+<<<<<<< HEAD
             <div class="py-6 text-sm text-center text-gray-400 dark:text-gray-600">© 2024 INT'l MOTOR Co. All rights reserved.</div>
+=======
+            <div class="py-6 text-sm text-center text-gray-400 dark:text-gray-600">© 2024 INT's MOTOR Co. All rights
+                reserved.</div>
+>>>>>>> 79d871035e5dce4bbdeaf86bade1894bbb1d1f48
         </footer>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>

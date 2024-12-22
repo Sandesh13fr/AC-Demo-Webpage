@@ -1,4 +1,4 @@
-const hamBargurAnimation = ()=>{
+const hamBargurAnimation = () => {
     var close = document.querySelector("#full i")
     var menu = document.querySelector(".language-opts i")
 
@@ -7,13 +7,13 @@ const hamBargurAnimation = ()=>{
         transform: 'translateX(0%)',
         duration: 1,
         opacity: 1
-    },"start")
+    }, "start")
 
     tl.from("#full i", {
         scale: 0,
         opacity: 0,
         duration: 0.3
-    },"start")
+    }, "start")
 
     tl.pause()
 
@@ -84,25 +84,75 @@ hamBargurAnimation()
 
 // languageChangeOnClick();
 
+document.addEventListener("DOMContentLoaded", () => {
+    const engBtn = document.getElementById("eng");
+    const freBtn = document.getElementById("fre");
 
-const cursorAnimation = ()=>{
+    // Define translations
+    const translations = {
+        en: {
+            aboutUs: "About Us",
+            acquisitionOptions: "Acquisition Options",
+            space360: "360 space",
+            searchPlaceholder: "Search...",
+            homeTitle: `Your Dream Car Awaits You`,
+            homeSubtitle: "Drive Your Dreams, Powered by Trust.",
+            homeText: "At Int'l Motor, we offer top-quality vehicles with precision and care. Whether you're buying or selling, our expert team ensures every car meets the highest standards for performance and appearance.",
+            buttonText: "Book Free Consultation",
+            testimonialsTitle: "What our customers are saying about us",
+        },
+        fr: {
+            aboutUs: "À propos de nous",
+            acquisitionOptions: "Options d'acquisition",
+            space360: "Espace 360",
+            searchPlaceholder: "Chercher...",
+            homeTitle: "Votre voiture de rêve vous attend",
+            homeSubtitle: "Conduisez vos rêves, propulsé par la confiance.",
+            homeText: "Chez Int'l Motor, nous proposons des véhicules de qualité supérieure avec précision et soin. Que vous achetiez ou vendiez, notre équipe d'experts veille à ce que chaque voiture respecte les normes les plus élevées en matière de performances et d'apparence.",
+            buttonText: "Réservez une consultation gratuite",
+            testimonialsTitle: "Ce que nos clients disent de nous",
+        }
+    };
+
+    // Function to update text
+    const updateLanguage = (lang) => {
+        document.querySelectorAll("[data-translate]").forEach((el) => {
+            const key = el.getAttribute("data-translate");
+            if (translations[lang][key]) {
+                el.textContent = translations[lang][key];
+            }
+        });
+        // Update placeholder for search input
+        const searchInput = document.getElementById("searchInput");
+        if (searchInput) {
+            searchInput.placeholder = translations[lang].searchPlaceholder;
+        }
+    };
+
+    // Event listeners for buttons
+    engBtn.addEventListener("click", () => updateLanguage("en"));
+    freBtn.addEventListener("click", () => updateLanguage("fr"));
+});
+
+
+const cursorAnimation = () => {
     var cursor = document.querySelector('#cursor');
     var mainBody = document.querySelector("#main");
-    mainBody.addEventListener("mousemove",(dets)=>{
-        gsap.to(cursor,{
-            x:dets.x,
-            y:dets.y,
+    mainBody.addEventListener("mousemove", (dets) => {
+        gsap.to(cursor, {
+            x: dets.x,
+            y: dets.y,
             ease: "Power4.out"
         })
     });
-    mainBody.addEventListener("mouseenter",(dets)=>{
-        gsap.to(cursor,{
-            scale:1
+    mainBody.addEventListener("mouseenter", (dets) => {
+        gsap.to(cursor, {
+            scale: 1
         })
     });
-    mainBody.addEventListener("mouseleave",(dets)=>{
-        gsap.to(cursor,{
-            scale:0
+    mainBody.addEventListener("mouseleave", (dets) => {
+        gsap.to(cursor, {
+            scale: 0
         })
     });
 }
