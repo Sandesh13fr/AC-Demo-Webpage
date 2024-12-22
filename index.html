@@ -16,18 +16,55 @@
 </head>
 
 <body>
-    <div id="cursor"
-        class="h-5 w-5 rounded-full bg-purple-700 mix-blend-difference fixed top-0 left-0 z-40 max-lg:hidden"></div>
     <div id="main" class="h-full w-full text-white">
-        <!-- <header class="backdrop-blur-sm fixed top-0 left-0 w-full flex items-center justify-between py-4 px-8 z-10 max-sm:px-6">
+        <header
+            class="backdrop-blur-sm fixed top-0 left-0 w-full flex items-center justify-between py-4 px-8 z-10 max-sm:px-6">
             <div id="logo" class="h-12 max-md:h-7 max-sm:h-[1.6rem]">
                 <img src="./Assets/photos/3.Logo_Horizontale_Blanc_sanstagline.png" alt="" class="h-full object-cover">
             </div>
-            <nav class="flex items-center gap-5 max-md:hidden">
+            <nav class="flex items-center space-x-8">
+                <!-- Menu Items -->
+                <div class="relative group">
+                    <span class="cursor-pointer uppercase tracking-widest text-sm font-light hover:text-gray-400">IM Companys</span>
+                    <div
+                        class="absolute top-full left-0 bg-gray-900 hidden group-hover:flex flex-col p-2 opacity-0 transition-all group-hover:opacity-100">
+                        <a href="#about" class="text-white text-sm hover:text-gray-400">About Us</a>
+                        <a href="#career" class="text-white text-sm hover:text-gray-400">Careers</a>
+                        <a href="#contact" class="text-white text-sm hover:text-gray-400">Contact Information</a>
+                    </div>
+                </div>
+
+                <div class="relative group">
+                    <span
+                        class="cursor-pointer uppercase tracking-widest text-sm font-light hover:text-gray-400">Acquisition
+                        Options</span>
+                    <div
+                        class="absolute top-full left-0 bg-gray-900 hidden group-hover:flex flex-col p-2 opacity-0 transition-all group-hover:opacity-100">
+                        <a href="#business" class="text-white text-sm hover:text-gray-400">Business Options</a>
+                        <a href="#personal" class="text-white text-sm hover:text-gray-400">Personal Options</a>
+                        <a href="#public" class="text-white text-sm hover:text-gray-400">Public Sector Options
+                            Publics</a>
+                    </div>
+                </div>
+
+                <div class="relative group">
+                    <span class="cursor-pointer uppercase tracking-widest text-sm font-light hover:text-gray-400">360
+                        space</span>
+                    <div
+                        class="absolute top-full left-0 bg-gray-900 hidden group-hover:flex flex-col p-2 opacity-0 transition-all group-hover:opacity-100">
+                        <a href="#insurance" class="text-white text-sm hover:text-gray-400">Insurance</a>
+                        <a href="#maintenance" class="text-white text-sm hover:text-gray-400">Maintenance &
+                            Installation</a>
+                        <a href="#shop" class="text-white text-sm hover:text-gray-400">Shop</a>
+                        <a href="#sell" class="text-white text-sm hover:text-gray-400">Sell My Vehicle</a>
+                    </div>
+                </div>
+            </nav>
+            <!-- <nav class="flex items-center gap-5 max-md:hidden">
                 <h4 data-translate="aboutUs" class="cursor-pointer">About Us</h4>
                 <h4 data-translate="acquisitionOptions" class="cursor-pointer">Acquisition Options</h4>
                 <h4 data-translate="space360" class="cursor-pointer">360 space</h4>
-            </nav>
+            </nav> -->
             <div class="flex items-center gap-4">
                 <div id="searchContainer" class="flex items-start justify-center gap-2">
                     <input type="text" id="searchInput" placeholder="Search..."
@@ -43,8 +80,10 @@
                     <i class="ri-menu-4-line text-3xl cursor-pointer max-sm:text-2xl hidden max-md:contents"></i>
                 </div>
             </div>
-        </header> -->
-        
+        </header>
+        <!-- Header -->
+
+
         <div id="full" class="max-md:w-5/6 z-20 fixed h-full top-0 right-0 w-3/12 bg-[#17151a] translate-x-full">
             <i class="ri-close-line magnet-target text-3xl absolute top-5 right-5 cursor-pointer"></i>
         </div>
@@ -66,10 +105,12 @@
                         At INT'l Motor, we provide tailored vehicle acquisition solutions for personal or professional
                         needs. From cars to machinery, our expert team ensures top-quality service with integrity and
                         excellence.</p>
-                        <div class="flex items-center gap-5 max-sm:flex-col max-sm:gap-1"><button class="py-2 px-4 border-2 rounded-lg max-sm:text-sm max-sm:px-3">Discover our brokerage
-                        solutions</button>
-                    <button class="py-2 px-4 border-2 rounded-lg max-sm:text-sm max-sm:px-3">Find Vehical of your dreams</button></div>
-                    
+                    <div class="flex items-center gap-5 max-sm:flex-col max-sm:gap-1"><button
+                            class="py-2 px-4 border-2 rounded-lg max-sm:text-sm max-sm:px-3">Discover our brokerage
+                            solutions</button>
+                        <button class="py-2 px-4 border-2 rounded-lg max-sm:text-sm max-sm:px-3">Find vehical of your
+                            dreams</button>
+                    </div>
                 </div>
             </section>
             <section class="about-us mt-20">
@@ -117,12 +158,14 @@
                         </div>
                         <div class="lg:w-1/2 space-y-6">
                             <div class="grid grid-cols-1 md:grid-cols-2 gap-6 ">
-                                <div class="p-6 bg-custom-purple shadow-custom backdrop-blur-custom border-custom-white border rounded-custom">
+                                <div
+                                    class="p-6 bg-custom-purple shadow-custom backdrop-blur-custom border-custom-white border rounded-custom">
                                     <h2 class="text-xl font-bold mb-2">
                                         About Company
                                     </h2>
                                     <p class="text-zinc-400">
-                                        Int'l Motor is an international brokerage company that provides unique vehicle acquisition solutions for personal or professional use.
+                                        Int'l Motor is an international brokerage company that provides unique vehicle
+                                        acquisition solutions for personal or professional use.
                                     </p>
                                     <button class="text-purple-700 font-semibold">
                                         Read More
@@ -130,12 +173,15 @@
                                         </i>
                                     </button>
                                 </div>
-                                <div class="p-6 bg-custom-purple shadow-custom backdrop-blur-custom border-custom-white border rounded-custom">
+                                <div
+                                    class="p-6 bg-custom-purple shadow-custom backdrop-blur-custom border-custom-white border rounded-custom">
                                     <h2 class="text-xl font-bold mb-2">
                                         Commitment
                                     </h2>
                                     <p class="text-zinc-400">
-                                        Our company firmly establishes its narrative through unparalleled brokerage solutions and exclusive client projects, driven by a commitment to Integrity and Excellence.    
+                                        Our company firmly establishes its narrative through unparalleled brokerage
+                                        solutions and exclusive client projects, driven by a commitment to Integrity and
+                                        Excellence.
                                     </p>
                                     <button class="text-purple-700 font-semibold">
                                         Read More
@@ -144,12 +190,17 @@
                                     </button>
                                 </div>
                             </div>
-                            <div class="p-6 bg-custom-purple shadow-custom backdrop-blur-custom border-custom-white border rounded-custom">
+                            <div
+                                class="p-6 bg-custom-purple shadow-custom backdrop-blur-custom border-custom-white border rounded-custom">
                                 <h2 class="text-xl font-bold mb-2">
                                     Mission
                                 </h2>
                                 <p class="text-zinc-400 mb-4">
-                                    With its extensive resources, the company is committed to delivering the best acquisition services in the market. Whether you need new or used vehicles, construction or agricultural machinery, utility vehicles, motorcycles, special vehicles, or services for private individuals, Int'l Motor is dedicated to meeting your specific needs.    
+                                    With its extensive resources, the company is committed to delivering the best
+                                    acquisition services in the market. Whether you need new or used vehicles,
+                                    construction or agricultural machinery, utility vehicles, motorcycles, special
+                                    vehicles, or services for private individuals, Int'l Motor is dedicated to meeting
+                                    your specific needs.
                                 </p>
                                 <button class="text-purple-700 font-semibold">
                                     Read More
@@ -169,7 +220,8 @@
                     </div>
                     <div
                         class="container flex flex-col items-center justify-center mx-auto lg:flex-row lg:flex-wrap lg:justify-evenly lg:px-10">
-                        <div class="flex flex-col max-w-sm mx-4 my-6 bg-custom-purple shadow-custom backdrop-blur-custom border-custom-white border rounded-custom">
+                        <div
+                            class="flex flex-col max-w-sm mx-4 my-6 bg-custom-purple shadow-custom backdrop-blur-custom border-custom-white border rounded-custom">
                             <div class="px-4 py-12 rounded-t-lg sm:px-8 md:px-12">
                                 <p class="relative px-6 py-1 text-lg italic text-center">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor"
@@ -194,7 +246,8 @@
                                 <p class="text-sm uppercase">Consumer</p>
                             </div>
                         </div>
-                        <div class="flex flex-col max-w-sm mx-4 my-6 bg-custom-purple shadow-custom backdrop-blur-custom border-custom-white border rounded-custom">
+                        <div
+                            class="flex flex-col max-w-sm mx-4 my-6 bg-custom-purple shadow-custom backdrop-blur-custom border-custom-white border rounded-custom">
                             <div class="px-4 py-12 rounded-t-lg sm:px-8 md:px-12">
                                 <p class="relative px-6 py-1 text-lg italic text-center">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor"
@@ -219,7 +272,8 @@
                                 <p class="text-sm uppercase">Consumer</p>
                             </div>
                         </div>
-                        <div class="flex flex-col max-w-sm mx-4 my-6 bg-custom-purple shadow-custom backdrop-blur-custom border-custom-white border rounded-custom">
+                        <div
+                            class="flex flex-col max-w-sm mx-4 my-6 bg-custom-purple shadow-custom backdrop-blur-custom border-custom-white border rounded-custom">
                             <div class="px-4 py-12 rounded-t-lg sm:px-8 md:px-12">
                                 <p class="relative px-6 py-1 text-lg italic text-center">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor"
@@ -244,7 +298,8 @@
                                 <p class="text-sm uppercase">Consumer</p>
                             </div>
                         </div>
-                        <div class="flex flex-col max-w-sm mx-4 my-6 bg-custom-purple shadow-custom backdrop-blur-custom border-custom-white border rounded-custom">
+                        <div
+                            class="flex flex-col max-w-sm mx-4 my-6 bg-custom-purple shadow-custom backdrop-blur-custom border-custom-white border rounded-custom">
                             <div class="px-4 py-12 rounded-t-lg sm:px-8 md:px-12">
                                 <p class="relative px-6 py-1 text-lg italic text-center">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor"
