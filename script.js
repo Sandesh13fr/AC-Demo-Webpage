@@ -154,77 +154,79 @@ const loaderAnimation = () => {
                 ease: "power4.in"
             }, "start+=2")
     })
+    const numberElement = document.querySelector('.counter .number');
+    const targetCount = 100;
+    function updateCounter() {
+        let currentCount = 0;
+        const interval = setInterval(() => {
+            if (currentCount <= targetCount) {
+                numberElement.textContent = currentCount;
+                currentCount = currentCount + 7;
+            } else {
+                clearInterval(interval);
+            }
+        }, 200);
+    }
+    updateCounter();
 }
+loaderAnimation()
 
-const numberElement = document.querySelector('.counter .number');
-const targetCount = 100;
-function updateCounter() {
-    let currentCount = 0;
-    const interval = setInterval(() => {
-        if (currentCount <= targetCount) {
-            numberElement.textContent = currentCount;
-            currentCount = currentCount + 7;
-        } else {
-            clearInterval(interval);
-        }
-    }, 200);
-}
-const searchForm = document.getElementById("search-form");
-      const searchInput = document.getElementById("search-bar");
-      const userCardsContainer = document.getElementById("user-cards");
-      const userCardTemplate = document.getElementById("user-card-template");
-      const showMoreBtn = document.getElementById("show-more-btn");
+const searchFunctionality = () => {
+    const searchForm = document.getElementById("search-form");
+    const searchInput = document.getElementById("search-bar");
+    const userCardsContainer = document.getElementById("user-cards");
+    const userCardTemplate = document.getElementById("user-card-template");
+    const showMoreBtn = document.getElementById("show-more-btn");
 
-      let users = [];
-      let displayedUsersCount = 6; // Number of users to display initially
+    let users = [];
+    let displayedUsersCount = 6; // Number of users to display initially
 
-      // Fetch users from the API
-      async function fetchUsers() {
+    // Fetch users from the API
+    async function fetchUsers() {
         try {
-          const response = await fetch(
-            "https://jsonplaceholder.typicode.com/users"
-          );
-          const usersData = await response.json();
-          users = usersData;
-          renderUserCards(users.slice(0, displayedUsersCount)); // Display initial set of users
+            const response = await fetch(
+                "https://jsonplaceholder.typicode.com/users"
+            );
+            const usersData = await response.json();
+            users = usersData;
+            renderUserCards(users.slice(0, displayedUsersCount)); // Display initial set of users
         } catch (error) {
-          console.error("Error fetching users:", error);
+            console.error("Error fetching users:", error);
         }
-      }
+    }
 
-      // Render the user cards
-      function renderUserCards(usersToDisplay) {
+    // Render the user cards
+    function renderUserCards(usersToDisplay) {
         userCardsContainer.innerHTML = ""; // Clear previous results
         usersToDisplay.forEach((user) => {
-          const card = userCardTemplate.content.cloneNode(true);
-          const header = card.querySelector(".header");
-          const body = card.querySelector(".body");
-          header.textContent = user.name;
-          body.textContent = user.email;
-          userCardsContainer.appendChild(card);
+            const card = userCardTemplate.content.cloneNode(true);
+            const header = card.querySelector(".header");
+            const body = card.querySelector(".body");
+            header.textContent = user.name;
+            body.textContent = user.email;
+            userCardsContainer.appendChild(card);
         });
-      }
+    }
 
-      // Handle search functionality
-      searchForm.addEventListener("submit", async (event) => {
+    // Handle search functionality
+    searchForm.addEventListener("submit", async (event) => {
         event.preventDefault(); // Prevent form submission
 
         const searchQuery = searchInput.value.toLowerCase();
         const filteredUsers = users.filter(
-          (user) =>
-            user.name.toLowerCase().includes(searchQuery) ||
-            user.email.toLowerCase().includes(searchQuery)
+            (user) =>
+                user.name.toLowerCase().includes(searchQuery) ||
+                user.email.toLowerCase().includes(searchQuery)
         );
         renderUserCards(filteredUsers.slice(0, displayedUsersCount)); // Display filtered users
-      });
+    });
 
-      // Handle "Show More" button click
-      showMoreBtn.addEventListener("click", () => {
+    // Handle "Show More" button click
+    showMoreBtn.addEventListener("click", () => {
         displayedUsersCount += 2; // Increase the number of displayed users by 6
         renderUserCards(users.slice(0, displayedUsersCount)); // Render updated list
-      });
-
-      // Initial fetch and display of all users
-      fetchUsers();
-updateCounter();
-loaderAnimation()
+    });
+    // Initial fetch and display of all users
+    fetchUsers();
+}
+searchFunctionality()
