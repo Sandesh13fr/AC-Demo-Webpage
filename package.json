@@ -1,10 +1,10 @@
 {
-  "name": "ankit",
+  "name": "ac-demo-webpage",
   "version": "1.0.0",
   "description": "",
   "main": "script.js",
   "scripts": {
-    "tom": "vite"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
