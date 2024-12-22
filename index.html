@@ -445,83 +445,89 @@
             <section class="search-functionality">
                 <div class="mx-auto max-w-7xl sm:px-6 lg:px-8">
                     <div
-                        class="relative isolate overflow-hidden bg-transparent px-6 py-20 text-center sm:px-16 sm:shadow-sm">
-                        <p class="mx-auto max-w-2xl text-3xl font-bold tracking-tight text-whitesmoke-900 sm:text-4xl">
-                            Find what drives you..?
-                        </p>
-
-                        <!-- Search Form -->
-                        <form id="search-form" class="mt-8">
-                            <label
-                                class="mx-auto relative bg-white min-w-sm max-w-2xl flex flex-col md:flex-row items-center justify-center border py-2 px-2 rounded-2xl gap-2 shadow-2xl focus-within:border-gray-300"
-                                for="search-bar">
-                                <input id="search-bar" placeholder="Search for a user"
-                                    class="px-6 py-2 w-full rounded-md flex-1 outline-none bg-white text-purple-700"
-                                    required />
-                                <button type="submit"
-                                    class="w-full md:w-auto px-6 py-3 bg-black border-black text-white fill-white active:scale-95 duration-100 border will-change-transform overflow-hidden relative rounded-xl transition-all">
-                                    <span class="text-sm font-semibold">Search</span>
-                                </button>
-                            </label>
-                        </form>
-
-                        <!-- Background SVG -->
-                        <svg viewBox="0 0 1024 1024"
-                            class="absolute left-1/2 top-1/2 -z-10 h-[64rem] w-[64rem] -translate-x-1/2 [mask-image:radial-gradient(closest-side,white,transparent)]"
-                            aria-hidden="true">
-                            <circle cx="512" cy="512" r="512" fill="url(#gradient)" fill-opacity="0.7"></circle>
-                            <defs>
-                                <radialGradient id="gradient">
-                                    <stop stop-color="#3b82f6"></stop>
-                                    <stop offset="1" stop-color="#1d4ed8"></stop>
-                                </radialGradient>
-                            </defs>
-                        </svg>
+                      class="relative isolate overflow-hidden bg-transparent px-6 py-20 text-center sm:px-16 sm:shadow-sm"
+                    >
+                      <p
+                        class="mx-auto max-w-2xl text-3xl font-bold tracking-tight text-whitesmoke-900 sm:text-4xl"
+                      >
+                        Find what drives you..?
+                      </p>
+              
+                      <!-- Search Form -->
+                      <form id="search-form" class="mt-8">
+                        <label
+                          class="mx-auto relative bg-white min-w-sm max-w-2xl flex flex-col md:flex-row items-center justify-center border py-2 px-2 rounded-2xl gap-2 shadow-2xl focus-within:border-gray-300"
+                          for="search-bar"
+                        >
+                          <input
+                            id="search-bar"
+                            placeholder="Search for a user"
+                            class="px-6 py-2 w-full rounded-md flex-1 outline-none bg-white text-purple-700"
+                            required
+                          />
+                          <button
+                            type="submit"
+                            class="w-full md:w-auto px-6 py-3 bg-black border-black text-white fill-white active:scale-95 duration-100 border will-change-transform overflow-hidden relative rounded-xl transition-all"
+                          >
+                            <span class="text-sm font-semibold">Search</span>
+                          </button>
+                        </label>
+                      </form>
+              
+                      <!-- Background SVG -->
+                      <svg
+                        viewBox="0 0 1024 1024"
+                        class="absolute left-1/2 top-1/2 -z-10 h-[64rem] w-[64rem] -translate-x-1/2 [mask-image:radial-gradient(closest-side,white,transparent)]"
+                        aria-hidden="true"
+                      >
+                        <circle
+                          cx="512"
+                          cy="512"
+                          r="512"
+                          fill="url(#gradient)"
+                          fill-opacity="0.7"
+                        ></circle>
+                        <defs>
+                          <radialGradient id="gradient">
+                            <stop stop-color="#3b82f6"></stop>
+                            <stop offset="1" stop-color="#1d4ed8"></stop>
+                          </radialGradient>
+                        </defs>
+                      </svg>
                     </div>
-                </div>
-
-                <!-- User Cards Section -->
-                <div id="user-cards"
-                    class="user-cards mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-4 sm:px-6 lg:px-8">
-                </div>
-
-                <template id="user-card-template">
+                  </div>
+              
+                  <!-- User Cards Section -->
+                  <div
+                    id="user-cards"
+                    class="user-cards mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-4 sm:px-6 lg:px-8"
+                  ></div>
+              
+                  <template id="user-card-template">
                     <div
-                        class="card bg-white shadow-md rounded-lg p-6 border border-gray-200 hover:shadow-lg transition-shadow duration-200">
-                        <div class="header text-lg font-semibold text-gray-900"></div>
-                        <div class="body mt-2 text-sm text-gray-700"></div>
+                      class="card bg-white shadow-md rounded-lg p-6 border border-gray-200 hover:shadow-lg transition-shadow duration-200"
+                    >
+                      <div class="header text-lg font-semibold text-gray-900"></div>
+                      <div class="body mt-2 text-sm text-gray-700"></div>
                     </div>
-                </template>
-
-                <!-- "Show More" Button -->
-                <div class="mt-8 text-center">
-                    <button id="show-more-btn" class="px-6 py-3 bg-purple-900 text-white rounded-xl">
-                        Show More
+                  </template>
+              
+                  <!-- "Show More" Button -->
+                  <div class="mt-8 text-center">
+                    <button
+                      id="show-more-btn"
+                      class="px-6 py-3 bg-purple-900 text-white rounded-xl"
+                    >
+                      Show More
                     </button>
             </section>
             <section>
                 <div class="min-w-screen min-h-screen flex items-center justify-center py-5">
                     <div class="w-full px-5 py-16 md:py-24 text-gray-300">
                         <div class="w-full max-w-6xl mx-auto">
-                            <svg viewBox="0 0 1024 1024"
-                                class="absolute left-1/2 top-1/2 z-10 h-[64rem] w-[64rem] -translate-y-1/2 [mask-image:radial-gradient(closest-side,white,transparent)]"
-                                aria-hidden="true">
-                                <circle cx="512" cy="512" r="512" fill="url(#827591b1-ce8c-4110-b064-7cb85a0b1217)"
-                                    fill-opacity="0.7">
-                                </circle>
-                                <defs>
-                                    <radialGradient id="827591b1-ce8c-4110-b064-7cb85a0b1217">
-                                        <stop stop-color="#3b82f6"></stop>
-                                        <stop offset="1" stop-color="#1d4ed8"></stop>
-                                    </radialGradient>
-                                </defs>
-                            </svg>
                             <div class="text-center max-w-xl mx-auto">
-                                <h1
-                                    class="text-6xl md:text-7xl font-bold mb-5 text-gray-600 font-[font1] leading-6xl tracking-tighter capitalize">
-                                    what people say about as</h1>
-                                <h3 class="text-xl mb-5 font-semibold font-[font3]">Lorem ipsum dolor sit amet
-                                    consectetur adipisicing
+                                <h1 class="text-6xl md:text-7xl font-bold mb-5 text-gray-600 font-[font1] leading-6xl tracking-tighter capitalize">what people say about as</h1>
+                                <h3 class="text-xl mb-5 font-semibold font-[font3]">Lorem ipsum dolor sit amet consectetur adipisicing
                                     elit.</h3>
                             </div>
                             <div class="-mx-3 md:flex items-start">
@@ -720,165 +726,48 @@
                     </div>
                 </div>
             </section>
-            <section>
-                <div class="min-h-screen p-6 flex items-center justify-center">
-                    <div class="container max-w-screen-lg mx-auto">
-                        <div>
-                            <h2 class="font-semibold text-xl text-gray-600">Responsive Form</h2>
-                            <p class="text-gray-500 mb-6">Form is mobile responsive. Give it a try.</p>
-
-                            <div class="rounded shadow-lg p-4 px-4 md:p-8 mb-6">
-                                <div class="grid gap-4 gap-y-2 text-sm grid-cols-1 lg:grid-cols-3">
-                                    <div class="text-gray-600">
-                                        <p class="font-medium text-lg">Personal Details</p>
-                                        <p>Please fill out all the fields.</p>
-                                    </div>
-
-                                    <div class="lg:col-span-2">
-                                        <div class="grid gap-4 gap-y-2 text-sm grid-cols-1 md:grid-cols-5">
-                                            <div class="md:col-span-5">
-                                                <label for="full_name">Full Name</label>
-                                                <input type="text" name="full_name" id="full_name"
-                                                    class="h-10 border mt-1 rounded px-4 w-full bg-gray-50" value="" />
-                                            </div>
-
-                                            <div class="md:col-span-5">
-                                                <label for="email">Email Address</label>
-                                                <input type="text" name="email" id="email"
-                                                    class="h-10 border mt-1 rounded px-4 w-full bg-gray-50" value=""
-                                                    placeholder="email@domain.com" />
-                                            </div>
-
-                                            <div class="md:col-span-3">
-                                                <label for="address">Address / Street</label>
-                                                <input type="text" name="address" id="address"
-                                                    class="h-10 border mt-1 rounded px-4 w-full bg-gray-50" value=""
-                                                    placeholder="" />
-                                            </div>
-
-                                            <div class="md:col-span-2">
-                                                <label for="city">City</label>
-                                                <input type="text" name="city" id="city"
-                                                    class="h-10 border mt-1 rounded px-4 w-full bg-gray-50" value=""
-                                                    placeholder="" />
-                                            </div>
-
-                                            <div class="md:col-span-2">
-                                                <label for="country">Country / region</label>
-                                                <div
-                                                    class="h-10 bg-gray-50 flex border border-gray-200 rounded items-center mt-1">
-                                                    <input name="country" id="country" placeholder="Country"
-                                                        class="px-4 appearance-none outline-none text-gray-800 w-full bg-transparent"
-                                                        value="" />
-                                                    <button tabindex="-1"
-                                                        class="cursor-pointer outline-none focus:outline-none transition-all text-gray-300 hover:text-red-600">
-                                                        <svg class="w-4 h-4 mx-2 fill-current"
-                                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                                                            stroke="currentColor" stroke-width="2"
-                                                            stroke-linecap="round" stroke-linejoin="round">
-                                                            <line x1="18" y1="6" x2="6" y2="18"></line>
-                                                            <line x1="6" y1="6" x2="18" y2="18"></line>
-                                                        </svg>
-                                                    </button>
-                                                    <button tabindex="-1" for="show_more"
-                                                        class="cursor-pointer outline-none focus:outline-none border-l border-gray-200 transition-all text-gray-300 hover:text-blue-600">
-                                                        <svg class="w-4 h-4 mx-2 fill-current"
-                                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                                                            stroke="currentColor" stroke-width="2"
-                                                            stroke-linecap="round" stroke-linejoin="round">
-                                                            <polyline points="18 15 12 9 6 15"></polyline>
-                                                        </svg>
-                                                    </button>
-                                                </div>
-                                            </div>
-
-                                            <div class="md:col-span-2">
-                                                <label for="state">State / province</label>
-                                                <div
-                                                    class="h-10 bg-gray-50 flex border border-gray-200 rounded items-center mt-1">
-                                                    <input name="state" id="state" placeholder="State"
-                                                        class="px-4 appearance-none outline-none text-gray-800 w-full bg-transparent"
-                                                        value="" />
-                                                    <button tabindex="-1"
-                                                        class="cursor-pointer outline-none focus:outline-none transition-all text-gray-300 hover:text-red-600">
-                                                        <svg class="w-4 h-4 mx-2 fill-current"
-                                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                                                            stroke="currentColor" stroke-width="2"
-                                                            stroke-linecap="round" stroke-linejoin="round">
-                                                            <line x1="18" y1="6" x2="6" y2="18"></line>
-                                                            <line x1="6" y1="6" x2="18" y2="18"></line>
-                                                        </svg>
-                                                    </button>
-                                                    <button tabindex="-1" for="show_more"
-                                                        class="cursor-pointer outline-none focus:outline-none border-l border-gray-200 transition-all text-gray-300 hover:text-blue-600">
-                                                        <svg class="w-4 h-4 mx-2 fill-current"
-                                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                                                            stroke="currentColor" stroke-width="2"
-                                                            stroke-linecap="round" stroke-linejoin="round">
-                                                            <polyline points="18 15 12 9 6 15"></polyline>
-                                                        </svg>
-                                                    </button>
-                                                </div>
-                                            </div>
-
-                                            <div class="md:col-span-1">
-                                                <label for="zipcode">Zipcode</label>
-                                                <input type="text" name="zipcode" id="zipcode"
-                                                    class="transition-all flex items-center h-10 border mt-1 rounded px-4 w-full bg-gray-50"
-                                                    placeholder="" value="" />
-                                            </div>
-
-                                            <div class="md:col-span-5">
-                                                <div class="inline-flex items-center">
-                                                    <input type="checkbox" name="billing_same" id="billing_same"
-                                                        class="form-checkbox" />
-                                                    <label for="billing_same" class="ml-2">My billing address is
-                                                        different than above.</label>
-                                                </div>
-                                            </div>
-
-                                            <div class="md:col-span-2">
-                                                <label for="soda">How many soda pops?</label>
-                                                <div
-                                                    class="h-10 w-28 bg-gray-50 flex border border-gray-200 rounded items-center mt-1">
-                                                    <button tabindex="-1" for="show_more"
-                                                        class="cursor-pointer outline-none focus:outline-none border-r border-gray-200 transition-all text-gray-500 hover:text-blue-600">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mx-2"
-                                                            viewBox="0 0 20 20" fill="currentColor">
-                                                            <path fill-rule="evenodd"
-                                                                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                                                                clip-rule="evenodd" />
-                                                        </svg>
-                                                    </button>
-                                                    <input name="soda" id="soda" placeholder="0"
-                                                        class="px-2 text-center appearance-none outline-none text-gray-800 w-full bg-transparent"
-                                                        value="0" />
-                                                    <button tabindex="-1" for="show_more"
-                                                        class="cursor-pointer outline-none focus:outline-none border-l border-gray-200 transition-all text-gray-500 hover:text-blue-600">
-                                                        <svg xmlns="http://www.w3.org/2000/svg"
-                                                            class="h-4 w-4 mx-2 fill-current" viewBox="0 0 20 20"
-                                                            fill="currentColor">
-                                                            <path fill-rule="evenodd"
-                                                                d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z"
-                                                                clip-rule="evenodd" />
-                                                        </svg>
-                                                    </button>
-                                                </div>
-                                            </div>
-
-                                            <div class="md:col-span-5 text-right">
-                                                <div class="inline-flex items-end">
-                                                    <button
-                                                        class="bg-purple-800 hover:bg-purple-900 text-white font-bold py-2 px-4 rounded">Submit</button>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+            <section class="py-6 dark:bg-gray-100 dark:text-gray-900">
+                <div class="grid max-w-6xl grid-cols-1 px-6 mx-auto lg:px-8 md:grid-cols-2 md:divide-x">
+                    <div class="py-6 md:py-0 md:px-6">
+                        <h1 class="text-4xl font-bold">Get in touch</h1>
+                        <p class="pt-2 pb-4">Fill in the form to start a conversation</p>
+                        <div class="space-y-4">
+                            <p class="flex items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 mr-2 sm:mr-6">
+                                    <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path>
+                                </svg>
+                                <span>Fake address, 9999 City</span>
+                            </p>
+                            <p class="flex items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 mr-2 sm:mr-6">
+                                    <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
+                                </svg>
+                                <span>123456789</span>
+                            </p>
+                            <p class="flex items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 mr-2 sm:mr-6">
+                                    <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
+                                    <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
+                                </svg>
+                                <span>contact@business.com</span>
+                            </p>
                         </div>
                     </div>
+                    <form novalidate="" class="flex flex-col py-6 space-y-6 md:py-0 md:px-6">
+                        <label class="block">
+                            <span class="mb-1">Full name</span>
+                            <input type="text" placeholder="Leroy Jenkins" class="block w-full rounded-md shadow-sm focus:ring focus:ring-opacity-75 focus:dark:ring-violet-600 dark:bg-gray-100">
+                        </label>
+                        <label class="block">
+                            <span class="mb-1">Email address</span>
+                            <input type="email" placeholder="leroy@jenkins.com" class="block w-full rounded-md shadow-sm focus:ring focus:ring-opacity-75 focus:dark:ring-violet-600 dark:bg-gray-100">
+                        </label>
+                        <label class="block">
+                            <span class="mb-1">Message</span>
+                            <textarea rows="3" class="block w-full rounded-md focus:ring focus:ring-opacity-75 focus:dark:ring-violet-600 dark:bg-gray-100"></textarea>
+                        </label>
+                        <button type="button" class="self-center px-8 py-3 text-lg rounded focus:ring hover:ring focus:ring-opacity-75 dark:bg-violet-600 dark:text-gray-50 focus:dark:ring-violet-600 hover:dark:ring-violet-600">Submit</button>
+                    </form>
                 </div>
             </section>
         </main>
