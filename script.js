@@ -83,3 +83,17 @@ hamBargurAnimation()
 // };
 
 // languageChangeOnClick();
+
+
+const cursorAnimation = ()=>{
+    var cursor = document.querySelector('#cursor');
+    var mainBody = document.querySelector("#main");
+    mainBody.addEventListener("mousemove",(dets)=>{
+        gsap.to(cursor,{
+            x:dets.x,
+            y:dets.y,
+            ease: "Power4.out"
+        })
+    });
+}
+cursorAnimation();
