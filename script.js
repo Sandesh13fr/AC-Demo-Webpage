@@ -100,6 +100,8 @@ document.addEventListener("DOMContentLoaded", () => {
             homeText: "At Int'l Motor, we offer top-quality vehicles with precision and care. Whether you're buying or selling, our expert team ensures every car meets the highest standards for performance and appearance.",
             buttonText: "Book Free Consultation",
             testimonialsTitle: "What our customers are saying about us",
+            aboutHeading:"Integrity and Excellence in all our work.",
+            aboutHeadingText: "Every endeavor at Int'l Motor has been a team-driven journey, where each individual has contributed to our success. Together, we've not only facilitated vehicle acquisitions but also built lasting relationships that define the essence of our business. "
         },
         fr: {
             aboutUs: "À propos de nous",
@@ -111,6 +113,8 @@ document.addEventListener("DOMContentLoaded", () => {
             homeText: "Chez Int'l Motor, nous proposons des véhicules de qualité supérieure avec précision et soin. Que vous achetiez ou vendiez, notre équipe d'experts veille à ce que chaque voiture respecte les normes les plus élevées en matière de performances et d'apparence.",
             buttonText: "Réservez une consultation gratuite",
             testimonialsTitle: "Ce que nos clients disent de nous",
+            aboutHeading:"Intégrité et Excellence dans tout notre travail.",
+            aboutHeadingText: "Chaque effort chez Int'l Motor a été une aventure collective, où chaque individu a contribué à notre réussite. Ensemble, nous avons non seulement facilité l'acquisition de véhicules, mais également construit des relations durables qui définissent l'essence de notre entreprise."
         }
     };
 
