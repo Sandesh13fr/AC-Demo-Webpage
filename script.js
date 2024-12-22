@@ -178,3 +178,15 @@ const cursorAnimation = () => {
     });
 }
 cursorAnimation();
+
+
+const swiperContainer = () => {
+    const swiper = new Swiper('.swiper', {
+        loop: true,
+        autoplay: {
+            delay: 6100,
+            disableOnInteraction: false,
+        },
+    });
+}
+swiperContainer()
