@@ -1,313 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @font-face {
-    font-family: GilroyBold;
+    font-family: font1;
     src: url('./Assets/fonts/Gilroy-Bold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
-    font-family: heavyBold;
+    font-family: font2;
     src: url("./Assets/fonts/Gilroy-Heavy.ttf");
 }
 
 @font-face {
-    font-family: light;
+    font-family: font3;
     src: url("./Assets/fonts/Gilroy-Light.ttf");
 }
 
 @font-face {
-    font-family: Gilroy;
+    font-family: font4;
     src: url('./Assets/fonts/Gilroy-Regular.ttf') format('truetype');
 }
 
 @font-face {
-    font-family: Medium;
+    font-family: font5;
     src: url("./Assets/fonts/Gilroy-Medium.ttf");
 }
 
-
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html,
-body {
+html,body{
     height: 100%;
     width: 100%;
 }
 
 body {
-    background-color: #0C0712;
-    color: whitesmoke;
-    overflow-x: hidden;
-    padding: 0 2rem;
-}
-
-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1.5rem 2rem;
-    font-family: Gilroy;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-
-    #logoContainer {
-        height: 3.5rem;
-        width: 15.5rem;
-
-        img {
-            height: 100%;
-            width: 100%;
-            object-fit: contain;
-            transition: all ease-in 0.9s;
-        }
-
-        img:hover {
-            transform: scale(1.2);
-            -webkit-transform: scale(1.1);
-            -moz-transform: scale(1.1);
-            -ms-transform: scale(1.1);
-            -o-transform: scale(1.1);
-        }
-    }
-
-    nav {
-        display: flex;
-
-        h4 {
-            color: whitesmoke;
-            text-decoration: none;
-            margin-right: 1rem;
-            cursor: pointer;
-            font-size: 1.1rem;
-            transition: all ease-in 0.2s;
-
-            &:hover {
-                color: #7a7a7a;
-            }
-        }
-
-    }
-
-    input[type="text"] {
-        padding: 0.5rem;
-        margin-right: 0.2rem;
-        border: none;
-        border-radius: 5px;
-        background-color: #333333;
-        color: whitesmoke;
-        font-size: 1rem;
-        transition: background-color 0.3s ease;
-    }
-
-    input[type="text"]:focus {
-        background-color: #555555;
-    }
-
-    #searchButton {
-        padding: 0.5rem 1rem;
-        border-radius: 5px;
-        background-color: #333333;
-        color: whitesmoke;
-        cursor: pointer;
-        font-size: 1rem;
-        transition: background-color 0.3s ease;
-        border: none;
-
-        &:hover {
-            background-color: #555555;
-        }
-
-        &:active {
-            background-color: #777777;
-        }
-    }
-
-    .container{
-        display: flex ;
-        gap: 20px;
-    }
-
-    .language-opts {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 20px;
-    }
-
-    .language-opts i {
-        display: none;
-        font-size: 2rem;
-        cursor: pointer;
-    }
-
-    .language h3 span{
-        user-select: none;
-        cursor: pointer;
-    }
-    
-    .language-opts i {
-        border: 2px solid #1a1a1a;
-        padding: 10px 12px;
-        border-radius: 50%;
-        font-size: 20px;
-        cursor: pointer;
-    }
-    
-    .language-opts i:hover {
-        background-color: #373737;
-        color: rgb(255, 255, 255);
-    }
-}
-
-#hamburger {
-    height: 100%;
-    width: 20%;
-    background-color: #1a1a1a;
-    backdrop-filter: blur(30px);
-    position: fixed;
-    right: 0;
-    top: 0;
-    padding: 12vw 3vw;
-    transform: translateX(100%);
-    z-index: 99;
-}
-
-#hamburger h1 {
-    cursor: pointer;
-}
-
-#hamburger h1 a:hover {
-    color: rgb(203, 203, 203);
-}
-
-#hamburger h1 a {
-    font-weight: 600;
-    text-decoration: none;
-    font-size: 1.7vw;
-    color: #1a1a1a;
-    color: rgb(87, 87, 87);
-    font-family: "Poppins", sans-serif;
-    margin-bottom: 10px;
-}
-
-#hamburger i {
-    position: absolute;
-    right: 7%;
-    top: 2%;
-    font-size: 25px;
-    border: 2px solid #f3f3f3;
-    padding: 5px;
-    border-radius: 50%;
-    color: #ffffff;
-    cursor: pointer;
-}
-
-#hamburger i:hover {
-    background-color: rgb(255, 255, 255);
-    color: #000000;
-}
-
-.home{
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    border-bottom: 2px solid #989898;
-}
-.center-header1 {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    flex-direction: column;
-}
-
-.home .center-header1 h1 {
-    font-family: "GilroyBold";
-    font-weight: bold;
-    font-size: 8rem;
-    z-index: 1;
-    line-height: 6.8rem;
-    letter-spacing: -5px;
-}
-
-.home .center-header1 p {
-    color: #777777;
-    width: 50%;
-    text-align: center;
-    margin-top: 20px;
-    font-family: light;
-    font-weight: 600;
-    font-size: 1.2rem;
-
-    span{
-        color: whitesmoke;
-    }
-}
-
-.home .center-header1 h2 {
-    font-family: Gilroy;
-    line-height: 2rem;
-    font-weight: 700;
-    font-size: 1.6rem;
-    z-index: 1;
-    margin-bottom: 5px;
-    color: #777777;
-    letter-spacing: -1px;
-
-}
-
-.btnContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-    gap: 10px;
-
-    button {
-        background-color: transparent;
-        border: 2px solid rgb(255, 255, 255);
-        color: white;
-        padding: 15px 32px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        margin: 4px 2px;
-        cursor: pointer;
-        border-radius: 20px;
-    }
-    #eng:active{
-        color: #742c74;
-    }
-}
-
-
-
-#background-blob {
-    position: absolute;
-    top: 50vh;
-    left: 25vw;
-    border-radius: 50%;
-    height: 25vw;
-    width: 40vw;
-    background: linear-gradient(to top right, rgb(95, 2, 95), navy);
-    z-index: -1;
-    transform: skew(20deg);
-    filter: blur(60px);
-    animation: blob 3s linear infinite alternate;
-    -webkit-animation: blob 3s linear infinite alternate;
-    -webkit-filter: blur(60px);
+    font-family: 'Gilroy', sans-serif;
 }
 
 @keyframes blob {
@@ -316,7 +50,6 @@ header {
         width: 50vw;
         height: 30vw;
         filter: blur(70px);
-        -webkit-filter: blur(70px);
         background: linear-gradient(to top center, #640664, navy);
     }
 
@@ -325,112 +58,6 @@ header {
         width: 40vw;
         height: 30vw;
         filter: blur(70px);
-        -webkit-filter: blur(70px);
         background: linear-gradient(to top left, #742c74, navy);
-    }
-}
-
-#second{
-    width: 100%;
-    height: 100vh;
-}
-
-@media (max-width: 1200px) {
-    .home .center-header1 h1 {
-        font-size: 4rem;
-    }
-
-    .home .center-header1 h2 {
-        font-size: 1.8rem;
-    }
-
-    header {
-        padding: 1.5rem 2rem;
-
-        details {
-            display: block;
-        }
-    }
-}
-
-@media (max-width: 992px) {
-    .home .center-header1 h1 {
-        font-size: 3.5rem;
-    }
-
-    .home .center-header1 h2 {
-        font-size: 1.6rem;
-    }
-
-    header {
-        /* Adjusting flex direction to column for vertical alignment */
-        flex-direction: column;
-        /* Centering items horizontally */
-        align-items: center;
-        /* Adjusting padding for better spacing */
-        padding: 1rem 2rem;
-
-        details {
-            display: block;
-        }
-    }
-}
-
-@media (max-width: 768px) {
-
-    header {
-        #logoContainer {
-            align-self: flex-start;
-        }
-
-        nav {
-            display: none;
-        }
-
-        .language-opts {
-            display: none;
-        }
-
-        #searchContainer {
-            display: none;
-        }
-
-        #hamburger {
-            display: inline-block;
-        }
-    }
-
-    #background-blob {
-        top: 40vh;
-        left: 20vw;
-        width: 60vw;
-        height: 30vw;
-    }
-}
-
-@media (max-width: 576px) {
-    .home .center-header1 h1 {
-        font-size: 2.5rem;
-    }
-
-    .home .center-header1 h2 {
-        font-size: 1.2rem;
-    }
-
-    header {
-        flex-direction: column;
-        align-items: center;
-        padding: 1rem;
-
-        details {
-            display: block;
-        }
-    }
-
-    #background-blob {
-        top: 30vh;
-        left: 10vw;
-        width: 80vw;
-        height: 35vw;
     }
 }
