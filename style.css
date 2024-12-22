@@ -45,6 +45,12 @@ html,body{
 body {
     font-family: 'Gilroy', sans-serif;
 }
+details > summary {
+    list-style: none;
+}
+details > summary::-webkit-details-marker {
+    display: none;
+}
 
 @keyframes blob {
     50% {
