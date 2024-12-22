@@ -71,7 +71,22 @@ document.addEventListener("DOMContentLoaded", () => {
             customerRequirementsText: "Our company firmly establishes its narrative through unparalleled brokerage solutions and exclusive client projects, driven by a commitment to Integrity and Excellence.",
             socialJustice: "SOCIAL JUSTICE",
             socialJusticeText: "With its extensive resources, the company is committed to delivering the best acquisition services in the market. Whether you need new or used vehicles, construction or agricultural machinery, utility vehicles, motorcycles, special vehicles, or services for private individuals, Int'l Motor is dedicated to meeting your specific needs.",
-            readMore: "Read More"
+            readMore: "Read More",
+            "services-title": "Services We Offer",
+            "services-description": "Offering top-quality products, expert guidance, and reliable after-sales support, we ensure a seamless and satisfying dealership experience.",
+            "service-card-1-title": "Car Dealership",
+            "service-card-1-description": "Find the perfect vehicle for your needs with our wide selection of new and used cars.",
+            "service-card-2-title": "Legal",
+            "service-card-2-description": "Protect your organization, devices, and stay compliant with our structured workflows and custom permissions.",
+            "service-card-3-title": "Business Automation",
+            "service-card-3-description": "Auto-assign tasks, send Slack messages, and much more with hundreds of new templates to help you get started.",
+            "service-card-4-title": "Car Maintenance",
+            "service-card-4-description": "Keep your car in perfect condition with our comprehensive maintenance services.",
+            "service-card-5-title": "Special Offers",
+            "service-card-5-description": "Avail exciting discounts and exclusive deals on our car services.",
+            "service-card-6-title": "Customer Support",
+            "service-card-6-description": "Experience top-notch support for all your dealership and service-related queries."
+
         },
         fr: {
             aboutUs: "mon entreprise",
