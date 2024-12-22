@@ -7,13 +7,13 @@ const hamBargurAnimation = ()=>{
         transform: 'translateX(0%)',
         duration: 1,
         opacity: 1
-    })
+    },"start")
 
     tl.from("#full i", {
         scale: 0,
         opacity: 0,
         duration: 0.3
-    })
+    },"start")
 
     tl.pause()
 
