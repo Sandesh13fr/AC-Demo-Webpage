@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,62 +8,61 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/Assets/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/Assets/favicon/favicon-16x16.png">
     <link rel="manifest" href="/Assets/favicon/site.webmanifest">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
+        integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
-    <title>INT's MOTOR</title>
+    <title>Document</title>
 </head>
+
 <body>
-    <header>
-        <!--Adding Logo-->
-        <div id="logoContainer">
-            <a href=""><img src="./Assets/photos/3.Logo_Horizontale_Blanc_sanstagline.png" alt="logo"></a>
-        </div>
-        <nav></nav>
-        <!--Adding Search Bar-->
-        
-        <!--Adding change Language-->
-        <div class="container">
-            <div id="searchContainer">
-                <input type="text" id="searchInput" placeholder="Search...">
-                <button id="searchButton"><i class="ri-search-2-line"></i></button>
+    <div id="main" class="h-full w-full text-white">
+        <header class="fixed top-0 left-0 w-full flex items-center justify-between py-4 px-8 z-10 max-sm:px-6">
+            <div id="logo" class="h-12 max-md:h-7 max-sm:h-6">
+                <img src="./Assets/photos/3.Logo_Horizontale_Blanc_sanstagline.png" alt="" class="h-full object-cover">
             </div>
-            <div class="language-opts">
-                <div class="language">
-                    <!-- <button value="Fr">Fr</button>/
-                    <button value="En">En</button> -->
-                    <h3><span id="fre" class="language-btn">FR</span> / <span id="eng" class="language-btn">EN</span></h3>
+            <nav class="flex items-center gap-5 max-md:hidden">
+                <h4>About Us</h4>
+                <h4>Acquisition Options</h4>
+                <h4>360 space</h4>
+            </nav>
+            <div class="flex items-center gap-4">
+                <div id="searchContainer" class="flex items-start justify-center gap-2">
+                    <input type="text" id="searchInput" placeholder="Search..."
+                        class="px-2 py-1 w-full text-white bg-zinc-800 rounded-md outline-none max-md:hidden">
+                    <button id="searchButton" class="px-2 py-1 rounded-md bg-zinc-800"><i
+                            class="ri-search-2-line"></i></button>
                 </div>
-                <i class="ri-menu-4-line"></i>
+                <div class="language-opts flex items-center gap-3">
+                    <div class="language">
+                        <h3><span id="fre" class="language-btn cursor-pointer">FR</span> / <span id="eng"
+                                class="language-btn cursor-pointer">EN</span></h3>
+                    </div>
+                    <i class="ri-menu-4-line text-3xl cursor-pointer max-sm:text-2xl"></i>
+                </div>
             </div>
-        </div>
-    </header>
-    <div id="hamburger">
-        <h1><a href="#">Home</a></h1>
-        <h1><a href="#work" title="Work">Work</a></h1>
-        <h1><a href="#">About Me</a></h1>
-        <h1><a href="#">Project</a></h1>
-        <h1><a href="#">Contact Us</a></h1>
-        <i class="ri-close-line magnet-target"></i>
+        </header>
+        <main class="bg-[#0C0712]">
+            <section id="home" class="relative h-screen w-full">
+                <video autoplay muted loop src="./Assets/videos/4489807-uhd_4096_2160_25fps.mp4" class="brightness-50 h-full w-full object-cover"></video>
+                <div id="home-container"
+                    class="flex items-center justify-center flex-col h-screen w-full absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+                    <h4 class="text-center text-2xl font-[font4] text-zinc-300 max-md:text-lg max-sm:text-sm">Drive Your Dreams, Powered by Trust.</h4>
+                    <h1 class="text-center text-8xl font-[font4] leading-none font-semibold max-md:text-6xl max-sm:text-5xl">Your Dream Car<br>
+                        Awaits You</h1>
+                    <p class="text-center w-1/2 font-[font3] text-zinc-300 my-6 max-md:text-lg max-md:w-3/5 max-sm:text-sm">At Int'l Motor, we offer top-quality vehicles with precision and care.
+                        Whether you're buying or
+                        selling, our expert team ensures every car meets the highest standards for performance and
+                        appearance.</p>
+                    <button class="py-2 px-6 border-2 rounded-lg max-sm:text-sm">Book Free Consultation</button>
+                </div>
+            </section>
+            <section class="h-screen">
+                
+            </section>
+        </main>
     </div>
-    <main>
-        <section class="home">
-            <div id="background-blob"></div>
-            <div class="center-header1">
-                <h2>Drive Your Dreams, Powered by Trust.</h2>
-                <h1>Your Dream Car <br>Awaits You</h1>
-                <p>At <span>Int'l Motor</span>, we <span>offer top-quality vehicles</span> with <span>precision</span> and <span>care</span>. Whether you're buying or selling, our <span>expert team</span> ensures every car meets the <span>highest standards</span> for <span>performance</span> and <span>appearance</span>.</p>
-                <div class="btnContainer">
-                    <button>Browse</button>
-                </div>
-            </div>
-        </section>
-        <section id="second">
-hahd
-        </section>
-        <section id="about"></section>
-    </main>
-    <footer></footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
     <script src="script.js"></script>
 </body>
+
 </html>
