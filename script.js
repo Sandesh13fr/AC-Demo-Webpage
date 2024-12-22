@@ -1,3 +1,20 @@
+const smoothScrolling = () => {
+    const lenis = new Lenis();
+
+    function raf(time) {
+        lenis.raf(time);
+        requestAnimationFrame(raf);
+    }
+    requestAnimationFrame(raf);
+    let searchIcon = document.querySelector("#searchButton")
+    let target = document.querySelector(".searchbar-functionality")
+    searchIcon.addEventListener("click", () => {
+        lenis.scrollTo(target)
+    })
+}
+
+smoothScrolling()
+
 const hamBargurAnimation = () => {
     var close = document.querySelector("#full i")
     var menu = document.querySelector(".language-opts i")
@@ -107,8 +124,8 @@ const swiperContainer = () => {
 }
 swiperContainer()
 
-const loaderAnimation  = ()=>{
-    window.addEventListener("load", ()=>{
+const loaderAnimation = () => {
+    window.addEventListener("load", () => {
         let tl = gsap.timeline()
         tl.to("#loader img", {
             opacity: 1,
@@ -121,40 +138,37 @@ const loaderAnimation  = ()=>{
             ease: "power4.in"
         }, "start+=1")
         tl.to(".counter span", {
-            color:"white",
-            opacity:0,
-            duration:1,
+            color: "white",
+            opacity: 0,
+            duration: 1,
             ease: "power4.in"
-        },"start+=2")
-        .to("#loader",{
-            opacity:0,
-            duration:1,
-            ease: "power4.in"
-        },"start+=2")
-        .to("#loader",{
-            display:"none",
-            duration:1,
-            ease: "power4.in"
-        },"start+=2")
+        }, "start+=2")
+            .to("#loader", {
+                opacity: 0,
+                duration: 1,
+                ease: "power4.in"
+            }, "start+=2")
+            .to("#loader", {
+                display: "none",
+                duration: 1,
+                ease: "power4.in"
+            }, "start+=2")
     })
 }
-loaderAnimation()
 
 const numberElement = document.querySelector('.counter .number');
-  const targetCount = 100;
-
-  // Function to update the counter
-  function updateCounter() {
+const targetCount = 100;
+function updateCounter() {
     let currentCount = 0;
     const interval = setInterval(() => {
-      if (currentCount <= targetCount) {
-        numberElement.textContent = currentCount;
-        currentCount=currentCount+7;
-      } else {
-        clearInterval(interval); // Stop the interval when the target is reached
-      }
-    }, 200); // Increment every 50ms
-  }
+        if (currentCount <= targetCount) {
+            numberElement.textContent = currentCount;
+            currentCount = currentCount + 7;
+        } else {
+            clearInterval(interval);
+        }
+    }, 200);
+}
 
-  // Start the counter animation
-  updateCounter();
+updateCounter();
+loaderAnimation()
