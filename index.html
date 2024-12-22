@@ -22,7 +22,7 @@
             <div id="logo" class="h-10 max-md:h-7 max-sm:h-[1.6rem]">
                 <img src="./Assets/photos/3.Logo_Horizontale_Blanc_sanstagline.png" alt="" class="h-full object-cover">
             </div>
-            <nav class="flex items-center space-x-8 group">
+            <nav class="flex items-center space-x-8 group max-md:hidden">
                 <div class="relative">
                     <span class="cursor-pointer uppercase tracking-widest text-sm font-light hover:text-gray-400" data-translate="aboutUs">My Company</span>
                     <div
@@ -35,6 +35,7 @@
 
                 <div class="relative">
                     <span
+                    data-translate="acquisitionOptions"
                         class="cursor-pointer uppercase tracking-widest text-sm font-light hover:text-gray-400">Acquisition
                         Options</span>
                     <div
@@ -47,7 +48,7 @@
                 </div>
 
                 <div class="relative">
-                    <span class="cursor-pointer uppercase tracking-widest text-sm font-light hover:text-gray-400">360
+                    <span data-translate="space360"  class="cursor-pointer uppercase tracking-widest text-sm font-light hover:text-gray-400">360
                         space</span>
                     <div
                         class="absolute top-full left-0 bg-gray-900 hidden group-hover:flex flex-col p-2 opacity-0 transition-all group-hover:opacity-100">
@@ -103,9 +104,10 @@
                         needs. From cars to machinery, our expert team ensures top-quality service with integrity and
                         excellence.</p>
                     <div class="flex items-center gap-5 max-sm:flex-col max-sm:gap-1"><button
+                        data-translate="buttonText"
                             class="py-2 px-4 border-2 rounded-lg max-sm:text-sm max-sm:px-3">Discover our brokerage
                             solutions</button>
-                        <button class="py-2 px-4 border-2 rounded-lg max-sm:text-sm max-sm:px-3">Find vehical of your
+                        <button data-translate="buttonText2" class="py-2 px-4 border-2 rounded-lg max-sm:text-sm max-sm:px-3">Find vehical of your
                             dreams</button>
                     </div>
                 </div>
@@ -116,10 +118,10 @@
             <section class="about-us mt-20">
                 <div class="max-w-7xl mx-auto p-6">
                     <div class="text-center mb-8">
-                        <p class="text-gray-400 font-[font3] font-semibold text-2xl">
-                            WHAT WE ENGAGED
+                        <p class="text-gray-400 font-[font3] font-semibold text-2xl" data-translate="whatWeEngaged">
+                            What We Engaged
                         </p>
-                        <h1 class="text-5xl leading-none tracking-tight font-[font1]">
+                        <h1 class="text-5xl leading-none tracking-tight font-[font1]" data-translate="innovativeSolution">
                             Innovative solution designed to revolutionize the way of acquiring a vehicle
                         </h1>
                     </div>
@@ -128,7 +130,7 @@
                             <p class="font-bold text-purple-700 text-4xl">
                                 1k+
                             </p>
-                            <p class="text-gray-400 text-lg">
+                            <p class="text-gray-400 text-lg" data-translate="dealWithClients">
                                 Deal with Clients
                             </p>
                         </div>
@@ -136,7 +138,7 @@
                             <p class="font-bold text-purple-700 text-4xl">
                                 99%
                             </p>
-                            <p class="text-gray-400 text-lg">
+                            <p class="text-gray-400 text-lg" data-translate="happyCustomers">
                                 Happy Customers
                             </p>
                         </div>
@@ -144,7 +146,7 @@
                             <p class="font-bold text-purple-700 text-4xl">
                                 1k+
                             </p>
-                            <p class="text-gray-400 text-lg">
+                            <p class="text-gray-400 text-lg" data-translate="dealsLocked">
                                 Deals Locked
                             </p>
                         </div>
@@ -157,54 +159,52 @@
                                 width="600" />
                         </div>
                         <div class="lg:w-1/2 space-y-6">
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 ">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                                 <div
                                     class="p-6 bg-custom-purple shadow-custom backdrop-blur-custom border-custom-white border rounded-custom">
-                                    <h2 class="text-xl font-bold mb-2">
+                                    <h2 class="text-xl font-bold mb-2" data-translate="ecoResponsibility">
                                         ECO-RESPONSIBILITY
                                     </h2>
-                                    <p class="text-zinc-400">
+                                    <p class="text-zinc-400" data-translate="ecoResponsibilityText">
                                         Int'l Motor is an international brokerage company that provides unique vehicle acquisition solutions for personal or professional use.
                                     </p>
-                                    <button class="text-purple-700 font-semibold">
+                                    <button class="text-purple-700 font-semibold" data-translate="readMore">
                                         Read More
-                                        <i class="fas fa-arrow-right text-white">
-                                        </i>
+                                        <i class="fas fa-arrow-right text-white"></i>
                                     </button>
                                 </div>
                                 <div
                                     class="p-6 bg-custom-purple shadow-custom backdrop-blur-custom border-custom-white border rounded-custom">
-                                    <h2 class="text-xl font-bold mb-2">
+                                    <h2 class="text-xl font-bold mb-2" data-translate="customerRequirements">
                                         CUSTOMER REQUIREMENTS
                                     </h2>
-                                    <p class="text-zinc-400">
-                                        Our company firmly establishes its narrative through unparalleled brokerage solutions and exclusive client projects, driven by a commitment to Integrity and Excellence.    
+                                    <p class="text-zinc-400" data-translate="customerRequirementsText">
+                                        Our company firmly establishes its narrative through unparalleled brokerage solutions and exclusive client projects, driven by a commitment to Integrity and Excellence.
                                     </p>
-                                    <button class="text-purple-700 font-semibold">
+                                    <button class="text-purple-700 font-semibold" data-translate="readMore">
                                         Read More
-                                        <i class="fas fa-arrow-right text-white">
-                                        </i>
+                                        <i class="fas fa-arrow-right text-white"></i>
                                     </button>
                                 </div>
                             </div>
                             <div
                                 class="p-6 bg-custom-purple shadow-custom backdrop-blur-custom border-custom-white border rounded-custom">
-                                <h2 class="text-xl font-bold mb-2">
+                                <h2 class="text-xl font-bold mb-2" data-translate="socialJustice">
                                     SOCIAL JUSTICE
                                 </h2>
-                                <p class="text-zinc-400 mb-4">
-                                    With its extensive resources, the company is committed to delivering the best acquisition services in the market. Whether you need new or used vehicles, construction or agricultural machinery, utility vehicles, motorcycles, special vehicles, or services for private individuals, Int'l Motor is dedicated to meeting your specific needs.    
+                                <p class="text-zinc-400 mb-4" data-translate="socialJusticeText">
+                                    With its extensive resources, the company is committed to delivering the best acquisition services in the market. Whether you need new or used vehicles, construction or agricultural machinery, utility vehicles, motorcycles, special vehicles, or services for private individuals, Int'l Motor is dedicated to meeting your specific needs.
                                 </p>
-                                <button class="text-purple-700 font-semibold">
+                                <button class="text-purple-700 font-semibold" data-translate="readMore">
                                     Read More
-                                    <i class="fas fa-arrow-right text-white">
-                                    </i>
+                                    <i class="fas fa-arrow-right text-white"></i>
                                 </button>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
+            
             <section class="testimonials">
                 <section class="py-10">
                     <div class="container flex flex-col items-center mx-auto md:p-10 md:px-12">
