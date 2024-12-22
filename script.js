@@ -95,5 +95,15 @@ const cursorAnimation = ()=>{
             ease: "Power4.out"
         })
     });
+    mainBody.addEventListener("mouseenter",(dets)=>{
+        gsap.to(cursor,{
+            scale:1
+        })
+    });
+    mainBody.addEventListener("mouseleave",(dets)=>{
+        gsap.to(cursor,{
+            scale:0
+        })
+    });
 }
 cursorAnimation();
