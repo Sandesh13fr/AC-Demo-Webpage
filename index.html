@@ -16,10 +16,10 @@
 </head>
 
 <body>
-    <div id="cursor" class="h-5 w-5 rounded-full bg-purple-600 mix-blend-difference fixed top-0 left-0 z-40"></div>
+    <div id="cursor" class="h-5 w-5 rounded-full bg-purple-600 mix-blend-difference fixed top-0 left-0 z-40 max-lg:hidden"></div>
     <div id="main" class="h-full w-full text-white">
         <header class="fixed top-0 left-0 w-full flex items-center justify-between py-4 px-8 z-10 max-sm:px-6">
-            <div id="logo" class="h-12 max-md:h-7 max-sm:h-6">
+            <div id="logo" class="h-12 max-md:h-7 max-sm:h-[1.6rem]">
                 <img src="./Assets/photos/3.Logo_Horizontale_Blanc_sanstagline.png" alt="" class="h-full object-cover">
             </div>
             <nav class="flex items-center gap-5 max-md:hidden">
@@ -39,11 +39,11 @@
                         <h3><span id="fre" class="language-btn cursor-pointer">FR</span> / <span id="eng"
                                 class="language-btn cursor-pointer">EN</span></h3>
                     </div>
-                    <i class="ri-menu-4-line text-3xl cursor-pointer max-sm:text-2xl"></i>
+                    <i class="ri-menu-4-line text-3xl cursor-pointer max-sm:text-2xl hidden max-md:contents"></i>
                 </div>
             </div>
         </header>
-        <div id="full" class="z-20 fixed h-full top-0 right-0 w-3/12 bg-[#17151a] translate-x-full">
+        <div id="full" class="max-md:w-5/6 z-20 fixed h-full top-0 right-0 w-3/12 bg-[#17151a] translate-x-full">
             <i class="ri-close-line magnet-target text-3xl absolute top-5 right-5 cursor-pointer"></i>
         </div>
         <main class="bg-[#0C0712]">
