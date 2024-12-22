@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
         integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="style.css">
     <title>INT'l MOTOR</title>
 </head>
@@ -24,7 +25,8 @@
             </div>
             <nav class="flex items-center space-x-8 group max-md:hidden">
                 <div class="relative">
-                    <span class="cursor-pointer uppercase tracking-widest text-sm font-light hover:text-gray-400" data-translate="aboutUs">My Company</span>
+                    <span class="cursor-pointer uppercase tracking-widest text-sm font-light hover:text-gray-400"
+                        data-translate="aboutUs">My Company</span>
                     <div
                         class="absolute top-full left-0 bg-gray-900 hidden group-hover:flex flex-col p-2 opacity-0 transition-all group-hover:opacity-100">
                         <a href="#about" class="text-white text-sm hover:text-gray-400">About Us</a>
@@ -34,8 +36,7 @@
                 </div>
 
                 <div class="relative">
-                    <span
-                    data-translate="acquisitionOptions"
+                    <span data-translate="acquisitionOptions"
                         class="cursor-pointer uppercase tracking-widest text-sm font-light hover:text-gray-400">Acquisition
                         Options</span>
                     <div
@@ -48,7 +49,8 @@
                 </div>
 
                 <div class="relative">
-                    <span data-translate="space360"  class="cursor-pointer uppercase tracking-widest text-sm font-light hover:text-gray-400">360
+                    <span data-translate="space360"
+                        class="cursor-pointer uppercase tracking-widest text-sm font-light hover:text-gray-400">360
                         space</span>
                     <div
                         class="absolute top-full left-0 bg-gray-900 hidden group-hover:flex flex-col p-2 opacity-0 transition-all group-hover:opacity-100">
@@ -67,12 +69,12 @@
             </nav> -->
             <div class="flex justify-center items-center gap-4">
                 <div id="searchContainer" class="flex items-start justify-center gap-2">
-                    <button id="searchButton"><i
-                            class="ri-search-2-line text-2xl"></i></button>
+                    <button id="searchButton"><i class="ri-search-2-line text-2xl"></i></button>
                 </div>
                 <div class="language-opts flex items-center gap-3">
                     <div class="language">
-                        <h3 class="text-lg font-[font3] font-semibold"><span id="fre" class="language-btn cursor-pointer">FR</span> / <span id="eng"
+                        <h3 class="text-lg font-[font3] font-semibold"><span id="fre"
+                                class="language-btn cursor-pointer">FR</span> / <span id="eng"
                                 class="language-btn cursor-pointer">EN</span></h3>
                     </div>
                     <i class="ri-menu-4-line text-3xl cursor-pointer max-sm:text-2xl hidden max-md:contents"></i>
@@ -87,33 +89,76 @@
         </div>
         <main class="bg-[#0C0712]">
             <section id="home" class="relative h-screen w-full">
-                <video autoplay muted loop src="./Assets/videos/istockphoto-1221801611-640_adpp_is.mp4"
-                    class="brightness-50 h-full w-full object-cover"></video>
-                <div id="home-container"
-                    class="flex items-center justify-center flex-col h-screen w-full absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-                    <h4 data-translate="homeSubtitle"
-                        class="text-center text-2xl font-[font4] text-zinc-300 max-md:text-lg max-sm:text-sm">Acting
-                        with integrity, a driver of trust</h4>
-                    <h1 class="text-center text-8xl font-[font4] leading-none font-semibold max-md:text-6xl max-sm:text-5xl"
-                        data-translate="homeTitle">
-                        Your Dream Car<br>
-                        Awaits You</h1>
-                    <p data-translate="homeText"
-                        class="text-center w-1/2 font-[font3] text-zinc-300 my-6 max-md:text-lg max-md:w-3/5 max-sm:text-sm">
-                        At INT'l Motor, we provide tailored vehicle acquisition solutions for personal or professional
-                        needs. From cars to machinery, our expert team ensures top-quality service with integrity and
-                        excellence.</p>
-                    <div class="flex items-center gap-5 max-sm:flex-col max-sm:gap-1"><button
-                        data-translate="buttonText"
-                            class="py-2 px-4 border-2 rounded-lg max-sm:text-sm max-sm:px-3">Discover our brokerage
-                            solutions</button>
-                        <button data-translate="buttonText2" class="py-2 px-4 border-2 rounded-lg max-sm:text-sm max-sm:px-3">Find vehical of your
-                            dreams</button>
+                <div class="swiper h-full w-full">
+                    <div class="swiper-wrapper">
+                        <div id="page1" class="relative swiper-slide">
+                            <video autoplay muted loop src="./Assets/videos/istockphoto-1221801611-640_adpp_is.mp4"
+                                class="brightness-50 h-full w-full object-cover"></video>
+                            <div
+                                class="absolute flex justify-center items-center top-0 left-0 z-10 h-full w-full flex-col">
+                                <h4 data-translate="homeSubtitle"
+                                    class="text-center text-2xl font-[font4] text-zinc-300 max-md:text-lg max-sm:text-sm">
+                                    Acting
+                                    with integrity, a driver of trust</h4>
+                                <h1 class="text-center text-8xl font-[font4] leading-none font-semibold max-md:text-6xl max-sm:text-5xl"
+                                    data-translate="homeTitle">
+                                    Your Dream Car<br>
+                                    Awaits You</h1>
+                                <p data-translate="homeText"
+                                    class="text-center w-1/2 font-[font3] text-zinc-300 my-6 max-md:text-lg max-md:w-3/5 max-sm:text-sm">
+                                    At INT'l Motor, we provide tailored vehicle acquisition solutions for personal or
+                                    professional
+                                    needs. From cars to machinery, our expert team ensures top-quality service with
+                                    integrity and
+                                    excellence.</p>
+                                <div class="flex items-center gap-5 max-sm:flex-col max-sm:gap-1"><button
+                                        data-translate="buttonText"
+                                        class="py-2 px-4 border-2 rounded-lg max-sm:text-sm max-sm:px-3">Discover our
+                                        brokerage
+                                        solutions</button>
+                                    <button data-translate="buttonText2"
+                                        class="py-2 px-4 border-2 rounded-lg max-sm:text-sm max-sm:px-3">Find vehical of
+                                        your
+                                        dreams</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="page2" class="swiper-slide">
+                            <video autoplay muted loop src="./Assets/videos/mixkit-car-dealer-showing-the-car-to-a-client-23048-hd-ready.mp4"
+                                class="brightness-50 h-full w-full object-cover"></video>
+                            <div
+                                class="absolute flex justify-center items-center top-0 left-0 z-10 h-full w-full flex-col">
+                                <h4 data-translate="homeSubtitle"
+                                    class="text-center text-2xl font-[font4] text-zinc-300 max-md:text-lg max-sm:text-sm">
+                                    Acting
+                                    with integrity, a driver of trust</h4>
+                                <h1 class="text-center text-8xl font-[font4] leading-none font-semibold max-md:text-6xl max-sm:text-5xl"
+                                    data-translate="homeTitle">
+                                    Your Dream Car<br>
+                                    Awaits You</h1>
+                                <p data-translate="homeText"
+                                    class="text-center w-1/2 font-[font3] text-zinc-300 my-6 max-md:text-lg max-md:w-3/5 max-sm:text-sm">
+                                    At INT'l Motor, we provide tailored vehicle acquisition solutions for personal or
+                                    professional
+                                    needs. From cars to machinery, our expert team ensures top-quality service with
+                                    integrity and
+                                    excellence.</p>
+                                <div class="flex items-center gap-5 max-sm:flex-col max-sm:gap-1"><button
+                                        data-translate="buttonText"
+                                        class="py-2 px-4 border-2 rounded-lg max-sm:text-sm max-sm:px-3">Discover our
+                                        brokerage
+                                        solutions</button>
+                                    <button data-translate="buttonText2"
+                                        class="py-2 px-4 border-2 rounded-lg max-sm:text-sm max-sm:px-3">Find vehical of
+                                        your
+                                        dreams</button>
+                                </div>
+                        </div>
                     </div>
                 </div>
             </section>
             <section class="services-offered">
-                
+
             </section>
             <section class="about-us mt-20">
                 <div class="max-w-7xl mx-auto p-6">
@@ -121,7 +166,8 @@
                         <p class="text-gray-400 font-[font3] font-semibold text-2xl" data-translate="whatWeEngaged">
                             What We Engaged
                         </p>
-                        <h1 class="text-5xl leading-none tracking-tight font-[font1]" data-translate="innovativeSolution">
+                        <h1 class="text-5xl leading-none tracking-tight font-[font1]"
+                            data-translate="innovativeSolution">
                             Innovative solution designed to revolutionize the way of acquiring a vehicle
                         </h1>
                     </div>
@@ -166,7 +212,8 @@
                                         ECO-RESPONSIBILITY
                                     </h2>
                                     <p class="text-zinc-400" data-translate="ecoResponsibilityText">
-                                        Int'l Motor is an international brokerage company that provides unique vehicle acquisition solutions for personal or professional use.
+                                        Int'l Motor is an international brokerage company that provides unique vehicle
+                                        acquisition solutions for personal or professional use.
                                     </p>
                                     <button class="text-purple-700 font-semibold" data-translate="readMore">
                                         Read More
@@ -179,7 +226,9 @@
                                         CUSTOMER REQUIREMENTS
                                     </h2>
                                     <p class="text-zinc-400" data-translate="customerRequirementsText">
-                                        Our company firmly establishes its narrative through unparalleled brokerage solutions and exclusive client projects, driven by a commitment to Integrity and Excellence.
+                                        Our company firmly establishes its narrative through unparalleled brokerage
+                                        solutions and exclusive client projects, driven by a commitment to Integrity and
+                                        Excellence.
                                     </p>
                                     <button class="text-purple-700 font-semibold" data-translate="readMore">
                                         Read More
@@ -193,7 +242,11 @@
                                     SOCIAL JUSTICE
                                 </h2>
                                 <p class="text-zinc-400 mb-4" data-translate="socialJusticeText">
-                                    With its extensive resources, the company is committed to delivering the best acquisition services in the market. Whether you need new or used vehicles, construction or agricultural machinery, utility vehicles, motorcycles, special vehicles, or services for private individuals, Int'l Motor is dedicated to meeting your specific needs.
+                                    With its extensive resources, the company is committed to delivering the best
+                                    acquisition services in the market. Whether you need new or used vehicles,
+                                    construction or agricultural machinery, utility vehicles, motorcycles, special
+                                    vehicles, or services for private individuals, Int'l Motor is dedicated to meeting
+                                    your specific needs.
                                 </p>
                                 <button class="text-purple-700 font-semibold" data-translate="readMore">
                                     Read More
@@ -204,7 +257,7 @@
                     </div>
                 </div>
             </section>
-            
+
             <section class="testimonials">
                 <section class="py-10">
                     <div class="container flex flex-col items-center mx-auto md:p-10 md:px-12">
@@ -411,6 +464,10 @@
                 reserved.</div>
         </footer>
     </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
     <script src="script.js"></script>
 </body>
