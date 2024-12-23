@@ -202,61 +202,61 @@ const loaderAnimation = () => {
 loaderAnimation()
 
 const searchFunctionality = () => {
+
     const searchForm = document.getElementById("search-form");
     const searchInput = document.getElementById("search-bar");
     const userCardsContainer = document.getElementById("user-cards");
     const userCardTemplate = document.getElementById("user-card-template");
     const showMoreBtn = document.getElementById("show-more-btn");
 
-    let users = [];
-    let displayedUsersCount = 6; // Number of users to display initially
+    let cars = [];
+    let displayedCarsCount = 6; // Number of cars to display initially
 
-    // Fetch users from the API
-    async function fetchUsers() {
+    // Fetch car data from the JSON file
+    async function fetchCars() {
         try {
-            const response = await fetch(
-                "https://jsonplaceholder.typicode.com/users"
-            );
-            const usersData = await response.json();
-            users = usersData;
-            renderUserCards(users.slice(0, displayedUsersCount)); // Display initial set of users
+            const response = await fetch("car_data.json");  // Adjust the path if necessary
+            const carsData = await response.json();
+            cars = carsData;
+            renderCarCards(cars.slice(0, displayedCarsCount)); // Display initial set of cars
         } catch (error) {
-            console.error("Error fetching users:", error);
+            console.error("Error fetching car data:", error);
         }
     }
 
-    // Render the user cards
-    function renderUserCards(usersToDisplay) {
+    // Render the car cards
+    function renderCarCards(carsToDisplay) {
         userCardsContainer.innerHTML = ""; // Clear previous results
-        usersToDisplay.forEach((user) => {
+        carsToDisplay.forEach((car) => {
             const card = userCardTemplate.content.cloneNode(true);
             const header = card.querySelector(".header");
             const body = card.querySelector(".body");
-            header.textContent = user.name;
-            body.textContent = user.email;
+            header.textContent = `${car.make} ${car.model} (${car.year})`;
+            body.textContent = `Price: $${car.price} | Dealer: ${car.dealer.name}, ${car.dealer.country}`;
             userCardsContainer.appendChild(card);
         });
     }
 
     // Handle search functionality
-    searchForm.addEventListener("submit", async (event) => {
+    searchForm.addEventListener("submit", (event) => {
         event.preventDefault(); // Prevent form submission
 
         const searchQuery = searchInput.value.toLowerCase();
-        const filteredUsers = users.filter(
-            (user) =>
-                user.name.toLowerCase().includes(searchQuery) ||
-                user.email.toLowerCase().includes(searchQuery)
+        const filteredCars = cars.filter(
+            (car) =>
+                car.make.toLowerCase().includes(searchQuery) ||
+                car.model.toLowerCase().includes(searchQuery)
         );
-        renderUserCards(filteredUsers.slice(0, displayedUsersCount)); // Display filtered users
+        renderCarCards(filteredCars.slice(0, displayedCarsCount)); // Display filtered cars
     });
 
     // Handle "Show More" button click
     showMoreBtn.addEventListener("click", () => {
-        displayedUsersCount += 2; // Increase the number of displayed users by 6
-        renderUserCards(users.slice(0, displayedUsersCount)); // Render updated list
+        displayedCarsCount += 2; // Increase the number of displayed cars
+        renderCarCards(cars.slice(0, displayedCarsCount)); 
     });
-    // Initial fetch and display of all users
-    fetchUsers();
+
+    fetchCars();
 }
+
 searchFunctionality()

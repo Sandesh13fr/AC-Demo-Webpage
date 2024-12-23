@@ -1,0 +1,101 @@
+[
+    {
+        "id": 1,
+        "make": "Toyota",
+        "model": "Corolla",
+        "year": 2022,
+        "price": 22000,
+        "dealer": {
+            "name": "International Motor",
+            "country": "France"
+        }
+    },
+    {
+        "id": 2,
+        "make": "Ford",
+        "model": "Focus",
+        "year": 2023,
+        "price": 25000,
+        "dealer": {
+            "name": "International Motor",
+            "country": "France"
+        }
+    },
+    {
+        "id": 3,
+        "make": "BMW",
+        "model": "X3",
+        "year": 2021,
+        "price": 42000,
+        "dealer": {
+            "name": "International Motor",
+            "country": "France"
+        }
+    },
+    {
+        "id": 4,
+        "make": "Audi",
+        "model": "Q5",
+        "year": 2022,
+        "price": 55000,
+        "dealer": {
+            "name": "International Motor",
+            "country": "France"
+        }
+    },
+    {
+        "id": 5,
+        "make": "Mercedes-Benz",
+        "model": "C-Class",
+        "year": 2023,
+        "price": 60000,
+        "dealer": {
+            "name": "International Motor",
+            "country": "France"
+        }
+    },
+    {
+        "id": 6,
+        "make": "Tesla",
+        "model": "Model 3",
+        "year": 2024,
+        "price": 70000,
+        "dealer": {
+            "name": "International Motor",
+            "country": "France"
+        }
+    },
+    {
+        "id": 7,
+        "make": "Chevrolet",
+        "model": "Camaro",
+        "year": 2022,
+        "price": 45000,
+        "dealer": {
+            "name": "International Motor",
+            "country": "France"
+        }
+    },
+    {
+        "id": 8,
+        "make": "Honda",
+        "model": "Civic",
+        "year": 2021,
+        "price": 21000,
+        "dealer": {
+            "name": "International Motor",
+            "country": "France"
+        }
+    },
+    {
+        "id": 9,
+        "make": "Nissan",
+        "model": "Altima",
+        "year": 2023,
+        "price": 28000,
+        "dealer": {
+            "name": "International Motor",
+            "country": "France"
+        }
+    }
+]
