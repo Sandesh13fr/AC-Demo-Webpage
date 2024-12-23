@@ -103,21 +103,3 @@ details[open] > summary::after {
         @apply bottom-2; /* Adjust dots position for mobile */
     }
 }
-
-@keyframes blob {
-    50% {
-        transform: translate(10%, -10%) skew(-20deg);
-        width: 50vw;
-        height: 30vw;
-        filter: blur(70px);
-        background: linear-gradient(to top center, #640664, navy);
-    }
-
-    to {
-        transform: translate(10%, -10%) skew(-10deg);
-        width: 40vw;
-        height: 30vw;
-        filter: blur(70px);
-        background: linear-gradient(to top left, #742c74, navy);
-    }
-}

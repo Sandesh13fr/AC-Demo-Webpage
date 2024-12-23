@@ -1,4 +1,6 @@
 import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+gsap.registerPlugin(ScrollTrigger);
 import "swiper/css";
 import Swiper from 'swiper';
 
@@ -201,6 +203,20 @@ const loaderAnimation = () => {
             duration: 0.5,
             ease: "power4.out",
             opacity: 0,
+        })
+        let tl2 = gsap.timeline({
+            scrollTrigger:{
+                trigger:".page2",
+                scroller:"body",
+                markers:true,
+                start:"top 60%",
+                end:"top 30%",
+                scrub:2,
+            }
+        })
+        tl2.from(".page2",{
+            opacity: 0,
+
         })
         
     })
