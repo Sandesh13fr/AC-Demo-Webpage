@@ -6,11 +6,12 @@ const smoothScrolling = () => {
         requestAnimationFrame(raf);
     }
     requestAnimationFrame(raf);
-    let searchIcon = document.querySelector("#searchButton")
-    let target = document.querySelector(".searchbar-functionality")
+    let searchIcon = document.querySelector(".searchButton")
+    let target = document.querySelector("#searchvehicles")
     searchIcon.addEventListener("click", () => {
         lenis.scrollTo(target)
     })
+    
 }
 
 smoothScrolling()
