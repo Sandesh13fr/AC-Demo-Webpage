@@ -44,6 +44,17 @@
     <link rel="preload" href="styles.css" as="style">
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> -->
     <title>INT'l MOTOR</title>
+    <script>
+        // Ensure this script is loaded before the buttons are clicked
+        function scrollToSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            if (section) {
+                section.scrollIntoView({ behavior: 'smooth' });
+            } else {
+                console.error(`Section with ID '${sectionId}' not found.`);
+            }
+        }
+    </script>
 </head>
 
 <body>
@@ -181,11 +192,11 @@
                                     integrity and
                                     excellence.</p>
                                 <div class="flex items-center gap-5 max-sm:flex-col max-sm:gap-1"><button
-                                        data-translate="buttonText" href="#Services"
+                                        data-translate="buttonText" onclick="scrollToSection('services')"
                                         class="py-2 px-4 border-2 rounded-lg max-sm:text-sm max-sm:px-3">Discover our
                                         brokerage
                                         solutions</button>
-                                    <button data-translate="buttonText2" href="#searchvehicles"
+                                    <button data-translate="buttonText2" onclick="scrollToSection('searchvehicles')"
                                         class="searchButton py-2 px-4 border-2 rounded-lg max-sm:text-sm max-sm:px-3">Find vehical of
                                         your
                                         dreams</button>
@@ -213,11 +224,11 @@
                                     integrity and
                                     excellence.</p>
                                 <div class="flex items-center gap-5 max-sm:flex-col max-sm:gap-1"><button
-                                        data-translate="buttonText" href="#Services"
+                                        data-translate="buttonText" onclick="scrollToSection('services')"
                                         class="py-2 px-4 border-2 rounded-lg max-sm:text-sm max-sm:px-3">Discover our
                                         brokerage
                                         solutions</button>
-                                    <button data-translate="buttonText2" href="#searchvehicles"
+                                    <button data-translate="buttonText2" onclick="scrollToSection('searchvehicles')"
                                         class="py-2 px-4 border-2 rounded-lg max-sm:text-sm max-sm:px-3">Find vehical of
                                         your
                                         dreams</button>
@@ -246,12 +257,12 @@
                                     integrity and
                                     excellence.</p>
                                 <div class="flex items-center gap-5 max-sm:flex-col max-sm:gap-1"><button
-                                        data-translate="buttonText" href="#Services"
+                                        data-translate="buttonText" onclick="scrollToSection('services')"
                                         class="py-2 px-4 border-2 rounded-lg max-sm:text-sm max-sm:px-3">Discover
                                         our
                                         brokerage
                                         solutions</button>
-                                    <button data-translate="buttonText2" href="#searchvehicles"
+                                    <button data-translate="buttonText2" onclick="scrollToSection('searchvehicles')"
                                         class="py-2 px-4 border-2 rounded-lg max-sm:text-sm max-sm:px-3">Find
                                         vehical of
                                         your
@@ -362,7 +373,7 @@
                     </div>
                 </div>
             </section>
-            <section id="Services">
+            <section id="services">
                 <div class="py-8 px-4 max-w-screen sm:py-16 lg:px-6 flex items-center justify-center flex-col">
                     <div
                         class="max-w-screen-md mb-8 lg:mb-16 text-center flex items-center justify-center flex-col px-5">
