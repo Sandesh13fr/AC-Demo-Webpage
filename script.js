@@ -209,14 +209,30 @@ const loaderAnimation = () => {
                 trigger:".page2",
                 scroller:"body",
                 markers:true,
-                start:"top 60%",
-                end:"top 30%",
+                start:"top 70%",
+                end:"top 40%",
                 scrub:2,
             }
         })
         tl2.from(".page2",{
-            opacity: 0,
-
+            opacity:0,
+            y:50,
+            duration: 0.5,
+            ease: "power4.out"
+        })
+        tl2.from(".para",{
+            opacity:0,
+            y:20,
+            duration: 0.5,
+            ease: "power4.out",
+            stagger:0.2
+        })
+        tl2.from(".imgContainer div",{
+            opacity:0,
+            y:20,
+            duration: 0.5,
+            ease: "power4.out",
+            stagger:0.4
         })
         
     })
