@@ -243,7 +243,7 @@ const loaderAnimation = () => {
             ease: "power4.out",
             stagger:0.4
         })
-        
+        // var tl3 =gsap.timeline({})
     })
     const numberElement = document.querySelector('.counter .number');
     const targetCount = 100;
