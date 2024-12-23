@@ -8,6 +8,8 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 import "swiper/css";
 import Swiper from 'swiper';
+import { Autoplay } from 'swiper/modules';
+
 
 /**
  * Handles the hamburger menu animation using GSAP
@@ -196,6 +198,7 @@ document.addEventListener("DOMContentLoaded", () => {
  */
 const swiperContainer = () => {
     const swiper = new Swiper('.swiper', {
+        modules: [Autoplay],
         loop: true,
         autoplay: {
             delay: 6100,
