@@ -271,5 +271,4 @@ const searchFunctionality = () => {
     fetchCars();
 
 }
-
 searchFunctionality()
