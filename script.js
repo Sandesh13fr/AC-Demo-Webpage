@@ -173,7 +173,6 @@ document.addEventListener("DOMContentLoaded", () => {
             footerSocialDescription: "Bacon ipsum dolor amet short ribs pig sausage prosciutto chicken spare ribs salami.",
             footerCopyright: "© 2020 Lorem Inc. Tous droits réservés.",
             footerEmail: "email@mail.com",
-
         }
     };
 
