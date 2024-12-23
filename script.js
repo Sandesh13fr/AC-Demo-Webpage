@@ -86,7 +86,8 @@ document.addEventListener("DOMContentLoaded", () => {
             card_5_title: "Special Offers",
             card_5_description: "Avail exciting discounts and exclusive deals on our car services.",
             card_6_title: "Customer Support",
-            card_6_description: "Experience top-notch support for all your dealership and service-related queries."
+            card_6_description: "Experience top-notch support for all your dealership and service-related queries.",
+            find_what_drives_you: "Find what drives you..?"
 
         },
         fr: {
@@ -124,8 +125,8 @@ document.addEventListener("DOMContentLoaded", () => {
             card_5_title: "Ofertas Especiales",
             card_5_description: "Aprovecha descuentos emocionantes y ofertas exclusivas en nuestros servicios de autos.",
             card_6_title: "Atención al Cliente",
-            card_6_description: "Disfruta de soporte de primer nivel para todas tus consultas relacionadas con concesionarios y servicios."
-
+            card_6_description: "Disfruta de soporte de primer nivel para todas tus consultas relacionadas con concesionarios y servicios.",
+            find_what_drives_you: "Trouvez ce qui vous motive..?"
         }
     };
 
