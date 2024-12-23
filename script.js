@@ -281,7 +281,7 @@ const loaderAnimation = () => {
             scrollTrigger:{
                 trigger:".page5",
                 scroller:"body",
-                markers:true,
+                markers:false,
                 start:"top 60%",
                 end:"top 40%",
                 scrub:2,
