@@ -247,8 +247,8 @@ const loaderAnimation = () => {
             scrollTrigger:{
                 trigger:".page3",
                 scroller:"body",
-                markers:true,
-                start:"top 70%",
+                markers:false,
+                start:"top 60%",
                 end:"top 40%",
                 scrub:2,
             }
@@ -257,6 +257,40 @@ const loaderAnimation = () => {
             opacity:0,
             y:50,
             duration: 0.5,
+            ease: "power4.out",
+            stagger: 0.4
+        })
+        var tl4 =gsap.timeline({
+            scrollTrigger:{
+                trigger:".page4",
+                scroller:"body",
+                markers:false,
+                start:"top 60%",
+                end:"top 30%",
+                scrub:2,
+            }
+        })
+        tl4.from(".page4,#user-cards,#show-more-btn",{
+            opacity:0,
+            y:50,
+            duration: 0.5,
+            ease: "power4.out",
+            stagger: 0.4
+        })
+        var tl5 =gsap.timeline({
+            scrollTrigger:{
+                trigger:".page5",
+                scroller:"body",
+                markers:true,
+                start:"top 60%",
+                end:"top 40%",
+                scrub:2,
+            }
+        })
+        tl5.from(".h1,.testimoinal-card>div",{
+            opacity:0,
+            y:50,
+            duration: 1,
             ease: "power4.out",
             stagger: 0.4
         })
