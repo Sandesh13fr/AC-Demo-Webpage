@@ -201,7 +201,7 @@ const swiperContainer = () => {
         modules: [Autoplay],
         loop: true,
         autoplay: {
-            delay: 6100,
+            delay: 3100,
             disableOnInteraction: false,
         },
     });
