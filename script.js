@@ -2,34 +2,39 @@ import gsap from 'gsap';
 import "swiper/css";
 import Swiper from 'swiper';
 
+// Function to handle hamburger menu animation
 const hamBargurAnimation = () => {
-    var close = document.querySelector("#full i")
-    var menu = document.querySelector(".language-opts i")
+    var close = document.querySelector("#full i");
+    var menu = document.querySelector(".language-opts i");
 
-    var tl = gsap.timeline()
+    var tl = gsap.timeline();
     tl.to("#full", {
         transform: 'translateX(0%)',
         duration: 1,
         opacity: 1
-    }, "start")
+    }, "start");
 
     tl.from("#full i", {
         scale: 0,
         opacity: 0,
         duration: 0.3
-    }, "start")
+    }, "start");
 
-    tl.pause()
+    tl.pause();
 
+    // Event listener to open menu
     menu.addEventListener('click', function () {
-        tl.play()
-    })
-    close.addEventListener("click", function () {
-        tl.reverse()
-    })
-}
+        tl.play();
+    });
 
-hamBargurAnimation()
+    // Event listener to close menu
+    close.addEventListener("click", function () {
+        tl.reverse();
+    });
+};
+
+// Initialize hamburger menu animation
+hamBargurAnimation();
 
 document.addEventListener("DOMContentLoaded", () => {
     const engBtn = document.getElementById("eng");
@@ -135,7 +140,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     };
 
-    // Function to update text
+    // Function to update text based on selected language
     const updateLanguage = (lang) => {
         document.querySelectorAll("[data-translate]").forEach((el) => {
             const key = el.getAttribute("data-translate");
@@ -145,11 +150,12 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     };
 
-    // Event listeners for buttons
+    // Event listeners for language buttons
     engBtn.addEventListener("click", () => updateLanguage("en"));
     freBtn.addEventListener("click", () => updateLanguage("fr"));
 });
 
+// Function to initialize Swiper
 const swiperContainer = () => {
     const swiper = new Swiper('.swiper', {
         loop: true,
@@ -158,22 +164,25 @@ const swiperContainer = () => {
             disableOnInteraction: false,
         },
     });
-}
-swiperContainer()
+};
 
+// Initialize Swiper
+swiperContainer();
+
+// Function to handle loader animation
 const loaderAnimation = () => {
     window.addEventListener("load", () => {
-        let tl = gsap.timeline()
+        let tl = gsap.timeline();
         tl.to("#loader img", {
             opacity: 1,
             duration: 1,
             ease: "power4.in"
-        }, "start")
+        }, "start");
         tl.to("#loader img", {
             opacity: 0,
             duration: 1,
             ease: "power4.in"
-        }, "start+=1")
+        }, "start+=1");
         tl.to(".counter span", {
             color: "white",
             opacity: 0,
@@ -189,21 +198,22 @@ const loaderAnimation = () => {
                 display: "none",
                 duration: 1,
                 ease: "power4.in"
-            }, "start+=2")
-        tl.from("header",{
-            y:-100,
+            }, "start+=2");
+        tl.from("header", {
+            y: -100,
             opacity: 0,
             duration: 0.5,
             ease: "power4.out"
         })
-        .from(".page1",{
-            y:100,
-            duration: 0.5,
-            ease: "power4.out",
-            opacity: 0,
-        })
-        
-    })
+            .from(".page1", {
+                y: 100,
+                duration: 0.5,
+                ease: "power4.out",
+                opacity: 0,
+            });
+    });
+
+    // Function to update counter
     const numberElement = document.querySelector('.counter .number');
     const targetCount = 100;
     function updateCounter() {
@@ -218,11 +228,13 @@ const loaderAnimation = () => {
         }, 200);
     }
     updateCounter();
-}
-loaderAnimation()
+};
 
+// Initialize loader animation
+loaderAnimation();
+
+// Function to handle search functionality
 const searchFunctionality = () => {
-
     const searchForm = document.getElementById("search-form");
     const searchInput = document.getElementById("search-bar");
     const userCardsContainer = document.getElementById("user-cards");
@@ -281,8 +293,9 @@ const searchFunctionality = () => {
         renderCarCards(cars.slice(0, displayedCarsCount));
     });
 
+    // Fetch initial car data
     fetchCars();
+};
 
-}
-searchFunctionality()
-
+// Initialize search functionality
+searchFunctionality();
