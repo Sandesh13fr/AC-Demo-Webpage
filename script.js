@@ -72,20 +72,20 @@ document.addEventListener("DOMContentLoaded", () => {
             socialJustice: "SOCIAL JUSTICE",
             socialJusticeText: "With its extensive resources, the company is committed to delivering the best acquisition services in the market. Whether you need new or used vehicles, construction or agricultural machinery, utility vehicles, motorcycles, special vehicles, or services for private individuals, Int'l Motor is dedicated to meeting your specific needs.",
             readMore: "Read More",
-            "services-title": "Services We Offer",
-            "services-description": "Offering top-quality products, expert guidance, and reliable after-sales support, we ensure a seamless and satisfying dealership experience.",
-            "service-card-1-title": "Car Dealership",
-            "service-card-1-description": "Find the perfect vehicle for your needs with our wide selection of new and used cars.",
-            "service-card-2-title": "Legal",
-            "service-card-2-description": "Protect your organization, devices, and stay compliant with our structured workflows and custom permissions.",
-            "service-card-3-title": "Business Automation",
-            "service-card-3-description": "Auto-assign tasks, send Slack messages, and much more with hundreds of new templates to help you get started.",
-            "service-card-4-title": "Car Maintenance",
-            "service-card-4-description": "Keep your car in perfect condition with our comprehensive maintenance services.",
-            "service-card-5-title": "Special Offers",
-            "service-card-5-description": "Avail exciting discounts and exclusive deals on our car services.",
-            "service-card-6-title": "Customer Support",
-            "service-card-6-description": "Experience top-notch support for all your dealership and service-related queries."
+            title: "Services We Offer",
+            description: "Offering top-quality products, expert guidance, and reliable after-sales support, we ensure a seamless and satisfying dealership experience.",
+            card_1_title: "Car Dealership",
+            card_1_description: "Find the perfect vehicle for your needs with our wide selection of new and used cars.",
+            card_2_title: "Legal",
+            card_2_description: "Protect your organization, devices, and stay compliant with our structured workflows and custom permissions.",
+            card_3_title: "Business Automation",
+            card_3_description: "Auto-assign tasks, send Slack messages, and much more with hundreds of new templates to help you get started.",
+            card_4_title: "Car Maintenance",
+            card_4_description: "Keep your car in perfect condition with our comprehensive maintenance services.",
+            card_5_title: "Special Offers",
+            card_5_description: "Avail exciting discounts and exclusive deals on our car services.",
+            card_6_title: "Customer Support",
+            card_6_description: "Experience top-notch support for all your dealership and service-related queries."
 
         },
         fr: {
@@ -109,7 +109,22 @@ document.addEventListener("DOMContentLoaded", () => {
             customerRequirementsText: "Notre entreprise établit fermement son récit à travers des solutions de courtage inégalées et des projets exclusifs pour les clients, animée par un engagement envers l'intégrité et l'excellence.",
             socialJustice: "JUSTICE SOCIALE",
             socialJusticeText: "Grâce à ses ressources considérables, l'entreprise s'engage à fournir les meilleurs services d'acquisition sur le marché. Que vous ayez besoin de véhicules neufs ou d'occasion, de machines de construction ou agricoles, de véhicules utilitaires, de motos, de véhicules spéciaux ou de services pour les particuliers, Int'l Motor est dédié à répondre à vos besoins spécifiques.",
-            readMore: "En savoir plus"
+            readMore: "En savoir plus",
+            title: "Servicios que ofrecemos",
+            description: "Ofrecemos productos de alta calidad, asesoramiento experto y soporte postventa confiable para garantizar una experiencia satisfactoria.",
+            card_1_title: "Concesionario de Autos",
+            card_1_description: "Encuentra el vehículo perfecto para tus necesidades con nuestra amplia selección de autos nuevos y usados.",
+            card_2_title: "Legal",
+            card_2_description: "Protege tu organización, dispositivos y mantente conforme con nuestros flujos de trabajo estructurados y permisos personalizados.",
+            card_3_title: "Automatización Empresarial",
+            card_3_description: "Asigna tareas automáticamente, envía mensajes de Slack y mucho más con cientos de nuevas plantillas para comenzar.",
+            card_4_title: "Mantenimiento de Autos",
+            card_4_description: "Mantén tu automóvil en perfecto estado con nuestros servicios de mantenimiento integrales.",
+            card_5_title: "Ofertas Especiales",
+            card_5_description: "Aprovecha descuentos emocionantes y ofertas exclusivas en nuestros servicios de autos.",
+            card_6_title: "Atención al Cliente",
+            card_6_description: "Disfruta de soporte de primer nivel para todas tus consultas relacionadas con concesionarios y servicios."
+
         }
     };
 

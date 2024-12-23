@@ -117,35 +117,45 @@
             </div>
         </header>
         <!-- Header -->
-        <div id="full" class="max-md:w-5/6 z-20 fixed h-full top-0 right-0 w-3/12 bg-[#17151a] translate-x-full">
-            <i class="ri-close-line magnet-target text-3xl absolute top-5 right-5 cursor-pointer mb-5"></i>
-            <div class="max-w-md mx-auto bg-purple p-4 rounded shadow mt-8">
-                <details class="mb-8 ">
-                    <summary class="cursor-pointer text-xl font-semibold text-purple-600">My Company</summary>
-                    <div class="mt-2 ml-4">
-                        <a href="#" class="block text-blue-500 hover:underline">Link 1</a>
-                        <a href="#" class="block text-blue-500 hover:underline">Link 2</a>
-                        <a href="#" class="block text-blue-500 hover:underline">Link 3</a>
+        <div id="full" class="z-20 fixed top-0 right-0 h-full w-3/12 max-md:w-5/6 bg-[#17151a] translate-x-full shadow-lg">
+            <i class="ri-close-line text-3xl absolute top-5 right-5 cursor-pointer text-gray-400 hover:text-white"></i>
+            <div class="max-w-md mx-auto p-6 rounded shadow mt-8">
+                <!-- Dropdown 1 -->
+                <details class="mb-6">
+                    <summary class="cursor-pointer text-lg font-semibold text-gray-200 hover:text-purple-500 flex items-center">
+                        My Company
+                    </summary>
+                    <div class="mt-3 ml-4 pl-2 border-l border-purple-500 space-y-2">
+                        <a href="#" class="block text-gray-400 hover:text-blue-500 transition duration-200">Link 1</a>
+                        <a href="#" class="block text-gray-400 hover:text-blue-500 transition duration-200">Link 2</a>
+                        <a href="#" class="block text-gray-400 hover:text-blue-500 transition duration-200">Link 3</a>
                     </div>
                 </details>
-                <details class="mb-8">
-                    <summary class="cursor-pointer text-xl font-semibold text-purple-600">Dropdown 2</summary>
-                    <div class="mt-2 ml-4">
-                        <a href="#" class="block text-blue-500 hover:underline">Link 1</a>
-                        <a href="#" class="block text-blue-500 hover:underline">Link 2</a>
-                        <a href="#" class="block text-blue-500 hover:underline">Link 3</a>
+                <!-- Dropdown 2 -->
+                <details class="mb-6">
+                    <summary class="cursor-pointer text-lg font-semibold text-gray-200 hover:text-purple-500 flex items-center">
+                        Dropdown 2
+                    </summary>
+                    <div class="mt-3 ml-4 pl-2 border-l border-purple-500 space-y-2">
+                        <a href="#" class="block text-gray-400 hover:text-blue-500 transition duration-200">Link 1</a>
+                        <a href="#" class="block text-gray-400 hover:text-blue-500 transition duration-200">Link 2</a>
+                        <a href="#" class="block text-gray-400 hover:text-blue-500 transition duration-200">Link 3</a>
                     </div>
                 </details>
-                <details class="mb-8">
-                    <summary class="cursor-pointer text-xl font-semibold text-purple-600">Dropdown 3</summary>
-                    <div class="mt-2 ml-4">
-                        <a href="#" class="block text-blue-500 hover:underline">Link 1</a>
-                        <a href="#" class="block text-blue-500 hover:underline">Link 2</a>
-                        <a href="#" class="block text-blue-500 hover:underline">Link 3</a>
+                <!-- Dropdown 3 -->
+                <details class="mb-6">
+                    <summary class="cursor-pointer text-lg font-semibold text-gray-200 hover:text-purple-500 flex items-center">
+                        Dropdown 3
+                    </summary>
+                    <div class="mt-3 ml-4 pl-2 border-l border-purple-500 space-y-2">
+                        <a href="#" class="block text-gray-400 hover:text-blue-500 transition duration-200">Link 1</a>
+                        <a href="#" class="block text-gray-400 hover:text-blue-500 transition duration-200">Link 2</a>
+                        <a href="#" class="block text-gray-400 hover:text-blue-500 transition duration-200">Link 3</a>
                     </div>
                 </details>
             </div>
         </div>
+        
         <main class="bg-[#0C0712]">
             <section id="home" class="relative h-screen w-full">
                 <div class="swiper h-full w-full">
@@ -356,10 +366,11 @@
                 <div class="py-8 px-4 max-w-screen sm:py-16 lg:px-6 flex items-center justify-center flex-col">
                     <div
                         class="max-w-screen-md mb-8 lg:mb-16 text-center flex items-center justify-center flex-col px-5">
-                        <h1 class="mb-4 text-4xl font-extrabold tracking-tight text-gray-100 font-[font1]">
+                        <h1 class="mb-4 text-4xl font-extrabold tracking-tight text-gray-100 font-[font1]"
+                            data-translate="title">
                             Services We Offer
                         </h1>
-                        <p class="text-gray-500 sm:text-xl font-[font3] font-semibold">
+                        <p class="text-gray-500 sm:text-xl font-[font3] font-semibold" data-translate="description">
                             Offering top-quality products, expert guidance, and reliable after-sales support, we ensure
                             a seamless and satisfying dealership experience.
                         </p>
@@ -372,20 +383,21 @@
                                 class="flex justify-center items-center w-12 h-12 rounded-full bg-primary-100 dark:bg-primary-900">
                                 <i class="ri-car-line text-primary-600 text-2xl"></i>
                             </div>
-                            <h3 class="mb-2 font-[font1] text-xl font-bold text-white">Car Dealership</h3>
-                            <p class="text-gray-500 font-[font3] font-semibold">
+                            <h3 class="mb-2 font-[font1] text-xl font-bold text-white" data-translate="card_1_title">Car
+                                Dealership</h3>
+                            <p class="text-gray-500 font-[font3] font-semibold" data-translate="card_1_description">
                                 Find the perfect vehicle for your needs with our wide selection of new and used cars.
                             </p>
                         </div>
                         <!-- Card 2 -->
                         <div
                             class="text-center pb-4 bg-custom-purple shadow-custom backdrop-blur-custom border-custom-white border rounded-custom">
-                            <div
-                                class="flex justify-center items-center w-12 h-12 rounded-full bg-primary-100 bg-primary-900">
+                            <div class="flex justify-center items-center w-12 h-12 rounded-full bg-primary-100 bg-primary-900">
                                 <i class="ri-shield-check-line text-primary-600 text-2xl"></i>
                             </div>
-                            <h3 class="mb-2 font-[font1] text-xl font-bold text-white">Legal</h3>
-                            <p class="text-gray-500 font-[font3] font-semibold">
+                            <h3 class="mb-2 font-[font1] text-xl font-bold text-white" data-translate="card_2_title">
+                                Legal</h3>
+                            <p class="text-gray-500 font-[font3] font-semibold" data-translate="card_2_description">
                                 Protect your organization, devices, and stay compliant with our structured workflows and
                                 custom permissions.
                             </p>
@@ -393,12 +405,12 @@
                         <!-- Card 3 -->
                         <div
                             class="text-center pb-4 bg-custom-purple shadow-custom backdrop-blur-custom border-custom-white border rounded-custom">
-                            <div
-                                class="flex justify-center items-center w-12 h-12 rounded-full bg-primary-100 bg-primary-900">
+                            <div class="flex justify-center items-center w-12 h-12 rounded-full bg-primary-100 bg-primary-900">
                                 <i class="ri-settings-line text-primary-600 text-2xl"></i>
                             </div>
-                            <h3 class="mb-2 font-[font1] text-xl font-bold text-white">Business Automation</h3>
-                            <p class="text-gray-500 font-[font3] font-semibold">
+                            <h3 class="mb-2 font-[font1] text-xl font-bold text-white" data-translate="card_3_title">
+                                Business Automation</h3>
+                            <p class="text-gray-500 font-[font3] font-semibold" data-translate="card_3_description">
                                 Auto-assign tasks, send Slack messages, and much more with hundreds of new templates to
                                 help you get started.
                             </p>
@@ -406,36 +418,36 @@
                         <!-- Card 4 -->
                         <div
                             class="text-center pb-4 bg-custom-purple shadow-custom backdrop-blur-custom border-custom-white border rounded-custom">
-                            <div
-                                class="flex justify-center items-center w-12 h-12 rounded-full bg-primary-100 bg-primary-900">
+                            <div class="flex justify-center items-center w-12 h-12 rounded-full bg-primary-100 bg-primary-900">
                                 <i class="ri-car-washing-line text-primary-600 text-2xl"></i>
                             </div>
-                            <h3 class="mb-2 font-[font1] text-xl font-bold text-white">Car Maintenance</h3>
-                            <p class="text-gray-500 font-[font3] font-semibold">
+                            <h3 class="mb-2 font-[font1] text-xl font-bold text-white" data-translate="card_4_title">Car
+                                Maintenance</h3>
+                            <p class="text-gray-500 font-[font3] font-semibold" data-translate="card_4_description">
                                 Keep your car in perfect condition with our comprehensive maintenance services.
                             </p>
                         </div>
                         <!-- Card 5 -->
                         <div
                             class="text-center pb-4 bg-custom-purple shadow-custom backdrop-blur-custom border-custom-white border rounded-custom">
-                            <div
-                                class="flex justify-center items-center w-12 h-12 rounded-full bg-primary-100 bg-primary-900">
+                            <div class="flex justify-center items-center w-12 h-12 rounded-full bg-primary-100 bg-primary-900">
                                 <i class="ri-price-tag-3-line text-primary-600 text-2xl"></i>
                             </div>
-                            <h3 class="mb-2 font-[font1] text-xl font-bold text-white">Special Offers</h3>
-                            <p class="text-gray-500 font-[font3] font-semibold">
+                            <h3 class="mb-2 font-[font1] text-xl font-bold text-white" data-translate="card_5_title">
+                                Special Offers</h3>
+                            <p class="text-gray-500 font-[font3] font-semibold" data-translate="card_5_description">
                                 Avail exciting discounts and exclusive deals on our car services.
                             </p>
                         </div>
                         <!-- Card 6 -->
                         <div
                             class="text-center pb-4 bg-custom-purple shadow-custom backdrop-blur-custom border-custom-white border rounded-custom">
-                            <div
-                                class="flex justify-center items-center w-12 h-12 rounded-full bg-primary-100 bg-primary-900">
+                            <div class="flex justify-center items-center w-12 h-12 rounded-full bg-primary-100 bg-primary-900">
                                 <i class="ri-user-star-line text-primary-600 text-2xl"></i>
                             </div>
-                            <h3 class="mb-2 font-[font1] text-xl font-bold text-white">Customer Support</h3>
-                            <p class="text-gray-500 font-[font3] font-semibold">
+                            <h3 class="mb-2 font-[font1] text-xl font-bold text-white" data-translate="card_6_title">
+                                Customer Support</h3>
+                            <p class="text-gray-500 font-[font3] font-semibold" data-translate="card_6_description">
                                 Experience top-notch support for all your dealership and service-related queries.
                             </p>
                         </div>
@@ -445,80 +457,58 @@
             <section class="search-functionality" id="searchvehicles">
                 <div class="mx-auto max-w-7xl sm:px-6 lg:px-8">
                     <div
-                      class="relative isolate overflow-hidden bg-transparent px-6 py-20 text-center sm:px-16 sm:shadow-sm"
-                    >
-                      <p
-                        class="mx-auto max-w-2xl text-3xl font-bold tracking-tight text-whitesmoke-900 sm:text-4xl"
-                      >
-                        Find what drives you..?
-                      </p>
-              
-                      <!-- Search Form -->
-                      <form id="search-form" class="mt-8">
-                        <label
-                          class="mx-auto relative bg-white min-w-sm max-w-2xl flex flex-col md:flex-row items-center justify-center border py-2 px-2 rounded-2xl gap-2 shadow-2xl focus-within:border-gray-300"
-                          for="search-bar"
-                        >
-                          <input
-                            id="search-bar"
-                            placeholder="Search for a user"
-                            class="px-6 py-2 w-full rounded-md flex-1 outline-none bg-white text-purple-700"
-                            required
-                          />
-                          <button
-                            type="submit"
-                            class="w-full md:w-auto px-6 py-3 bg-black border-black text-white fill-white active:scale-95 duration-100 border will-change-transform overflow-hidden relative rounded-xl transition-all"
-                          >
-                            <span class="text-sm font-semibold">Search</span>
-                          </button>
-                        </label>
-                      </form>
-              
-                      <!-- Background SVG -->
-                      <svg
-                        viewBox="0 0 1024 1024"
-                        class="absolute left-1/2 top-1/2 -z-10 h-[64rem] w-[64rem] -translate-x-1/2 [mask-image:radial-gradient(closest-side,white,transparent)]"
-                        aria-hidden="true"
-                      >
-                        <circle
-                          cx="512"
-                          cy="512"
-                          r="512"
-                          fill="url(#gradient)"
-                          fill-opacity="0.7"
-                        ></circle>
-                        <defs>
-                          <radialGradient id="gradient">
-                            <stop stop-color="#3b82f6"></stop>
-                            <stop offset="1" stop-color="#1d4ed8"></stop>
-                          </radialGradient>
-                        </defs>
-                      </svg>
+                        class="relative isolate overflow-hidden bg-transparent px-6 py-20 text-center sm:px-16 sm:shadow-sm">
+                        <p class="mx-auto max-w-2xl text-3xl font-bold tracking-tight text-whitesmoke-900 sm:text-4xl">
+                            Find what drives you..?
+                        </p>
+
+                        <!-- Search Form -->
+                        <form id="search-form" class="mt-8">
+                            <label
+                                class="mx-auto relative bg-white min-w-sm max-w-2xl flex flex-col md:flex-row items-center justify-center border py-2 px-2 rounded-2xl gap-2 shadow-2xl focus-within:border-gray-300"
+                                for="search-bar">
+                                <input id="search-bar" placeholder="Search for a user"
+                                    class="px-6 py-2 w-full rounded-md flex-1 outline-none bg-white text-purple-700"
+                                    required />
+                                <button type="submit"
+                                    class="w-full md:w-auto px-6 py-3 bg-black border-black text-white fill-white active:scale-95 duration-100 border will-change-transform overflow-hidden relative rounded-xl transition-all">
+                                    <span class="text-sm font-semibold">Search</span>
+                                </button>
+                            </label>
+                        </form>
+
+                        <!-- Background SVG -->
+                        <svg viewBox="0 0 1024 1024"
+                            class="absolute left-1/2 top-1/2 -z-10 h-[64rem] w-[64rem] -translate-x-1/2 [mask-image:radial-gradient(closest-side,white,transparent)]"
+                            aria-hidden="true">
+                            <circle cx="512" cy="512" r="512" fill="url(#gradient)" fill-opacity="0.7"></circle>
+                            <defs>
+                                <radialGradient id="gradient">
+                                    <stop stop-color="#3b82f6"></stop>
+                                    <stop offset="1" stop-color="#1d4ed8"></stop>
+                                </radialGradient>
+                            </defs>
+                        </svg>
                     </div>
-                  </div>
-              
-                  <!-- User Cards Section -->
-                  <div
-                    id="user-cards"
-                    class="user-cards mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-4 sm:px-6 lg:px-8"
-                  ></div>
-              
-                  <template id="user-card-template">
+                </div>
+
+                <!-- User Cards Section -->
+                <div id="user-cards"
+                    class="user-cards mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-4 sm:px-6 lg:px-8">
+                </div>
+
+                <template id="user-card-template">
                     <div
-                      class="card bg-white shadow-md rounded-lg p-6 border border-gray-200 hover:shadow-lg transition-shadow duration-200"
-                    >
-                      <div class="header text-lg font-semibold text-gray-900"></div>
-                      <div class="body mt-2 text-sm text-gray-700"></div>
+                        class="card bg-white shadow-md rounded-lg p-6 border border-gray-200 hover:shadow-lg transition-shadow duration-200">
+                        <div class="header text-lg font-semibold text-gray-900"></div>
+                        <div class="body mt-2 text-sm text-gray-700"></div>
                     </div>
-                  </template>
-              
-                  <!-- "Show More" Button -->
-                  <div class="mt-8 text-center">
-                    <button
-                      id="show-more-btn"
-                      class="px-6 py-3 bg-purple-900 text-white rounded-xl"
-                    >
-                      Show More
+                </template>
+
+                <!-- "Show More" Button -->
+                <div class="mt-8 text-center">
+                    <button id="show-more-btn" class="px-6 py-3 bg-purple-900 text-white rounded-xl">
+                        Show More
                     </button>
             </section>
             <section class="Testimonials">
@@ -526,8 +516,11 @@
                     <div class="w-full px-5 py-16 md:py-24 text-gray-300">
                         <div class="w-full max-w-6xl mx-auto">
                             <div class="text-center max-w-xl mx-auto">
-                                <h1 class="text-6xl md:text-7xl font-bold mb-5 text-gray-600 font-[font1] leading-6xl tracking-tighter capitalize">what people say about as</h1>
-                                <h3 class="text-xl mb-5 font-semibold font-[font3]">Lorem ipsum dolor sit amet consectetur adipisicing
+                                <h1
+                                    class="text-6xl md:text-7xl font-bold mb-5 text-gray-600 font-[font1] leading-6xl tracking-tighter capitalize">
+                                    what people say about as</h1>
+                                <h3 class="text-xl mb-5 font-semibold font-[font3]">Lorem ipsum dolor sit amet
+                                    consectetur adipisicing
                                     elit.</h3>
                             </div>
                             <div class="-mx-3 md:flex items-start">
@@ -728,140 +721,153 @@
             </section>
             <section class="pb-28">
                 <div class="grid max-w-6xl grid-cols-1 px-6 mx-auto lg:px-8 md:grid-cols-2 md:divide-x">
-                  <div class="py-6 md:py-0 md:px-6">
-                    <h1 class="text-4xl font-semibold font-[font1]">Get in touch</h1>
-                    <p class="pt-2 pb-4 font-[font3]">Fill in the form to start a conversation</p>
-                    <div class="space-y-3 font-[font3]">
-                      <p class="flex items-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 mr-2 sm:mr-6">
-                          <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path>
-                        </svg>
-                        <span>your Address</span>
-                      </p>
-                      <p class="flex items-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 mr-2 sm:mr-6">
-                            <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
-                        </svg>
-                        <span>123456789</span>
-                    </p>
-                      <p class="flex items-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 mr-2 sm:mr-6">
-                          <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
-                          <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
-                        </svg>
-                        <span> intlmotor.dircom@outlook.com </span>
-                      </p>
-                    </div>
-                  </div>
-              
-                  <!-- Form -->
-                  <form action="mailto:intlmotor.dircom@outlook.com " method="post" enctype="text/plain" class="font-[font3] flex flex-col py-6 space-y-6 md:py-0 md:px-6 text-black">
-                    <label class="block">
-                      <span class="mb-1 text-white">Full name</span>
-                      <input type="text" name="FullName" placeholder="Leroy Jenkins" class="block w-full rounded-md shadow-sm focus:ring focus:ring-opacity-75 focus:dark:ring-violet-600 px-2 py-2" required>
-                    </label>
-                    <label class="block">
-                      <span class="mb-1 text-white">Email address</span>
-                      <input type="email" name="Email" placeholder="leroy@jenkins.com" class="block w-full rounded-md shadow-sm focus:ring focus:ring-opacity-75 focus:dark:ring-violet-600 px-2 py-2" required>
-                    </label>
-                    <label class="block">
-                      <span class="mb-1 text-white">Message</span>
-                      <textarea rows="3" name="Message" class="block w-full rounded-md focus:ring focus:ring-opacity-75 focus:dark:ring-violet-600 dark:bg-gray-100 px-2 py-2" required></textarea>
-                    </label>
-                    <button type="submit" class="self-center px-8 py-3 text-lg rounded focus:ring hover:ring focus:ring-opacity-75 dark:bg-violet-600 dark:text-gray-50 focus:dark:ring-violet-600 hover:dark:ring-violet-600">Submit</button>
-                  </form>
-                </div>
-              </section>
-              
-        </main>
-        <footer class="px-4 bg-[#0C0712] text-gray-100 border-t-2 border-zinc-500">
-            <div class="container flex flex-col justify-between py-10 mx-auto space-y-8 lg:flex-row lg:space-y-0">
-                <div class="lg:w-1/3">
-                    <a rel="noopener noreferrer" href="#" class="flex justify-center space-x-3 lg:justify-start">
-                        <div class="flex items-center justify-center w-14 h-14 rounded-full bg-none-400">
-                            <img src="./Assets/photos/Symbole_blanc.png" alt="" class="h-full w-full object-contain">
+                    <div class="py-6 md:py-0 md:px-6">
+                        <h1 class="text-4xl font-semibold font-[font1]">Get in touch</h1>
+                        <p class="pt-2 pb-4 font-[font3]">Fill in the form to start a conversation</p>
+                        <div class="space-y-3 font-[font3]">
+                            <p class="flex items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                    class="w-5 h-5 mr-2 sm:mr-6">
+                                    <path fill-rule="evenodd"
+                                        d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                                <span>your Address</span>
+                            </p>
+                            <p class="flex items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                    class="w-5 h-5 mr-2 sm:mr-6">
+                                    <path
+                                        d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z">
+                                    </path>
+                                </svg>
+                                <span>123456789</span>
+                            </p>
+                            <p class="flex items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                    class="w-5 h-5 mr-2 sm:mr-6">
+                                    <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z">
+                                    </path>
+                                    <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
+                                </svg>
+                                <span> intlmotor.dircom@outlook.com </span>
+                            </p>
                         </div>
-                        <span class="self-center text-2xl font-semibold">INT'l MOTOR</span>
+                    </div>
+
+                    <!-- Form -->
+                    <form action="mailto:intlmotor.dircom@outlook.com " method="post" enctype="text/plain"
+                        class="font-[font3] flex flex-col py-6 space-y-6 md:py-0 md:px-6 text-black">
+                        <label class="block">
+                            <span class="mb-1 text-white">Full name</span>
+                            <input type="text" name="FullName" placeholder="Leroy Jenkins"
+                                class="block w-full rounded-md shadow-sm focus:ring focus:ring-opacity-75 focus:dark:ring-violet-600 px-2 py-2"
+                                required>
+                        </label>
+                        <label class="block">
+                            <span class="mb-1 text-white">Email address</span>
+                            <input type="email" name="Email" placeholder="leroy@jenkins.com"
+                                class="block w-full rounded-md shadow-sm focus:ring focus:ring-opacity-75 focus:dark:ring-violet-600 px-2 py-2"
+                                required>
+                        </label>
+                        <label class="block">
+                            <span class="mb-1 text-white">Message</span>
+                            <textarea rows="3" name="Message"
+                                class="block w-full rounded-md focus:ring focus:ring-opacity-75 focus:dark:ring-violet-600 dark:bg-gray-100 px-2 py-2"
+                                required></textarea>
+                        </label>
+                        <button type="submit"
+                            class="self-center px-8 py-3 text-lg rounded focus:ring hover:ring focus:ring-opacity-75 dark:bg-violet-600 dark:text-gray-50 focus:dark:ring-violet-600 hover:dark:ring-violet-600">Submit</button>
+                    </form>
+                </div>
+            </section>
+
+        </main>
+        <footer class="bg-[#0C0712] text-gray-100 border-t-2 border-zinc-500">
+            <div class="container mx-auto px-4 py-16">
+                <div class="grid gap-10 row-gap-8 mb-8 sm:grid-cols-2 lg:grid-cols-4">
+                    <!-- Logo and Description -->
+                    <div class="sm:col-span-2">
+                        <a href="/" aria-label="Go home" title="Company" class="inline-flex items-center">
+                            <img src="./Assets/photos/3.Logo_Horizontale_Blanc_sanstagline.png" alt="footerLogo"
+                                class="h-10">
+                        </a>
+                        <div class="mt-6 lg:max-w-md">
+                            <p class="text-sm text-gray-400">
+                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                                laudantium, totam rem aperiam.
+                            </p>
+                            <p class="mt-4 text-sm text-gray-400">
+                                Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+                                explicabo.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Contacts Section -->
+                    <div class="space-y-4 text-sm">
+                        <p class="text-base font-bold tracking-wide">Contacts</p>
+                        <div class="flex items-center">
+                            <span class="mr-2 text-gray-300">Phone:</span>
+                            <a href="tel:850-123-5021"
+                                class="text-gray-400 hover:text-purple-400 transition-colors duration-300">850-123-5021</a>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="mr-2 text-gray-300">Email:</span>
+                            <a href="mailto:info@lorem.mail"
+                                class="text-gray-400 hover:text-purple-400 transition-colors duration-300">info@lorem.mail</a>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="mr-2 text-gray-300">Address:</span>
+                            <a href="https://www.google.com/maps" target="_blank" rel="noopener noreferrer"
+                                class="text-gray-400 hover:text-purple-400 transition-colors duration-300">
+                                312 Lovely Street, NY
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Social Media Links -->
+                    <div>
+                        <p class="text-base font-bold tracking-wide">Social</p>
+                        <div class="flex items-center mt-2 space-x-4">
+                            <a href="/" class="text-gray-500 hover:text-purple-400 transition-colors duration-300">
+                                <svg viewBox="0 0 24 24" fill="currentColor" class="h-5 w-5">
+                                    <path
+                                        d="M24,4.6c-0.9,0.4-1.8,0.7-2.8,0.8c1-0.6,1.8-1.6,2.2-2.7c-1,0.6-2,1-3.1,1.2c-0.9-1-2.2-1.6-3.6-1.6 c-2.7,0-4.9,2.2-4.9,4.9c0,0.4,0,0.8,0.1,1.1C7.7,8.1,4.1,6.1,1.7,3.1C1.2,3.9,1,4.7,1,5.6c0,1.7,0.9,3.2,2.2,4.1 C2.4,9.7,1.6,9.5,1,9.1c0,0,0,0,0,0.1c0,2.4,1.7,4.4,3.9,4.8c-0.4,0.1-0.8,0.2-1.3,0.2c-0.3,0-0.6,0-0.9-0.1c0.6,2,2.4,3.4,4.6,3.4 c-1.7,1.3-3.8,2.1-6.1,2.1c-0.4,0-0.8,0-1.2-0.1c2.2,1.4,4.8,2.2,7.5,2.2c9.1,0,14-7.5,14-14c0-0.2,0-0.4,0-0.6 C22.5,6.4,23.3,5.5,24,4.6z">
+                                    </path>
+                                </svg>
+                            </a>
+                            <a href="/" class="text-gray-500 hover:text-purple-400 transition-colors duration-300">
+                                <svg viewBox="0 0 30 30" fill="currentColor" class="h-6 w-6">
+                                    <circle cx="15" cy="15" r="4"></circle>
+                                    <path
+                                        d="M19.999,3h-10C6.14,3,3,6.141,3,10.001v10C3,23.86,6.141,27,10.001,27h10C23.86,27,27,23.859,27,19.999v-10   C27,6.14,23.859,3,19.999,3z M15,21c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S18.309,21,15,21z M22,9c-0.552,0-1-0.448-1-1   c0-0.552,0.448-1,1-1s1,0.448,1,1C23,8.552,22.552,9,22,9z">
+                                    </path>
+                                </svg>
+                            </a>
+                            <a href="/" class="text-gray-500 hover:text-purple-400 transition-colors duration-300">
+                                <svg viewBox="0 0 24 24" fill="currentColor" class="h-5 w-5">
+                                    <path
+                                        d="M22,0H2C0.895,0,0,0.895,0,2v20c0,1.105,0.895,2,2,2h11v-9h-3v-4h3V8.413c0-3.1,1.893-4.788,4.659-4.788 c1.325,0,2.463,0.099,2.795,0.143v3.24l-1.918,0.001c-1.504,0-1.795,0.715-1.795,1.763V11h4.44l-1,4h-3.44v9H22c1.105,0,2-0.895,2-2 V2C24,0.895,23.105,0,22,0z">
+                                    </path>
+                                </svg>
+                            </a>
+                        </div>
+                        <p class="mt-4 text-sm text-gray-400">
+                            Bacon ipsum dolor amet short ribs pig sausage prosciutto chicken spare ribs salami.
+                        </p>
+                    </div>
+                </div>
+                <!-- Footer Bottom -->
+                <div
+                    class="flex flex-col-reverse items-center justify-between pt-5 border-t border-gray-700 lg:flex-row">
+                    <p class="text-sm text-gray-400">
+                        © 2020 Lorem Inc. All rights reserved.
+                    </p>
+                    <a href="mailto:email@mail.com"
+                        class="text-sm text-gray-400 hover:text-purple-400 transition-colors duration-300">
+                        email@mail.com
                     </a>
                 </div>
-                <div class="grid grid-cols-2 text-sm gap-x-3 gap-y-8 lg:w-2/3 sm:grid-cols-4">
-                    <div class="space-y-3">
-                        <h3 class="tracking-wide uppercase text-gray-300 font-[font1]">About us</h3>
-                        <ul class="space-y-1">
-                            <li>
-                                <a rel="noopener noreferrer" class="font-[font3]" href="#">Official Press Releases</a>
-                            </li>
-                            <li>
-                                <a rel="noopener noreferrer" class="font-[font3]" href="#">Careers</a>
-                            </li>
-                            <li>
-                                <a rel="noopener noreferrer" class="font-[font3]" href="#">Contact Information</a>
-                            </li>
-                            <li>
-                                <a rel="noopener noreferrer" class="font-[font3]" href="#">FAQ</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="space-y-3">
-                        <h3 class="tracking-wide uppercase text-gray-300 font-[font1]">Acquisition Options</h3>
-                        <ul class="space-y-1">
-                            <li>
-                                <a rel="noopener noreferrer" class="font-[font3]" href="#">Business Options</a>
-                            </li>
-                            <li>
-                                <a rel="noopener noreferrer" class="font-[font3]" href="#">Personal Options</a>
-                            </li>
-                            <li>
-                                <a rel="noopener noreferrer" class="font-[font3]" href="#">Public Sector Options</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="space-y-3">
-                        <h3 class="uppercase text-gray-300 font-[font1]">My 360 Space</h3>
-                        <ul class="space-y-1">
-                            <li>
-                                <a rel="noopener noreferrer" class="font-[font3]" href="#">Insurance</a>
-                            </li>
-                            <li>
-                                <a rel="noopener noreferrer" class="font-[font3]" href="#">Maintenance &
-                                    Installation</a>
-                            </li>
-                            <li>
-                                <a rel="noopener noreferrer" class="font-[font3]" href="#">Shop</a>
-                            </li>
-                            <li>
-                                <a rel="noopener noreferrer" class="font-[font3]" href="#">Sell My Vehicle</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="space-y-3">
-                        <div class="uppercase text-gray-300 font-[font1]">Social media</div>
-                        <div class="flex justify-start space-x-3">
-                            <a rel="noopener noreferrer" href="#" title="Facebook" class="flex items-center p-1">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 32 32"
-                                    class="w-5 h-5 fill-current">
-                                    <path
-                                        d="M32 16c0-8.839-7.167-16-16-16-8.839 0-16 7.161-16 16 0 7.984 5.849 14.604 13.5 15.803v-11.177h-4.063v-4.625h4.063v-3.527c0-4.009 2.385-6.223 6.041-6.223 1.751 0 3.584 0.312 3.584 0.312v3.937h-2.021c-1.984 0-2.604 1.235-2.604 2.5v3h4.437l-0.713 4.625h-3.724v11.177c7.645-1.199 13.5-7.819 13.5-15.803z">
-                                    </path>
-                                </svg>
-                            </a>
-                            <a rel="noopener noreferrer" href="#" title="X" class="flex items-center p-1">
-                                <i class="ri-twitter-x-line text-xl"></i>
-                            </a>
-                            <a rel="noopener noreferrer" href="#" title="Instagram" class="flex items-center p-1">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor"
-                                    class="w-5 h-5 fill-current">
-                                    <path
-                                        d="M16 0c-4.349 0-4.891 0.021-6.593 0.093-1.709 0.084-2.865 0.349-3.885 0.745-1.052 0.412-1.948 0.959-2.833 1.849-0.891 0.885-1.443 1.781-1.849 2.833-0.396 1.020-0.661 2.176-0.745 3.885-0.077 1.703-0.093 2.244-0.093 6.593s0.021 4.891 0.093 6.593c0.084 1.704 0.349 2.865 0.745 3.885 0.412 1.052 0.959 1.948 1.849 2.833 0.885 0.891 1.781 1.443 2.833 1.849 1.020 0.391 2.181 0.661 3.885 0.745 1.703 0.077 2.244 0.093 6.593 0.093s4.891-0.021 6.593-0.093c1.704-0.084 2.865-0.355 3.885-0.745 1.052-0.412 1.948-0.959 2.833-1.849 0.891-0.885 1.443-1.776 1.849-2.833 0.391-1.020 0.661-2.181 0.745-3.885 0.077-1.703 0.093-2.244 0.093-6.593s-0.021-4.891-0.093-6.593c-0.084-1.704-0.355-2.871-0.745-3.885-0.412-1.052-0.959-1.948-1.849-2.833-0.885-0.891-1.776-1.443-2.833-1.849-1.020-0.396-2.181-0.661-3.885-0.745-1.703-0.077-2.244-0.093-6.593-0.093zM16 2.88c4.271 0 4.781 0.021 6.469 0.093 1.557 0.073 2.405 0.333 2.968 0.553 0.751 0.291 1.276 0.635 1.844 1.197 0.557 0.557 0.901 1.088 1.192 1.839 0.22 0.563 0.48 1.411 0.553 2.968 0.072 1.688 0.093 2.199 0.093 6.469s-0.021 4.781-0.099 6.469c-0.084 1.557-0.344 2.405-0.563 2.968-0.303 0.751-0.641 1.276-1.199 1.844-0.563 0.557-1.099 0.901-1.844 1.192-0.556 0.22-1.416 0.48-2.979 0.553-1.697 0.072-2.197 0.093-6.479 0.093s-4.781-0.021-6.48-0.099c-1.557-0.084-2.416-0.344-2.979-0.563-0.76-0.303-1.281-0.641-1.839-1.199-0.563-0.563-0.921-1.099-1.197-1.844-0.224-0.556-0.48-1.416-0.563-2.979-0.057-1.677-0.084-2.197-0.084-6.459 0-4.26 0.027-4.781 0.084-6.479 0.083-1.563 0.339-2.421 0.563-2.979 0.276-0.761 0.635-1.281 1.197-1.844 0.557-0.557 1.079-0.917 1.839-1.199 0.563-0.219 1.401-0.479 2.964-0.557 1.697-0.061 2.197-0.083 6.473-0.083zM16 7.787c-4.541 0-8.213 3.677-8.213 8.213 0 4.541 3.677 8.213 8.213 8.213 4.541 0 8.213-3.677 8.213-8.213 0-4.541-3.677-8.213-8.213-8.213zM16 21.333c-2.948 0-5.333-2.385-5.333-5.333s2.385-5.333 5.333-5.333c2.948 0 5.333 2.385 5.333 5.333s-2.385 5.333-5.333 5.333zM26.464 7.459c0 1.063-0.865 1.921-1.923 1.921-1.063 0-1.921-0.859-1.921-1.921 0-1.057 0.864-1.917 1.921-1.917s1.923 0.86 1.923 1.917z">
-                                    </path>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
             </div>
-            <div class="py-6 text-sm text-center text-gray-400 dark:text-gray-600">© 2024 INT'l MOTOR Co. All rights
-                reserved.</div>
         </footer>
     </div>
     <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
