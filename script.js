@@ -11,7 +11,7 @@ const smoothScrolling = () => {
     searchIcon.addEventListener("click", () => {
         lenis.scrollTo(target)
     })
-    
+
 }
 
 smoothScrolling()
@@ -87,8 +87,17 @@ document.addEventListener("DOMContentLoaded", () => {
             card_5_description: "Avail exciting discounts and exclusive deals on our car services.",
             card_6_title: "Customer Support",
             card_6_description: "Experience top-notch support for all your dealership and service-related queries.",
-            find_what_drives_you: "Find what drives you..?"
-
+            find_what_drives_you: "Find what drives you..?",
+            testimonials_heading: " What People Are Saying About Us",
+            get_in_touch: "Get in touch",
+            fill_form: "Fill in the form to start a conversation",
+            your_address: "your Address",
+            phone_number: "123456789",
+            email: "intlmotor.dircom@outlook.com",
+            full_name: "Full name",
+            email_address: "Email address",
+            message: "Message",
+            submit: "Submit"
         },
         fr: {
             aboutUs: "mon entreprise",
@@ -126,7 +135,17 @@ document.addEventListener("DOMContentLoaded", () => {
             card_5_description: "Aprovecha descuentos emocionantes y ofertas exclusivas en nuestros servicios de autos.",
             card_6_title: "Atención al Cliente",
             card_6_description: "Disfruta de soporte de primer nivel para todas tus consultas relacionadas con concesionarios y servicios.",
-            find_what_drives_you: "Trouvez ce qui vous motive..?"
+            find_what_drives_you: "Trouvez ce qui vous motive..?",
+            testimonials_heading: "Ce Que Les Gens Disent De Nous",
+            get_in_touch: "Prenez contact",
+            fill_form: "Remplissez le formulaire pour commencer une conversation",
+            your_address: "votre adresse",
+            phone_number: "123456789",
+            email: "intlmotor.dircom@outlook.com",
+            full_name: "Nom complet",
+            email_address: "Adresse e-mail",
+            message: "Message",
+            submit: "Soumettre"
         }
     };
 
@@ -255,7 +274,7 @@ const searchFunctionality = () => {
     // Handle "Show More" button click
     showMoreBtn.addEventListener("click", () => {
         displayedCarsCount += 2; // Increase the number of displayed cars
-        renderCarCards(cars.slice(0, displayedCarsCount)); 
+        renderCarCards(cars.slice(0, displayedCarsCount));
     });
 
     fetchCars();
