@@ -190,6 +190,19 @@ const loaderAnimation = () => {
                 duration: 1,
                 ease: "power4.in"
             }, "start+=2")
+        tl.from("header",{
+            y:-100,
+            opacity: 0,
+            duration: 0.5,
+            ease: "power4.out"
+        })
+        .from(".page1",{
+            y:100,
+            duration: 0.5,
+            ease: "power4.out",
+            opacity: 0,
+        })
+        
     })
     const numberElement = document.querySelector('.counter .number');
     const targetCount = 100;
@@ -272,3 +285,4 @@ const searchFunctionality = () => {
 
 }
 searchFunctionality()
+
