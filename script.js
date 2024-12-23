@@ -217,7 +217,7 @@ const loaderAnimation = () => {
             scrollTrigger:{
                 trigger:".page2",
                 scroller:"body",
-                markers:true,
+                markers:false,
                 start:"top 70%",
                 end:"top 40%",
                 scrub:2,
@@ -243,7 +243,23 @@ const loaderAnimation = () => {
             ease: "power4.out",
             stagger:0.4
         })
-        // var tl3 =gsap.timeline({})
+        var tl3 =gsap.timeline({
+            scrollTrigger:{
+                trigger:".page3",
+                scroller:"body",
+                markers:true,
+                start:"top 70%",
+                end:"top 40%",
+                scrub:2,
+            }
+        })
+        tl3.from(".page3 div",{
+            opacity:0,
+            y:50,
+            duration: 0.5,
+            ease: "power4.out",
+            stagger: 0.4
+        })
     })
     const numberElement = document.querySelector('.counter .number');
     const targetCount = 100;
