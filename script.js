@@ -1,5 +1,5 @@
 import gsap from 'gsap';
-// import 'swiper/swiper-bundle.min.css';
+import "swiper/css";
 import Swiper from 'swiper';
 
 const smoothScrolling = () => {
@@ -237,12 +237,17 @@ const searchFunctionality = () => {
     let cars = [];
     let displayedCarsCount = 6; // Number of cars to display initially
 
-    // Fetch car data from the JSON file
+    // Fetch car data from the API
     async function fetchCars() {
         try {
-            const response = await fetch("./car_data.json");  // Adjust the path if necessary
-            const carsData = await response.json();
-            cars = carsData;
+            const response = await fetch("https://api.jsonbin.io/v3/b/676910e6ad19ca34f8df9271", {
+                method: "GET",
+                headers: {
+                    "X-Access-Key": "YOUR_API_ACCESS_KEY", // Replace with your actual API key
+                },
+            });
+            const jsonData = await response.json();
+            cars = jsonData.record; // Adjust based on the API response structure
             renderCarCards(cars.slice(0, displayedCarsCount)); // Display initial set of cars
         } catch (error) {
             console.error("Error fetching car data:", error);
@@ -282,6 +287,7 @@ const searchFunctionality = () => {
     });
 
     fetchCars();
+
 }
 
 searchFunctionality()
