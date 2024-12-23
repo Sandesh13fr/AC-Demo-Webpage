@@ -42,8 +42,19 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preload" href="styles.css" as="style">
     <title>INT'l MOTOR</title>
-  <script type="module" crossorigin src="/assets/index-z872Z7lM.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/index-B1fA2gD4.css">
+    <script>
+        // Ensure this script is loaded before the buttons are clicked
+        function scrollToSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            if (section) {
+                section.scrollIntoView({ behavior: 'smooth' });
+            } else {
+                console.error(`Section with ID '${sectionId}' not found.`);
+            }
+        }
+    </script>
+  <script type="module" crossorigin src="/assets/index-CShFbXzQ.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-DubLdPxH.css">
 </head>
 
 <body>
@@ -57,15 +68,15 @@
     </div>
     <div id="main" class="h-full w-full text-white">
         <header
-            class="backdrop-blur-sm fixed top-0 left-0 w-full flex items-center justify-between py-4 px-8 z-10 max-sm:px-6">
+            class="font-[font0] backdrop-blur-sm fixed top-0 left-0 w-full flex items-center justify-between py-4 px-8 z-10 max-sm:px-6">
             <div id="logo"
                 class="h-9 max-md:h-6 max-sm:h-[1.6rem] scale-100 hover:scale-125 duration-75 ease-in-out max-md:hover:scale-100">
                 <img src="/assets/3.Logo_Horizontale_Blanc_sanstagline-Y7BJWRyv.png" alt="INT'l MOTOR logo"
                     class="h-full object-cover">
             </div>
             <nav class="flex items-center space-x-8 group max-md:hidden">
-                <div class="relative">
-                    <span class="cursor-pointer uppercase tracking-widest text-sm font-light hover:text-gray-400"
+                <div class="relative font-[font0]">
+                    <span class="cursor-pointer uppercase tracking-widest text-sm font-[font0] hover:text-gray-400"
                         data-translate="aboutUs">My Company</span>
                     <div
                         class="absolute top-full left-0 bg-gray-900 hidden group-hover:flex flex-col p-2 opacity-0 transition-all group-hover:opacity-100">
@@ -75,9 +86,9 @@
                     </div>
                 </div>
 
-                <div class="relative">
+                <div class="relative font-[font0]">
                     <span data-translate="acquisitionOptions"
-                        class="cursor-pointer uppercase tracking-widest text-sm font-light hover:text-gray-400">Acquisition
+                        class="cursor-pointer uppercase tracking-widest text-sm font-[font0] hover:text-gray-400">Acquisition
                         Options</span>
                     <div
                         class="absolute top-full left-0 bg-gray-900 hidden group-hover:flex flex-col p-2 opacity-0 transition-all group-hover:opacity-100">
@@ -88,9 +99,9 @@
                     </div>
                 </div>
 
-                <div class="relative">
+                <div class="relative font-[font0]">
                     <span data-translate="space360"
-                        class="cursor-pointer uppercase tracking-widest text-sm font-light hover:text-gray-400">360
+                        class="cursor-pointer uppercase tracking-widest text-sm font-[font0] hover:text-gray-400">360
                         space</span>
                     <div
                         class="absolute top-full left-0 bg-gray-900 hidden group-hover:flex flex-col p-2 opacity-0 transition-all group-hover:opacity-100">
@@ -104,11 +115,11 @@
             </nav>
             <div class="flex justify-center items-center gap-4">
                 <div id="searchContainer" class="flex items-start justify-center gap-2">
-                    <button class="searchButton"><i class="ri-search-2-line text-2xl"></i></button>
+                    <button class="searchButton" onclick="scrollToSection('searchvehicles')"><i class="ri-search-2-line text-2xl"></i></button>
                 </div>
                 <div class="language-opts flex items-center gap-3">
                     <div class="language">
-                        <h3 class="text-lg font-[font3] font-semibold"><span id="fre"
+                        <h3 class="text-lg font-[font0] font-semibold"><span id="fre"
                                 class="language-btn cursor-pointer">FR</span> / <span id="eng"
                                 class="language-btn cursor-pointer">EN</span></h3>
                     </div>
@@ -181,11 +192,11 @@
                                     integrity and
                                     excellence.</p>
                                 <div class="flex items-center gap-5 max-sm:flex-col max-sm:gap-1"><button
-                                        data-translate="buttonText" href="#Services"
+                                        data-translate="buttonText" onclick="scrollToSection('services')"
                                         class="py-2 px-4 border-2 rounded-lg max-sm:text-sm max-sm:px-3">Discover our
                                         brokerage
                                         solutions</button>
-                                    <button data-translate="buttonText2" href="#searchvehicles"
+                                    <button data-translate="buttonText2" onclick="scrollToSection('searchvehicles')"
                                         class="searchButton py-2 px-4 border-2 rounded-lg max-sm:text-sm max-sm:px-3">Find vehical of
                                         your
                                         dreams</button>
@@ -213,11 +224,11 @@
                                     integrity and
                                     excellence.</p>
                                 <div class="flex items-center gap-5 max-sm:flex-col max-sm:gap-1"><button
-                                        data-translate="buttonText" href="#Services"
+                                        data-translate="buttonText" onclick="scrollToSection('services')"
                                         class="py-2 px-4 border-2 rounded-lg max-sm:text-sm max-sm:px-3">Discover our
                                         brokerage
                                         solutions</button>
-                                    <button data-translate="buttonText2" href="#searchvehicles"
+                                    <button data-translate="buttonText2" onclick="scrollToSection('searchvehicles')"
                                         class="py-2 px-4 border-2 rounded-lg max-sm:text-sm max-sm:px-3">Find vehical of
                                         your
                                         dreams</button>
@@ -246,12 +257,12 @@
                                     integrity and
                                     excellence.</p>
                                 <div class="flex items-center gap-5 max-sm:flex-col max-sm:gap-1"><button
-                                        data-translate="buttonText" href="#Services"
+                                        data-translate="buttonText" onclick="scrollToSection('services')"
                                         class="py-2 px-4 border-2 rounded-lg max-sm:text-sm max-sm:px-3">Discover
                                         our
                                         brokerage
                                         solutions</button>
-                                    <button data-translate="buttonText2" href="#searchvehicles"
+                                    <button data-translate="buttonText2" onclick="scrollToSection('searchvehicles')"
                                         class="py-2 px-4 border-2 rounded-lg max-sm:text-sm max-sm:px-3">Find
                                         vehical of
                                         your
@@ -362,7 +373,7 @@
                     </div>
                 </div>
             </section>
-            <section id="Services">
+            <section id="services">
                 <div class="py-8 px-4 max-w-screen sm:py-16 lg:px-6 flex items-center justify-center flex-col">
                     <div
                         class="max-w-screen-md mb-8 lg:mb-16 text-center flex items-center justify-center flex-col px-5">
