@@ -119,6 +119,7 @@ details[open] > summary::after {
         @apply bottom-2;
     }
 }
+<<<<<<< HEAD
 
 /* Keyframes for blob animation */
 @keyframes blob {
@@ -138,3 +139,5 @@ details[open] > summary::after {
         background: linear-gradient(to top left, #742c74, navy);
     }
 }
+=======
+>>>>>>> c27644e1236f9fd7d914ef17bf6b7df5e788d519
