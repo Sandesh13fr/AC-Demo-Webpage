@@ -90,7 +90,16 @@ document.addEventListener("DOMContentLoaded", () => {
             full_name: "Full name",
             email_address: "Email address",
             message: "Message",
-            submit: "Submit"
+            submit: "Submit",
+            footerDescription1: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.",
+            footerDescription2: "Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
+            footerContactPhone: "Phone:",
+            footerContactEmail: "Email:",
+            footerContactAddress: "Address:",
+            footerSocialTitle: "Social",
+            footerSocialDescription: "Bacon ipsum dolor amet short ribs pig sausage prosciutto chicken spare ribs salami.",
+            footerCopyright: "© 2020 Lorem Inc. All rights reserved.",
+            footerEmail: "email@mail.com",
         },
         fr: {
             aboutUs: "mon entreprise",
@@ -138,7 +147,17 @@ document.addEventListener("DOMContentLoaded", () => {
             full_name: "Nom complet",
             email_address: "Adresse e-mail",
             message: "Message",
-            submit: "Soumettre"
+            submit: "Soumettre",
+            footerDescription1: "Sed ut perspiciatis unde omnis iste natus error accusantium doloremque laudantium, totam rem aperiam.",
+            footerDescription2: "Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
+            footerContactPhone: "Téléphone :",
+            footerContactEmail: "Courriel :",
+            footerContactAddress: "Adresse :",
+            footerSocialTitle: "Social",
+            footerSocialDescription: "Bacon ipsum dolor amet short ribs pig sausage prosciutto chicken spare ribs salami.",
+            footerCopyright: "© 2020 Lorem Inc. Tous droits réservés.",
+            footerEmail: "email@mail.com",
+
         }
     };
 
@@ -207,89 +226,89 @@ const loaderAnimation = () => {
             duration: 0.5,
             ease: "power4.out"
         })
-        .from(".page1",{
-            y:100,
-            duration: 0.5,
-            ease: "power4.out",
-            opacity: 0,
-        })
+            .from(".page1", {
+                y: 100,
+                duration: 0.5,
+                ease: "power4.out",
+                opacity: 0,
+            })
         let tl2 = gsap.timeline({
-            scrollTrigger:{
-                trigger:".page2",
-                scroller:"body",
-                markers:false,
-                start:"top 70%",
-                end:"top 40%",
-                scrub:2,
+            scrollTrigger: {
+                trigger: ".page2",
+                scroller: "body",
+                markers: false,
+                start: "top 70%",
+                end: "top 40%",
+                scrub: 2,
             }
         })
-        tl2.from(".page2",{
-            opacity:0,
-            y:50,
+        tl2.from(".page2", {
+            opacity: 0,
+            y: 50,
             duration: 0.5,
             ease: "power4.out"
         })
-        tl2.from(".para",{
-            opacity:0,
-            y:20,
+        tl2.from(".para", {
+            opacity: 0,
+            y: 20,
             duration: 0.5,
             ease: "power4.out",
-            stagger:0.2
+            stagger: 0.2
         })
-        tl2.from(".imgContainer div",{
-            opacity:0,
-            y:20,
-            duration: 0.5,
-            ease: "power4.out",
-            stagger:0.4
-        })
-        var tl3 =gsap.timeline({
-            scrollTrigger:{
-                trigger:".page3",
-                scroller:"body",
-                markers:false,
-                start:"top 60%",
-                end:"top 40%",
-                scrub:2,
-            }
-        })
-        tl3.from(".page3 div",{
-            opacity:0,
-            y:50,
+        tl2.from(".imgContainer div", {
+            opacity: 0,
+            y: 20,
             duration: 0.5,
             ease: "power4.out",
             stagger: 0.4
         })
-        var tl4 =gsap.timeline({
-            scrollTrigger:{
-                trigger:".page4",
-                scroller:"body",
-                markers:false,
-                start:"top 60%",
-                end:"top 30%",
-                scrub:2,
+        var tl3 = gsap.timeline({
+            scrollTrigger: {
+                trigger: ".page3",
+                scroller: "body",
+                markers: false,
+                start: "top 60%",
+                end: "top 40%",
+                scrub: 2,
             }
         })
-        tl4.from(".page4,#user-cards,#show-more-btn",{
-            opacity:0,
-            y:50,
+        tl3.from(".page3 div", {
+            opacity: 0,
+            y: 50,
             duration: 0.5,
             ease: "power4.out",
             stagger: 0.4
         })
-        var tl5 =gsap.timeline({
-            scrollTrigger:{
-                trigger:".page5",
-                scroller:"body",
-                markers:false,
-                start:"top 60%",
-                end:"top 40%",
-                scrub:2,
+        var tl4 = gsap.timeline({
+            scrollTrigger: {
+                trigger: ".page4",
+                scroller: "body",
+                markers: false,
+                start: "top 60%",
+                end: "top 30%",
+                scrub: 2,
             }
         })
-        tl5.from(".h1,.testimoinal-card>div",{
-            opacity:0,
-            y:50,
+        tl4.from(".page4,#user-cards,#show-more-btn", {
+            opacity: 0,
+            y: 50,
+            duration: 0.5,
+            ease: "power4.out",
+            stagger: 0.4
+        })
+        var tl5 = gsap.timeline({
+            scrollTrigger: {
+                trigger: ".page5",
+                scroller: "body",
+                markers: false,
+                start: "top 60%",
+                end: "top 40%",
+                scrub: 2,
+            }
+        })
+        tl5.from(".h1,.testimoinal-card>div", {
+            opacity: 0,
+            y: 50,
             duration: 1,
             ease: "power4.out",
             stagger: 0.4
