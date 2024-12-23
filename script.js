@@ -2,7 +2,6 @@ import gsap from 'gsap';
 import "swiper/css";
 import Swiper from 'swiper';
 
-
 const hamBargurAnimation = () => {
     var close = document.querySelector("#full i")
     var menu = document.querySelector(".language-opts i")
