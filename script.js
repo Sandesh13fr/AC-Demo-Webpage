@@ -1,3 +1,7 @@
+import gsap from 'gsap';
+// import 'swiper/swiper-bundle.min.css';
+import Swiper from 'swiper';
+
 const smoothScrolling = () => {
     const lenis = new Lenis();
 
@@ -236,7 +240,7 @@ const searchFunctionality = () => {
     // Fetch car data from the JSON file
     async function fetchCars() {
         try {
-            const response = await fetch("car_data.json");  // Adjust the path if necessary
+            const response = await fetch("./car_data.json");  // Adjust the path if necessary
             const carsData = await response.json();
             cars = carsData;
             renderCarCards(cars.slice(0, displayedCarsCount)); // Display initial set of cars
