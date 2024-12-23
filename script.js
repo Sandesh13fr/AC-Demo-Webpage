@@ -1,21 +1,31 @@
+/**
+ * Main JavaScript file for car dealership website
+ * Handles animations, language switching, search functionality, and UI interactions
+ */
+
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 import "swiper/css";
 import Swiper from 'swiper';
 
-// Function to handle hamburger menu animation
+/**
+ * Handles the hamburger menu animation using GSAP
+ * Creates a sliding animation for the menu and handles open/close events
+ */
 const hamBargurAnimation = () => {
     var close = document.querySelector("#full i");
     var menu = document.querySelector(".language-opts i");
 
     var tl = gsap.timeline();
+    // Animate menu sliding in from the side
     tl.to("#full", {
         transform: 'translateX(0%)',
         duration: 1,
         opacity: 1
     }, "start");
 
+    // Animate close icon appearing
     tl.from("#full i", {
         scale: 0,
         opacity: 0,
@@ -24,27 +34,32 @@ const hamBargurAnimation = () => {
 
     tl.pause();
 
-    // Event listener to open menu
+    // Toggle menu open
     menu.addEventListener('click', function () {
         tl.play();
     });
 
-    // Event listener to close menu
+    // Toggle menu close
     close.addEventListener("click", function () {
         tl.reverse();
     });
 };
 
-// Initialize hamburger menu animation
 hamBargurAnimation();
 
+/**
+ * Initializes language switching functionality
+ * Contains translations for English and French
+ * Updates UI text based on selected language
+ */
 document.addEventListener("DOMContentLoaded", () => {
     const engBtn = document.getElementById("eng");
     const freBtn = document.getElementById("fre");
 
-    // Define translations
+    // Translation objects for English and French
     const translations = {
         en: {
+            // English translations
             aboutUs: "My Company",
             acquisitionOptions: "Acquisition Options",
             space360: "360 space",
@@ -102,6 +117,7 @@ document.addEventListener("DOMContentLoaded", () => {
             footerEmail: "email@mail.com",
         },
         fr: {
+            // French translations
             aboutUs: "mon entreprise",
             acquisitionOptions: "Options d'Acquisition",
             space360: "Espace 360",
@@ -171,12 +187,14 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     };
 
-    // Event listeners for language buttons
+    // Attach language switch event listeners
     engBtn.addEventListener("click", () => updateLanguage("en"));
     freBtn.addEventListener("click", () => updateLanguage("fr"));
 });
 
-// Function to initialize Swiper
+/**
+ * Initializes Swiper carousel with autoplay functionality
+ */
 const swiperContainer = () => {
     const swiper = new Swiper('.swiper', {
         loop: true,
@@ -187,12 +205,15 @@ const swiperContainer = () => {
     });
 };
 
-// Initialize Swiper
 swiperContainer();
 
-// Function to handle loader animation
+/**
+ * Handles the initial page loader animation and scroll animations
+ * Uses GSAP for smooth transitions and scroll-triggered animations
+ */
 const loaderAnimation = () => {
     window.addEventListener("load", () => {
+        // Initial loader animation sequence
         let tl = gsap.timeline();
         tl.to("#loader img", {
             opacity: 1,
@@ -330,10 +351,12 @@ const loaderAnimation = () => {
     updateCounter();
 };
 
-// Initialize loader animation
 loaderAnimation();
 
-// Function to handle search functionality
+/**
+ * Handles the car search functionality
+ * Fetches car data from API, renders cards, and handles search filtering
+ */
 const searchFunctionality = () => {
     const searchForm = document.getElementById("search-form");
     const searchInput = document.getElementById("search-bar");
@@ -342,28 +365,34 @@ const searchFunctionality = () => {
     const showMoreBtn = document.getElementById("show-more-btn");
 
     let cars = [];
-    let displayedCarsCount = 6; // Number of cars to display initially
+    let displayedCarsCount = 6; // Initial number of displayed cars
 
-    // Fetch car data from the API
+    /**
+     * Fetches car data from the API
+     * @returns {Promise<void>}
+     */
     async function fetchCars() {
         try {
             const response = await fetch("https://api.jsonbin.io/v3/b/676910e6ad19ca34f8df9271", {
                 method: "GET",
                 headers: {
-                    "X-Access-Key": "YOUR_API_ACCESS_KEY", // Replace with your actual API key
+                    "X-Access-Key": "YOUR_API_ACCESS_KEY",
                 },
             });
             const jsonData = await response.json();
-            cars = jsonData.record; // Adjust based on the API response structure
-            renderCarCards(cars.slice(0, displayedCarsCount)); // Display initial set of cars
+            cars = jsonData.record;
+            renderCarCards(cars.slice(0, displayedCarsCount));
         } catch (error) {
             console.error("Error fetching car data:", error);
         }
     }
 
-    // Render the car cards
+    /**
+     * Renders car cards to the DOM
+     * @param {Array} carsToDisplay - Array of car objects to display
+     */
     function renderCarCards(carsToDisplay) {
-        userCardsContainer.innerHTML = ""; // Clear previous results
+        userCardsContainer.innerHTML = "";
         carsToDisplay.forEach((car) => {
             const card = userCardTemplate.content.cloneNode(true);
             const header = card.querySelector(".header");
@@ -374,28 +403,26 @@ const searchFunctionality = () => {
         });
     }
 
-    // Handle search functionality
+    // Search form submission handler
     searchForm.addEventListener("submit", (event) => {
-        event.preventDefault(); // Prevent form submission
-
+        event.preventDefault();
         const searchQuery = searchInput.value.toLowerCase();
         const filteredCars = cars.filter(
             (car) =>
                 car.make.toLowerCase().includes(searchQuery) ||
                 car.model.toLowerCase().includes(searchQuery)
         );
-        renderCarCards(filteredCars.slice(0, displayedCarsCount)); // Display filtered cars
+        renderCarCards(filteredCars.slice(0, displayedCarsCount));
     });
 
-    // Handle "Show More" button click
+    // Show more button handler
     showMoreBtn.addEventListener("click", () => {
-        displayedCarsCount += 2; // Increase the number of displayed cars
+        displayedCarsCount += 2;
         renderCarCards(cars.slice(0, displayedCarsCount));
     });
 
-    // Fetch initial car data
+    // Initialize car data
     fetchCars();
 };
-
-// Initialize search functionality
+//call searchFunctionality
 searchFunctionality();
