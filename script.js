@@ -207,15 +207,44 @@ const loaderAnimation = () => {
             duration: 0.5,
             ease: "power4.out"
         })
-            .from(".page1", {
-                y: 100,
-                duration: 0.5,
-                ease: "power4.out",
-                opacity: 0,
-            });
-    });
-
-    // Function to update counter
+        .from(".page1",{
+            y:100,
+            duration: 0.5,
+            ease: "power4.out",
+            opacity: 0,
+        })
+        let tl2 = gsap.timeline({
+            scrollTrigger:{
+                trigger:".page2",
+                scroller:"body",
+                markers:true,
+                start:"top 70%",
+                end:"top 40%",
+                scrub:2,
+            }
+        })
+        tl2.from(".page2",{
+            opacity:0,
+            y:50,
+            duration: 0.5,
+            ease: "power4.out"
+        })
+        tl2.from(".para",{
+            opacity:0,
+            y:20,
+            duration: 0.5,
+            ease: "power4.out",
+            stagger:0.2
+        })
+        tl2.from(".imgContainer div",{
+            opacity:0,
+            y:20,
+            duration: 0.5,
+            ease: "power4.out",
+            stagger:0.4
+        })
+        
+    })
     const numberElement = document.querySelector('.counter .number');
     const targetCount = 100;
     function updateCounter() {
