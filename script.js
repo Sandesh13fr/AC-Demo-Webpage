@@ -428,3 +428,27 @@ const searchFunctionality = () => {
 };
 //call searchFunctionality
 searchFunctionality();
+
+const cursor = () =>{
+    var cursor = document.querySelector("#cursor")
+    var main = document.querySelector("#main");
+    main.addEventListener("mousemove",(dets)=>{
+        gsap.to(cursor,{
+            x:dets.clientX,
+            y:dets.clientY,
+            ease:"Power4.out"
+        })
+    })
+    main.addEventListener("mouseleave",(dets)=>{
+        gsap.to(cursor,{
+            scale:0
+        })
+    })
+    main.addEventListener("mouseenter",(dets)=>{
+        gsap.to(cursor,{
+            scale:1
+        })
+    })
+}
+
+cursor()
