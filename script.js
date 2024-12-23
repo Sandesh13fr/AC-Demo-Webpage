@@ -2,23 +2,24 @@ import gsap from 'gsap';
 import "swiper/css";
 import Swiper from 'swiper';
 
-const smoothScrolling = () => {
-    const lenis = new Lenis();
+// const smoothScrolling = () => {
+//     const lenis = new Lenis({
+//         duration: 0.2
+//     });
 
-    function raf(time) {
-        lenis.raf(time);
-        requestAnimationFrame(raf);
-    }
-    requestAnimationFrame(raf);
-    let searchIcon = document.querySelector(".searchButton")
-    let target = document.querySelector("#searchvehicles")
-    searchIcon.addEventListener("click", () => {
-        lenis.scrollTo(target)
-    })
+//     function raf(time) {
+//         lenis.raf(time);
+//         requestAnimationFrame(raf);
+//     }
+//     requestAnimationFrame(raf);
+//     let searchIcon = document.querySelector(".searchButton")
+//     let target = document.querySelector("#searchvehicles")
+//     searchIcon.addEventListener("click", () => {
+//         lenis.scrollTo(target)
+//     })
+// }
 
-}
-
-smoothScrolling()
+// smoothScrolling()
 
 const hamBargurAnimation = () => {
     var close = document.querySelector("#full i")
